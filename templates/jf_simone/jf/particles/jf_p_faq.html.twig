@@ -1,0 +1,52 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+{% set indentifier = random() %}
+
+{% block particle %}
+	<div{% if particle.special_id %} id="{{ particle.special_id|e }}"{% endif %} class="jf_p_global{% if particle.theme == 'dark' %} dark{% endif %}" style="
+		{% if particle.padding %}padding:{{ particle.padding|e }};{% endif %}
+		{% if particle.textAlign %}text-align:{{ particle.textAlign|e }};{% endif %}
+		{% if particle.bg_color %}background-color:{{ particle.bg_color|e }};{% endif %}
+		{% if particle.bg_img %}background-image:url('{{ url(particle.bg_img)|e }}');{% endif %}
+		background-size:{{ particle.bg_size|e }};
+		background-attachment:{{ particle.bg_attachement|e }};
+		{{ particle.bg_css|e }}
+	">
+		{% if particle.bg_mask %}<div class="jf_p_global_bg_mask" style="background:{{ particle.bg_mask|e }}"></div>{% endif %}
+		<div class="jf_p_global_cont">
+			<div class="clear"></div>
+			{% if particle.contentW == "default" %}<div class="jf_g_container"><div class="g-content">{% endif %}
+				{{ particle.html_before|html|raw }}
+				<div class="row-fluid">
+					{% for item in particle.items %}
+						<div class="span{{ item.grid }}" style="text-align:{{ item.contentTextAl|e }};{{ item.contentCSS|e }}"
+							{% if item.css3_anim %} data-aos="{{ item.css3_anim|e }}" data-aos-delay="{{ item.css3_anim_delay|e }}"{% endif %}>
+								{% if item.contentStyle == "faq" %}
+									<div class="accordion jf_p_faq" id="jf_p_faq-{{ indentifier|e }}">
+										{% for q_item in item.question_items %}
+											<div class="accordion-group">
+												<div class="accordion-heading">
+													<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#jf_p_faq-{{ indentifier|e }}" href="#jf_p_faq-{{ indentifier|e }}-{{ loop.index }}">
+														{{ q_item.question|html|raw }}
+														<div class="jf_p_faq_toggle_icon"></div>
+													</a>
+												</div>
+												<div id="jf_p_faq-{{ indentifier|e }}-{{ loop.index }}" class="accordion-body collapse" style="height: 0px;">
+													<div class="accordion-inner">
+														{{ q_item.answer|html|raw }}
+													</div>
+												</div>
+											</div>
+										{% endfor %}
+									</div>
+								{% else %}
+									{{ item.html|html|raw }}
+								{% endif %}
+						</div>
+					{% endfor %}
+				</div>
+				{{ particle.html_after|html|raw }}
+			{% if particle.contentW == "default" %}</div></div>{% endif %}
+			<div class="clear"></div>
+		</div>
+	</div>
+{% endblock %}

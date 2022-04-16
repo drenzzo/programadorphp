@@ -1,0 +1,66 @@
+name: 20
+timestamp: 1494964028
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/page_about.jpg'
+  name: default
+  timestamp: 1482703875
+positions:
+  right-panel: 'Module Position'
+  news-panel: 'Module Position'
+  footer-b: "Position:\_footer-b"
+  footer-c: "Position:\_footer-c"
+sections:
+  header: Header
+  navigation: Navigation
+  right-panel: Right-panel
+  news-panel: News-panel
+  full-width-section-1: Full-width-section-1
+  full-width-section-2: Full-width-section-2
+  bottom-footer: Bottom-footer
+  main: Main
+  footer: Footer
+particles:
+  jf_p_cta:
+    jf_p_cta-4539: 'JF Particle - CTA'
+  messages:
+    system-messages-5749: 'System Messages'
+  jf_p_ft_intro:
+    jf_p_ft_intro-9338: 'JF Particle - Features Intro'
+    jf_p_ft_intro-5684: 'JF Particle - Features Intro (Why Us)'
+  jf_p_teams:
+    jf_p_teams-5587: 'JF Particle - Teams'
+  jf_p_clients:
+    jf_p_clients-9524: 'JF Particle - Clients'
+  jf_p_testimonials:
+    jf_p_testimonials-8035: 'JF Particle - Testimonials'
+  logo:
+    logo-3629: Logo
+  menu:
+    menu-4420: Menu
+  position:
+    position-position-6155: 'Module Position'
+    position-position-1069: 'Module Position'
+    position-position-4393: "Position:\_footer-b"
+    position-position-3724: "Position:\_footer-c"
+  custom:
+    custom-4511: 'Footer Copyright'
+  jf_p_subscribe:
+    jf_p_subscribe-4373: 'JF Particle - Mailchimp Subscribe'
+inherit:
+  default:
+    header: header
+    navigation: navigation
+    right-panel: right-panel
+    news-panel: news-panel
+    system-messages-5749: system-messages-9589
+    footer: footer
+    bottom-footer: bottom-footer
+    logo-3629: logo-8517
+    menu-4420: menu-2176
+    position-position-6155: position-position-7914
+    position-position-1069: position-position-9581
+    custom-4511: custom-3503
+    position-position-4393: position-position-5191
+    position-position-3724: position-position-1028
+    jf_p_subscribe-4373: jf_p_subscribe-6876

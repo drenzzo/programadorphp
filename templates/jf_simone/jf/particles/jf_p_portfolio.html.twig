@@ -1,0 +1,98 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+{% set indentifier = random() %}
+
+{% block stylesheets %}
+	<style>#jf_p_p-{{ indentifier|e }} .jf_p_p_sizer-{{ indentifier|e }},#jf_p_p-{{ indentifier|e }} [class*="jf_p_p_item"]{width:{{ particle.items_width|e }}%}</style>
+{% endblock %}
+
+{% block javascript %}
+	<script type="text/javascript" src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/particles/jf_p_portfolio/isotope.pkgd.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$(window).on('load', function () {
+				var $grid_{{ indentifier|e }} = $('#jf_p_p-{{ indentifier|e }}').isotope({
+					itemSelector: '.jf_p_p_item-{{ indentifier|e }}',
+					percentPosition: true,
+					masonry: {
+						columnWidth: '.jf_p_p_sizer-{{ indentifier|e }}'
+					}
+				});
+				if($('.jf_p_p_filterbar-{{ indentifier|e }}').length){
+					$('.jf_p_p_filterbar-{{ indentifier|e }}').find('button:first-child').addClass('btn btn-primary');
+					$('.jf_p_p_filterbar-{{ indentifier|e }}').on('click','button',function() {
+						var filterValue = $(this).attr('data-filter');
+						$grid_{{ indentifier|e }}.isotope({ filter: filterValue });
+						$(this).parent().find('button').removeClass('btn btn-primary');
+						$(this).addClass('btn btn-primary');
+					});
+				}
+			});
+		});
+	</script>
+{% endblock %}
+
+{% block particle %}
+	<div{% if particle.special_id %} id="{{ particle.special_id|e }}"{% endif %} class="jf_p_global jf_p_pricing{% if particle.theme == 'dark' %} dark{% endif %}" style="
+		{% if particle.padding %}padding:{{ particle.padding|e }};{% endif %}
+		{% if particle.textAlign %}text-align:{{ particle.textAlign|e }};{% endif %}
+		{% if particle.bg_color %}background-color:{{ particle.bg_color|e }};{% endif %}
+		{% if particle.bg_img %}background-image:url('{{ url(particle.bg_img)|e }}');{% endif %}
+		background-size:{{ particle.bg_size|e }};
+		background-attachment:{{ particle.bg_attachement|e }};
+		{{ particle.bg_css|e }}
+	">
+		{% if particle.bg_mask %}<div class="jf_p_global_bg_mask" style="background:{{ particle.bg_mask|e }}"></div>{% endif %}
+		<div class="jf_p_global_cont">
+			<div class="clear"></div>
+			{% if particle.contentW == "default" %}<div class="jf_g_container"><div class="g-content">{% endif %}
+				{{ particle.html_before|html|raw }}
+				<div class="jf_p_portfolio_wrap"{% if particle.css3_anim %} data-aos="fade-up" data-aos-delay="{{ particle.css3_anim_delay|e }}"{% endif %}>
+					{% if particle.filterbar %}
+						<div class="jf_p_p_filterbar-{{ indentifier|e }}">
+							{% if particle.filterbar_all %}<button data-filter="*">{{ particle.filterbar_all_txt|e }}</button>{% endif %}
+							{% for item in particle.filterbar_items %}<button data-filter=".{{ item.filter_id|e }}_{{ indentifier|e }}">{{ item.filter_text|e }}</button>{% endfor %}
+						</div>
+					{% endif %}
+					
+					<div id="jf_p_p-{{ indentifier|e }}" class="jf_p_portfolio">
+						<div class="jf_p_p_sizer-{{ indentifier|e }}"></div>
+						{% for item in particle.items %}
+							<div class="jf_p_p_item-{{ indentifier|e }} {{ item.filteritem_id|e }}_{{ indentifier|e }}">
+								<img src="{{ url(item.image_src)|e }}" alt="{{ item.image_text|e }}">
+								{% if item.linktype == "url" %}
+									<a class="jf_p_p_i_overlay waves-effect waves-light-50" href="{{ item.url|e }}">
+								{% elseif item.linktype == "image" %}
+									<a class="jf_p_p_i_overlay jf_p_cta_lightbox_btn jf_venobox waves-effect waves-light-50" data-gall="venogallery{{ indentifier|e }}" href="{{ url(item.lightbox_image)|e }}" title="{{ item.image_text|e }}">
+								{% elseif item.linktype == "video_y" %}
+									<a class="jf_p_p_i_overlay jf_p_cta_lightbox_btn jf_venobox waves-effect waves-light-50" data-gall="venogallery{{ indentifier|e }}" href="{{ item.lightbox_video|e }}" data-autoplay="true" data-vbtype="youtube">
+								{% elseif item.linktype == "video_v" %}
+									<a class="jf_p_p_i_overlay jf_p_cta_lightbox_btn jf_venobox waves-effect waves-light-50" data-gall="venogallery{{ indentifier|e }}" href="{{ item.lightbox_video|e }}" data-autoplay="true" data-vbtype="vimeo">
+								{% else %}
+									<div class="jf_p_p_i_overlay">
+								{% endif %}
+										<div class="jf_p_p_i_bg">
+											<div class="jf_p_p_i_title_wrap">
+												<div class="jf_p_p_i_title">{{ item.image_text|e }}</div>
+											</div>
+										</div>
+								{% if item.linktype == "url" %}
+									</a>
+								{% elseif item.linktype == "image" %}
+									</a>
+								{% elseif item.linktype == "video_y" %}
+									</a>
+								{% elseif item.linktype == "video_v" %}
+									</a>
+								{% else %}
+									</div>
+								{% endif %}
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+				{{ particle.html_after|html|raw }}
+			{% if particle.contentW == "default" %}</div></div>{% endif %}
+			<div class="clear"></div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div{% if particle.special_id %} id="{{ particle.special_id|e }}"{% endif %} class="jf_p_global{% if particle.theme == 'dark' %} dark{% endif %}" style="
+		{% if particle.padding %}padding:{{ particle.padding|e }};{% endif %}
+		{% if particle.textAlign %}text-align:{{ particle.textAlign|e }};{% endif %}
+		{% if particle.bg_color %}background-color:{{ particle.bg_color|e }};{% endif %}
+		{% if particle.bg_img %}background-image:url('{{ url(particle.bg_img)|e }}');{% endif %}
+		background-size:{{ particle.bg_size|e }};
+		background-attachment:{{ particle.bg_attachement|e }};
+		{{ particle.bg_css|e }}
+	">
+		{% if particle.bg_mask %}<div class="jf_p_global_bg_mask" style="background:{{ particle.bg_mask|e }}"></div>{% endif %}
+		<div class="jf_p_global_cont">
+			<div class="clear"></div>
+			{% if particle.contentW == "default" %}<div class="jf_g_container"><div class="g-content">{% endif %}
+				{{ particle.html_before|html|raw }}
+				<div class="row-fluid">
+				
+					{% for item in particle.items %}
+						<div class="jf_p_teams span{{ item.grid }}" style="text-align:{{ item.contentTextAl|e }};{{ item.contentCSS|e }}"
+							{% if item.css3_anim %} data-aos="{{ item.css3_anim|e }}" data-aos-delay="{{ item.css3_anim_delay|e }}"{% endif %}>
+							<img src="{{ url(item.image)|e }}" alt="{{ item.teammate_name|e }}">
+							<div class="jf_p_teams_c">
+							<div class="jf_p_teams_bg">
+							<div class="jf_p_teams_wrap">
+								<div class="teammate_name">{{ item.teammate_name|e }}</div>
+								<div class="teammate_pos">{{ item.teammate_pos|e }}</div>
+								<div class="jf_p_teams_social">
+									{% if item.icon_1_html %}<a href="{{ item.icon_1_url|e }}" target="_{{ item.icon_1_target|e }}">{{ item.icon_1_html|html|raw }}</a>{% endif %}
+									{% if item.icon_2_html %}<a href="{{ item.icon_2_url|e }}" target="_{{ item.icon_2_target|e }}">{{ item.icon_2_html|html|raw }}</a>{% endif %}
+									{% if item.icon_3_html %}<a href="{{ item.icon_3_url|e }}" target="_{{ item.icon_3_target|e }}">{{ item.icon_3_html|html|raw }}</a>{% endif %}
+									{% if item.icon_4_html %}<a href="{{ item.icon_4_url|e }}" target="_{{ item.icon_4_target|e }}">{{ item.icon_4_html|html|raw }}</a>{% endif %}
+									{% if item.icon_5_html %}<a href="{{ item.icon_5_url|e }}" target="_{{ item.icon_5_target|e }}">{{ item.icon_5_html|html|raw }}</a>{% endif %}
+								</div>
+							</div>
+							</div>
+							</div>
+						</div>
+					{% endfor %}
+					
+				</div>
+				{{ particle.html_after|html|raw }}
+			{% if particle.contentW == "default" %}</div></div>{% endif %}
+			<div class="clear"></div>
+		</div>
+	</div>
+{% endblock %}

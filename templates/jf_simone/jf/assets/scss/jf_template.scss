@@ -1,0 +1,74 @@
+/**
+* @version		1.0
+* @template		Simone
+* @author		JoomForest - https://www.joomforest.com
+* @copyright	Copyright (C) 2011-2017 JoomForest.com
+* @license		JoomForest.com Proprietary Use License - https://www.joomforest.com/licenses
+*/
+
+@import "0_css3_mixins";
+@import "0_variables";
+
+// NORMALIZE CSS
+@import "1_normalize";
+// BODY STYLES
+@import "2_body";
+// TYPO PREVIEW STYLES
+@import "3_typo_preview";
+// Typography
+@import "4_typo";
+// Bootstrap
+@import "5_bootstrap_232";
+@import "z_simone";
+
+$breakpoints-mobile-container:				100% !default;
+@mixin breakpoint($breakpoint, $media: all) {
+	@if $breakpoint == large-desktop-range {
+		@media only #{$media} and (min-width: $breakpoints-large-desktop-container) { @content; }
+	}
+	@else if $breakpoint == desktop-range {
+		@media only #{$media} and (min-width: $breakpoints-desktop-container) and (max-width: $breakpoints-large-desktop-container - 0.062rem) { @content; }
+	}
+	@else if $breakpoint == desktop-only {
+		@media only #{$media} and (min-width: $breakpoints-desktop-container) { @content; }
+	}
+	@else if $breakpoint == tablet-range {
+		@media only #{$media} and (min-width: $breakpoints-tablet-container) and (max-width: $breakpoints-desktop-container - 0.062rem) { @content; }
+	}
+	@else if $breakpoint == large-mobile-range {
+		@media only #{$media} and (min-width: $breakpoints-large-mobile-container + 0.062rem) and (max-width: $breakpoints-tablet-container - 0.062rem) { @content; }
+	}
+	@else if $breakpoint == small-mobile-range {
+		@media only #{$media} and (max-width: $breakpoints-large-mobile-container) { @content; }
+	}
+	@else if $breakpoint == no-mobile {
+		@media only #{$media} and (min-width: $breakpoints-tablet-container) { @content; }
+	}
+	@else if $breakpoint == mobile-only {
+		@media only #{$media} and (max-width: $breakpoints-tablet-container - 0.062rem) { @content; }
+	}
+	@else if $breakpoint == no-desktop {
+		@media only #{$media} and (max-width: $breakpoints-desktop-container - 0.062rem) { @content; }
+	}
+}
+.jf_g_container {
+	margin: 0 auto;
+	padding: 0;
+	width: $breakpoints-large-desktop-container;
+	@include breakpoint(desktop-range) {
+		width: $breakpoints-desktop-container;
+	}
+	@include breakpoint(tablet-range) {
+		width: $breakpoints-tablet-container;
+	}
+	@include breakpoint(large-mobile-range) {
+		width: $breakpoints-large-mobile-container;
+	}
+	@include breakpoint(small-mobile-range) {
+		width: $breakpoints-mobile-container;
+	}
+	.g-content {
+		margin: 10px;
+		padding: 15px;
+	}
+}

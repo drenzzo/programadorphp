@@ -1,0 +1,6 @@
+preset: indigo
+jf_color_base:
+  accent-1: '#777BB3'
+jf_color_menu:
+  toplevel-active: '#777BB3'
+  dropdown-active: '#777BB3'

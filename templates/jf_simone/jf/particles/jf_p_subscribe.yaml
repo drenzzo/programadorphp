@@ -1,0 +1,86 @@
+name: JF Particle - Mailchimp Subscribe
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    tabs:
+      type: container.tabs
+      fields:
+        tab_config:
+          label: Configuration
+          fields:
+
+            post_url:
+              type: input.text
+              label: Mailchimp Post URL
+              description: "The mailchimp post url will look like this: http://blahblah.us1.list-manage.com/subscribe/post?u=5afsdhfuhdsiufdba6f8802"
+
+            html_before:
+              type: textarea.textarea
+              label: Custom HTML Before the "Subscribe Form"
+              description: Type Custom HTML
+              default: "<h3 class='g-title'>Subscribe</h3>"
+
+            title:
+              type: input.text
+              label: Title
+              description: Type title text
+              default: Get monthly news and promotions.
+
+        tab_callback:
+          label: Language Callback Texts
+          fields:
+
+            lang_btn:
+              type: input.text
+              label: Subscribe Button
+              description: Type Subscribe Button Text
+              default: "SUBSCRIBE"
+
+            lang_input:
+              type: input.text
+              label: Input Paceholder
+              description: Type Input Paceholder Text
+              default: "Your Email Address"
+
+            lang_sending:
+              type: input.text
+              label: Sending Callback
+              description: Type Sending Callback Text
+              default: "Sending..."
+
+            lang_callback_1:
+              type: input.text
+              label: Callback - 1
+              default: "We have sent you a confirmation email, Thank You very much :)"
+
+            lang_callback_2:
+              type: input.text
+              label: Callback - 2
+              default: "Please enter your email address"
+
+            lang_callback_3:
+              type: input.text
+              label: Callback - 3
+              default: "An email address must contain a single @"
+
+            lang_callback_4:
+              type: input.text
+              label: Callback - 4
+              default: "The domain portion of the email address is invalid (the portion after the @: )"
+
+            lang_callback_5:
+              type: input.text
+              label: Callback - 5
+              default: "The username portion of the email address is invalid (the portion before the @: )"
+
+            lang_callback_6:
+              type: input.text
+              label: Callback - 6
+              default: "This email address looks fake or invalid. Please enter a real email address"

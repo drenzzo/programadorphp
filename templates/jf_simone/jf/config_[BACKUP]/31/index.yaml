@@ -1,0 +1,57 @@
+name: 31
+timestamp: 1494964029
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/p_mailchimp.jpg'
+  name: default
+  timestamp: 1482703875
+positions:
+  right-panel: 'Module Position'
+  news-panel: 'Module Position'
+  footer-b: "Position:\_footer-b"
+  footer-c: "Position:\_footer-c"
+sections:
+  header: Header
+  navigation: Navigation
+  right-panel: Right-panel
+  news-panel: News-panel
+  full-width-section-1: Full-width-section-1
+  full-width-section-2: Full-width-section-2
+  bottom-footer: Bottom-footer
+  main: Main
+  footer: Footer
+particles:
+  jf_p_subscribe:
+    jf_p_subscribe-4778: 'JF Particle - Mailchimp Subscribe'
+    jf_p_subscribe-6344: 'JF Particle - Mailchimp Subscribe'
+  custom:
+    custom-2081: 'Custom HTML'
+    custom-5251: 'Footer Copyright'
+  messages:
+    system-messages-5749: 'System Messages'
+  logo:
+    logo-3362: Logo
+  menu:
+    menu-5023: Menu
+  position:
+    position-position-3043: 'Module Position'
+    position-position-5391: 'Module Position'
+    position-position-4437: "Position:\_footer-b"
+    position-position-9528: "Position:\_footer-c"
+inherit:
+  default:
+    header: header
+    navigation: navigation
+    right-panel: right-panel
+    news-panel: news-panel
+    system-messages-5749: system-messages-9589
+    footer: footer
+    bottom-footer: bottom-footer
+    logo-3362: logo-8517
+    menu-5023: menu-2176
+    position-position-3043: position-position-7914
+    position-position-5391: position-position-9581
+    custom-5251: custom-3503
+    position-position-4437: position-position-5191
+    position-position-9528: position-position-1028
+    jf_p_subscribe-6344: jf_p_subscribe-6876

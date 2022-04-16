@@ -1,0 +1,13 @@
+enabled: '1'
+post_url: ''
+html_before: '<h3 class=''g-title''>Subscribe</h3>'
+title: 'Get monthly news and promotions.'
+lang_btn: SUBSCRIBE
+lang_input: 'Your Email Address'
+lang_sending: Sending...
+lang_callback_1: 'We have sent you a confirmation email, Thank You very much :)'
+lang_callback_2: 'Please enter your email address'
+lang_callback_3: 'An email address must contain a single @'
+lang_callback_4: 'The domain portion of the email address is invalid (the portion after the @: )'
+lang_callback_5: 'The username portion of the email address is invalid (the portion before the @: )'
+lang_callback_6: 'This email address looks fake or invalid. Please enter a real email address'

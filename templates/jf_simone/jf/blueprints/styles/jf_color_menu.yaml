@@ -1,0 +1,27 @@
+name: Menu Styles
+description: Menu styles for the theme
+type: core
+
+form:
+  fields:
+
+    toplevel-default:
+      type: input.colorpicker
+      label: Top Level Menu Item - Text Color
+      default: "#222222"
+    toplevel-active:
+      type: input.colorpicker
+      label: Top Level Menu Item - Active Text Color
+      default: "#ff4081"
+    dropdown-bg:
+      type: input.colorpicker
+      label: Dropdown Background
+      default: "#ffffff"
+    dropdown-default:
+      type: input.colorpicker
+      label: Dropdown Level Menu Item - Text Color
+      default: "#222222"
+    dropdown-active:
+      type: input.colorpicker
+      label: Dropdown Level Menu Item - Active Text Color
+      default: "#ff4081"

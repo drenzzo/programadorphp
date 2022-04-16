@@ -1,0 +1,619 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/home_apps.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/:
+    -
+      - jf_p_radialslider-1917
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/:
+    -
+      - jf_p_cta-5716
+    -
+      - jf_p_cta-4539
+    -
+      - jf_p_cta-9537
+    -
+      - jf_p_cta-1175
+    -
+      - jf_p_carousel-3929
+    -
+      - jf_p_cta-7666
+    -
+      - jf_p_teams-5587
+    -
+      - jf_p_testimonials-8035
+    -
+      - jf_p_pricing-5167
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  jf_p_radialslider-1917:
+    title: 'JF Particle - Radial Slider'
+    attributes:
+      autoplay: '1'
+      items:
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/1.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Create your App page <br>with <span style=\"font-weight:600\">Simone</span></h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background:#fff;font-weight:400;border-radius:100px;\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius: 100px;\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t\t</div>\n\t</a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 1'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/2.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Manage All of Your <br>Stuff with our App</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius:100px;color:#d119ad\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" data-tilt=\"10\">Play Video <i class=\"fa fa-play\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"></i></a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 2'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/3.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Easy and Powerful <br>Mobile App</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius:100px;color:#f18e52\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" data-tilt=\"10\">Watch Video <i class=\"fa fa-play\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"></i></a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 3'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/1.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Create your App page <br>with <span style=\"font-weight:600\">Simone</span></h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background:#fff;font-weight:400;border-radius:100px;\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius: 100px;\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t\t</div>\n\t</a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 1'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/2.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Manage All of Your <br>Stuff with our App</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius:100px;color:#d119ad\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" data-tilt=\"10\">Play Video <i class=\"fa fa-play\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"></i></a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 2'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/3.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Easy and Powerful <br>Mobile App</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius:100px;color:#f18e52\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" data-tilt=\"10\">Watch Video <i class=\"fa fa-play\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"></i></a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 3'
+      css: "@media (max-width: 320px) {\n\t#g-full-width-section-1 {\n\t\tpadding-top: 80px!important;\n\t\tbackground: #ff4081;\n\t}\n}"
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  jf_p_cta-5716:
+    title: 'JF Particle - Features (Amazing)'
+    attributes:
+      padding: '100px 0'
+      html_before: "<h3 style=\"margin:0 0 30px;font-size:2.7rem;font-weight:300;color:#000;\" data-aos=\"fade-up\">Amazing Features</h3><p style=\"margin:0 0 100px 0;font-size:15px\" data-aos=\"fade-up\">Scelerisque eros ultricies vel, integer, mauris. Parturient sit, et, </p>\n"
+      items:
+        -
+          grid: '4'
+          contentTextAl: right
+          contentStyle: html
+          contentCSS: ''
+          html: "<div class=\"jf_p_cta_iconbox right\" data-aos=\"fade-right\" data-aos-delay=\"0\" style=\"margin:90px 0\">\n\t<div class=\"icon_right\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 15 7 C 7.8324839 7 2 12.832484 2 20 C 2 34.761905 18.694043 42.047119 24.375 46.78125 L 25 47.3125 L 25.625 46.78125 C 31.305957 42.047119 48 34.761905 48 20 C 48 12.832484 42.167516 7 35 7 C 30.944199 7 27.383797 8.9249177 25 11.84375 C 22.616203 8.9249177 19.055801 7 15 7 z M 15 9 C 18.835004 9 22.185693 10.969285 24.15625 13.9375 L 25 15.1875 L 25.84375 13.9375 C 27.814307 10.969285 31.164996 9 35 9 C 41.086484 9 46 13.913516 46 20 C 46 32.896733 31.592632 39.574446 25 44.78125 C 18.407368 39.574446 4 32.896733 4 20 C 4 13.913516 8.9135161 9 15 9 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Made with Big Love</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox right\" data-aos=\"fade-right\" data-aos-delay=\"200\" style=\"margin:90px 0\">\n\t<div class=\"icon_right\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\" enable-background=\"new 0 0 50 50\">\n\t\t\t<path d=\"M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 34.0625 14.46875 L 23.125 31.46875 L 15.78125 24.84375 L 14.4375 26.34375 L 22.625 33.75 L 23.5 34.53125 L 24.125 33.53125 L 35.75 15.53125 L 34.0625 14.46875 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Amazing Design Beauty</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox right\" data-aos=\"fade-right\" data-aos-delay=\"400\" style=\"margin:90px 0\">\n\t<div class=\"icon_right\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\" enable-background=\"new 0 0 50 50\">\n\t\t\t<path d=\"M 20 8 C 13.541003 8 8.3687552 13.109649 8.09375 19.5 C 3.4161675 20.775428 0 24.996229 0 30 C 0 36.045455 4.9545455 41 11 41 L 41 41 C 45.945455 41 50 36.945455 50 32 C 50 28.100473 47.400722 24.792267 43.90625 23.625 C 43.694002 17.762096 38.911888 13 33 13 C 31.961341 13 30.993822 13.255869 30.03125 13.53125 C 27.881885 10.26209 24.216892 8 20 8 z M 20 10 C 23.726016 10 26.991036 12.092984 28.71875 15.09375 L 29.15625 15.8125 L 29.9375 15.53125 C 30.93689 15.167836 31.911111 15 33 15 C 37.954545 15 42 19.045455 42 24 L 42 24.3125 L 42 25.09375 L 42.78125 25.28125 C 45.713159 25.971111 48 28.768468 48 32 C 48 35.854545 44.854545 39 41 39 L 11 39 C 6.0454545 39 2 34.954545 2 30 C 2 25.672222 5.0580205 21.995442 9.1875 21.1875 L 10 21.03125 L 10 20.1875 L 10 20 C 10 14.435519 14.435519 10 20 10 z M 25 18.59375 L 24.28125 19.28125 L 18.28125 25.28125 L 19.71875 26.71875 L 24 22.4375 L 24 34 L 26 34 L 26 22.4375 L 30.28125 26.71875 L 31.71875 25.28125 L 25.71875 19.28125 L 25 18.59375 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Elegent and Perfect</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: left
+        -
+          grid: '4'
+          contentTextAl: center
+          contentStyle: image
+          contentCSS: ''
+          html: ''
+          image_src: 'gantry-media://jf/pages/home_app/features_3.png'
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-up
+          css3_anim_delay: '200'
+          name: 'middle (image)'
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: ''
+          html: "<div class=\"jf_p_cta_iconbox\" data-aos=\"fade-left\" data-aos-delay=\"0\" style=\"margin:90px 0\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 25 5 C 13.966513 5 5 13.966513 5 25 A 1.0001 1.0001 0 1 0 7 25 C 7 15.047487 15.047487 7 25 7 C 31.245219 7 36.728098 10.179957 39.957031 15 L 33 15 A 1.0001 1.0001 0 1 0 33 17 L 41.761719 17 L 43 17 L 43 7 A 1.0001 1.0001 0 0 0 41.984375 5.9863281 A 1.0001 1.0001 0 0 0 41 7 L 41 13.009766 C 37.34915 8.1484513 31.538723 5 25 5 z M 43.984375 23.986328 A 1.0001 1.0001 0 0 0 43 25 C 43 34.952513 34.952513 43 25 43 C 18.754258 43 13.271088 39.819768 10.042969 35 L 17 35.001953 A 1.0001 1.0001 0 1 0 17 33.001953 L 8.4453125 33 A 1.0001 1.0001 0 0 0 8.0585938 33 L 7 33 L 7 43 A 1.0001 1.0001 0 1 0 9 43 L 9 36.986328 C 12.649688 41.849109 18.459565 45 25 45 C 36.033487 45 45 36.033487 45 25 A 1.0001 1.0001 0 0 0 43.984375 23.986328 z\" color=\"#000\" font-weight=\"400\" font-family=\"sans-serif\" white-space=\"normal\" overflow=\"visible\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">24 hours support</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox\" data-aos=\"fade-left\" data-aos-delay=\"200\" style=\"margin:90px 0\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\" enable-background=\"new 0 0 50 50\">\n\t\t\t<path d=\"M 25 3 C 18.364481 3 13 8.3644809 13 15 L 13 20 L 9 20 C 7.3545455 20 6 21.354545 6 23 L 6 47 C 6 48.645455 7.3545455 50 9 50 L 41 50 C 42.645455 50 44 48.645455 44 47 L 44 23 C 44 21.354545 42.645455 20 41 20 L 37 20 L 37 15 C 37 8.3644809 31.635519 3 25 3 z M 25 5 C 30.564481 5 35 9.4355191 35 15 L 35 20 L 15 20 L 15 15 C 15 9.4355191 19.435519 5 25 5 z M 9 22 L 41 22 C 41.554545 22 42 22.445455 42 23 L 42 47 C 42 47.554545 41.554545 48 41 48 L 9 48 C 8.4454545 48 8 47.554545 8 47 L 8 23 C 8 22.445455 8.4454545 22 9 22 z M 25 30 C 23.3 30 22 31.3 22 33 C 22 33.9 22.4 34.6875 23 35.1875 L 23 38 C 23 39.1 23.9 40 25 40 C 26.1 40 27 39.1 27 38 L 27 35.1875 C 27.6 34.6875 28 33.9 28 33 C 28 31.3 26.7 30 25 30 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Bootstrap framework</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox\" data-aos=\"fade-left\" data-aos-delay=\"400\" style=\"margin:90px 0\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 7 2 C 4.2 2 2 4.2 2 7 L 2 34 C 2 36.8 4.2 39 7 39 L 34 39 C 36.8 39 39 36.8 39 34 L 39 9.8125 L 37 12 L 37 34 C 37 35.7 35.7 37 34 37 L 7 37 C 5.3 37 4 35.7 4 34 L 4 7 C 4 5.3 5.3 4 7 4 L 33.40625 4 L 35.09375 2.09375 C 34.69375 2.09375 34.4 2 34 2 L 7 2 z M 36.25 5.34375 L 18.9375 24.59375 L 10.65625 17.25 L 9.34375 18.75 L 18.34375 26.75 L 19.09375 27.40625 L 19.75 26.65625 L 37.75 6.65625 L 36.25 5.34375 z M 41 11 L 41 13 L 43 13 C 44.7 13 46 14.3 46 16 L 46 43 C 46 44.7 44.7 46 43 46 L 16 46 C 14.3 46 13 44.7 13 43 L 13 41 L 11 41 L 11 43 C 11 45.8 13.2 48 16 48 L 43 48 C 45.8 48 48 45.8 48 43 L 48 16 C 48 13.2 45.8 11 43 11 L 41 11 z\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Gantry 5 Template</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-left
+          css3_anim_delay: '400'
+          name: right
+  jf_p_cta-4539:
+    title: 'JF Particle - Features 1 (Elegant & Perfect)'
+    attributes:
+      padding: '80px 0'
+      bg_color: '#eeeeee'
+      items:
+        -
+          grid: '5'
+          contentTextAl: left
+          contentStyle: image
+          contentCSS: ''
+          html: ''
+          image_src: 'gantry-media://jf/pages/home_app/features_1.png'
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: left
+        -
+          grid: '7'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:0 50px;'
+          html: "<div style=\"color:#ff4081;font-size:20px;\">elegent &amp;</div>\n<h3 style=\"margin-top:0;\">Perfect Design</h3>\n<p style=\"font-size:16px;margin:0 0 30px 0;\">Elementum urna ultrices scelerisque ridiculus sit cursus sed nisi nisi enim urna ultrices nunc lorem dolor, adipiscing nunc! Augue eu facilisis in amet ridiculus! Cursus phasellus. Ut auctor! A ridiculus, odio lectus magna nisi mattis montes, aliquam proin? Elementum pulvinar natoque tortor? Sagittis nec massa ultrices dictumst urna! Dignissim hac, turpis! Phasellus.</p>\n<a class=\"btn btn-primary btn-large waves-effect waves-light-50\" href=\"#\" data-tilt=\"20\">Learn More</a>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '300'
+          name: right
+  jf_p_cta-9537:
+    title: 'JF Particle - Features 2 (Clean & Powerful)'
+    attributes:
+      padding: '80px 0 60px'
+      items:
+        -
+          grid: '7'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:0 50px;'
+          html: "<div style=\"color:#ff4081;font-size:20px;\">clean &amp;</div>\n<h3 style=\"margin-top:0;\">Powerful Theme</h3>\n<p style=\"font-size:16px;margin:0 0 30px 0;\">Elementum urna ultrices scelerisque ridiculus sit cursus sed nisi nisi enim urna ultrices nunc lorem dolor, adipiscing nunc! Augue eu facilisis in amet ridiculus! Cursus phasellus. Ut auctor! A ridiculus, odio lectus magna nisi mattis montes, aliquam proin? Elementum pulvinar natoque tortor? Sagittis nec massa ultrices dictumst urna! Dignissim hac, turpis! Phasellus.</p>\n<a class=\"btn btn-primary btn-large waves-effect waves-light-50\" href=\"#\" data-tilt=\"20\">Learn More</a>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: left
+        -
+          grid: '5'
+          contentTextAl: right
+          contentStyle: image
+          contentCSS: ''
+          html: ''
+          image_src: 'gantry-media://jf/pages/home_app/features_2.png'
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: right
+  jf_p_cta-1175:
+    title: 'JF Particle - CTA (Video - See How it Works)'
+    attributes:
+      padding: '125px 0 175px'
+      bg_img: 'gantry-media://jf/pages/home_app/play_video_bg.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.4)'
+      bg_attachement: fixed
+      html_before: "<div style=\"display:block;margin:0 0 50px;color:#fff;font-size:2rem;font-weight:500;display:inline-block;\" data-aos=\"fade-up\">See How it Works</div>\n<div class=\"jf_p_cta_img_block\" data-aos=\"fade-up\">\n\t<a class=\"jf_p_cta_lightbox_btn jf_venobox waves-effect waves-light-50\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\"><span class=\"fa fa-play\"></span></a>\n</div>"
+  jf_p_carousel-3929:
+    title: 'JF Particle - Carousel (App Showcase)'
+    attributes:
+      bg_color: '#ffffff'
+      html_before: "<h3 style=\"margin:0 0 30px;font-size:2.7rem;font-weight:300;color:#000;\" data-aos=\"fade-up\">App Showcase</h3>\n<p style=\"margin:0 0 70px 0;font-size:15px\" data-aos=\"fade-up\">Works perfectly on all devices</p>"
+      items:
+        -
+          image_src: 'gantry-media://jf/particles/carousel/1.jpg'
+          image_alt: ''
+          linktype: '0'
+          url: ''
+          lightbox_image: 'gantry-media://jf/particles/carousel/1.jpg'
+          lightbox_video: ''
+          name: 'item 1'
+        -
+          image_src: 'gantry-media://jf/particles/carousel/2.jpg'
+          image_alt: ''
+          linktype: url
+          url: '#'
+          lightbox_image: 'gantry-media://jf/particles/carousel/2.jpg'
+          lightbox_video: ''
+          name: 'item 2'
+        -
+          image_src: 'gantry-media://jf/particles/carousel/3.jpg'
+          image_alt: ''
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/particles/carousel/3.jpg'
+          lightbox_video: ''
+          name: 'item 3'
+        -
+          image_src: 'gantry-media://jf/particles/carousel/5.jpg'
+          image_alt: ''
+          linktype: video_y
+          url: ''
+          lightbox_image: 'gantry-media://jf/particles/carousel/5.jpg'
+          lightbox_video: 'https://youtu.be/luhsTvMihi0'
+          name: 'item 4'
+        -
+          image_src: 'gantry-media://jf/particles/carousel/4.jpg'
+          image_alt: ''
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/particles/carousel/4.jpg'
+          lightbox_video: ''
+          name: 'item 5'
+        -
+          image_src: 'gantry-media://jf/particles/carousel/6.jpg'
+          image_alt: ''
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/particles/carousel/6.jpg'
+          lightbox_video: ''
+          name: 'item 6'
+        -
+          image_src: 'gantry-media://jf/particles/carousel/7.jpg'
+          image_alt: ''
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/particles/carousel/7.jpg'
+          lightbox_video: ''
+          name: 'item 7'
+      css3_anim: fade-up
+  jf_p_cta-7666:
+    title: 'JF Particle - CTA (Download)'
+    attributes:
+      padding: '100px 0'
+      textAlign: left
+      theme: dark
+      bg_img: 'gantry-media://jf/particles/radialslider/app/1.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0)'
+      bg_attachement: scroll
+      html_before: "<h3 class=\"icon_title\" style=\"margin:0 0 30px;font-size:2.7rem;font-weight:500;\" data-aos=\"fade-up\">Download Simone Today</h3>\n<p style=\"margin:0 0 50px 0;font-size:15px\" data-aos=\"fade-up\">Scelerisque tempor, mus auctor amet arcu. Porttitor augue, odio duis lundium tristique.</p>\n<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background:#fff;font-weight:400;border-radius:100px;color:#ff4081\" data-aos=\"fade-up\" data-tilt=\"10\">\n\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t</div>\n</a>\n<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background:#fff;font-weight:400;border-radius:100px;color:#ff4081\" data-aos=\"fade-up\" data-tilt=\"10\">\n\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t</div>\n</a>"
+  jf_p_teams-5587:
+    title: 'JF Particle - Teams'
+    attributes:
+      bg_color: '#ffffff'
+      html_before: "<h3 style=\"margin:0;font-size:2.7rem;font-weight:300;color:#000;line-height:1\" data-aos=\"fade-up\">Awesome Team</h3>\n<div class=\"small_sep middle\" style=\"margin: 30px auto;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\" style=\"margin:0 0 50px\">Get to know the people behind Simone, Our creative and technical team.</p>"
+      items:
+        -
+          grid: '3'
+          image: 'gantry-media://jf/particles/testimonials/5.jpg'
+          teammate_name: 'John Doe'
+          teammate_pos: 'SEO, founder'
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 1'
+        -
+          grid: '3'
+          image: 'gantry-media://jf/particles/testimonials/1.jpg'
+          teammate_name: 'Jane Doe'
+          teammate_pos: Co-founder
+          css3_anim: fade-up
+          css3_anim_delay: '300'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 2'
+        -
+          grid: '3'
+          image: 'gantry-media://jf/particles/testimonials/2.jpg'
+          teammate_name: 'Tommy King'
+          teammate_pos: 'Senior Consultant'
+          css3_anim: fade-up
+          css3_anim_delay: '600'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 3'
+        -
+          grid: '3'
+          image: 'gantry-media://jf/particles/testimonials/6.jpg'
+          teammate_name: 'Lara White'
+          teammate_pos: 'Senior Consultant'
+          css3_anim: fade-up
+          css3_anim_delay: '900'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 4'
+  jf_p_testimonials-8035:
+    title: 'JF Particle - Testimonials'
+    attributes:
+      special_id: testimonials
+      theme: dark
+      bg_color: ''
+      bg_img: 'gantry-media://jf/pages/home_app/testimonials_bg.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.5)'
+      bg_attachement: fixed
+      autoplay_delay: '6000'
+      html_before: '<h3 style="text-align:center;font-size:28px;margin:0 0 80px;" data-aos="fade-up">What People Say about<br>our Awesome App</h3>'
+      items:
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/1.jpg'
+          avatar_alt: 'Jane Doe - Web Developer'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Jane Doe'
+          author_pos: 'Web Developer'
+          quote: '<h5>Highly recommend</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 1'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/2.jpg'
+          avatar_alt: 'Tony Antony - CEO'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Tony Antony'
+          author_pos: CEO
+          quote: '<h5>Best Forum Software</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 2'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/3.jpg'
+          avatar_alt: 'Melisa Ferdinand - Marketing Manager'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Melisa Ferdinand'
+          author_pos: 'Sales Manager'
+          quote: '<h5>Modern Design</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 3'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/4.jpg'
+          avatar_alt: 'Jessica Sutton - Web Designer'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Jessica Sutton'
+          author_pos: 'Web Designer'
+          quote: '<h5>High Professionalism</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 4'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/5.jpg'
+          avatar_alt: 'Mark Adams - Web Developor'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Mark Adams'
+          author_pos: 'Web Developor'
+          quote: '<h5>Fantastic work</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 5'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/6.jpg'
+          avatar_alt: 'Scarlett Hugo - CEO'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Scarlett Hugo'
+          author_pos: CEO
+          quote: '<h5>It''s Amazing</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 6'
+      css3_anim: fade-up
+  jf_p_pricing-5167:
+    title: 'JF Particle - Pricing Tables'
+    attributes:
+      textAlign: center
+      bg_color: '#f8f8f8'
+      html_before: "<h3 class=\"icon_title\" style=\"margin:0;font-size:2.7rem;font-weight:500;color:#000\" data-aos=\"fade-up\">Pricing Plans</h3><div class=\"small_sep middle\" style=\"margin: 30px auto;\" data-aos=\"fade-up\"></div>\n<p style=\"margin:0 0 100px 0;font-size:15px\" data-aos=\"fade-up\">Simple, flexible, and predictable pricing. Choose which package is best suited for you.</p>"
+      items:
+        -
+          tableStyle: table
+          col: col-1-3
+          html: ''
+          highlighted: '0'
+          html_heading: Flexible
+          html_subheading: 'Light Solution'
+          html_pricing: $29
+          html_row_1: '<i class="fa fa-check"></i>Dedicated Account Manager'
+          html_row_2: '<i class="fa fa-check"></i>Configurable Call Recording'
+          html_row_3: '<i class="fa fa-check"></i>Quality & Customer Experience'
+          html_row_4: '<i class="fa fa-check"></i>Routing Using Full Context'
+          html_row_5: '<i class="fa fa-check"></i>Tight IVR/ACD Integration'
+          html_row_6: '<a class="btn btn-inverse btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          name: 'Row 1'
+        -
+          tableStyle: table
+          col: col-1-3
+          html: ''
+          highlighted: '1'
+          html_heading: Starter
+          html_subheading: 'Basic Solution'
+          html_pricing: $50
+          html_row_1: '<i class="fa fa-check"></i>Well Documented & Video Tutorials'
+          html_row_2: '<i class="fa fa-check"></i>Integrated Online calendars'
+          html_row_3: '<i class="fa fa-check"></i>5 Prototype Versions'
+          html_row_4: '<i class="fa fa-check"></i>Security and Admin Controls'
+          html_row_5: '<i class="fa fa-check"></i>24/7 Phone and Email Dupport'
+          html_row_6: '<a class="btn btn-primary btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          name: 'Row 2'
+        -
+          tableStyle: table
+          col: col-1-3
+          html: ''
+          highlighted: '0'
+          html_heading: Professional
+          html_subheading: 'Advanced Platform'
+          html_pricing: $99
+          html_row_1: '<i class="fa fa-check"></i>Dedicated Account Manager'
+          html_row_2: '<i class="fa fa-check"></i>Configurable Call Recording'
+          html_row_3: '<i class="fa fa-check"></i>Quality & Customer Experience'
+          html_row_4: '<i class="fa fa-check"></i>Routing Using Full Context'
+          html_row_5: '<i class="fa fa-check"></i>Tight IVR/ACD Integration'
+          html_row_6: '<a class="btn btn-inverse btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          name: 'Row 3'

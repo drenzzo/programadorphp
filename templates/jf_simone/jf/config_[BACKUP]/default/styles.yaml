@@ -1,0 +1,30 @@
+preset: pink
+base:
+  body-font: 'family=Poppins:300,400,500,600,700'
+  heading-font: 'family=Poppins:300,400,500,600,700'
+jf_color_base:
+  background: '#eeeeee'
+  text-color: '#666666'
+  tag-color: '#4d4d4d'
+  accent-1: '#ff4081'
+  login-left: '#c61590'
+  login-right: '#1e80dc'
+jf_color_menu:
+  toplevel-default: '#222222'
+  toplevel-active: '#ff4081'
+  dropdown-bg: '#ffffff'
+  dropdown-default: '#222222'
+  dropdown-active: '#ff4081'
+jf_color_s_header:
+  background: '#ffffff'
+  shadow: '#dcdcdc'
+  text-color: '#444444'
+breakpoints:
+  large-desktop-container: 78rem
+  desktop-container: 60rem
+  tablet-container: 48rem
+  large-mobile-container: 30rem
+  mobile-menu-breakpoint: 48rem
+menu:
+  col-width: 180px
+  animation: g-fade-in-up

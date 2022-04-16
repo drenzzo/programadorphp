@@ -1,0 +1,74 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+{% set indentifier = random() %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_carousels/owl/owl.carousel.min.css" type="text/css" />
+	<link rel="stylesheet" href="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_carousels/owl/owl.theme.min.css" type="text/css" />
+	<link rel="stylesheet" href="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_carousels/jf_carousels.min.css" type="text/css" />
+{% endblock %}
+
+{% block javascript %}
+	<script type="text/javascript" src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_carousels/owl/jf_owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$("#jf_p_testimonials-{{ indentifier|e }}").jf_owlCarousel({
+				items: {{ particle.count_items|e }},
+				autoPlay: {% if particle.autoplay_delay %}{{ particle.autoplay_delay|e }}{% else %}false{% endif %},
+				stopOnHover: {% if particle.stophover %}true{% else %}false{% endif %},
+				slideSpeed:	{{ particle.speed|e }},
+				paginationSpeed: {{ particle.speed|e }},
+				rewindSpeed: {{ particle.speed|e }},
+				navigation: false,
+				pagination: {% if particle.pagination %}true{% else %}false{% endif %},
+				lazyLoad: {% if particle.lazyload %}true{% else %}false{% endif %},
+				autoHeight: {% if particle.autoHeight %}true{% else %}false{% endif %},
+				mouseDrag: {% if particle.mouseDrag %}true{% else %}false{% endif %},
+				touchDrag: {% if particle.touchDrag %}true{% else %}false{% endif %}
+			});
+		});
+	</script>
+{% endblock %}
+
+{% block particle %}
+	<div{% if particle.special_id %} id="{{ particle.special_id|e }}"{% endif %} class="jf_p_global jf_p_testimonials_wrap{% if particle.theme == 'dark' %} dark{% endif %}" style="
+		{% if particle.padding %}padding:{{ particle.padding|e }};{% endif %}
+		{% if particle.textAlign %}text-align:{{ particle.textAlign|e }};{% endif %}
+		{% if particle.bg_color %}background-color:{{ particle.bg_color|e }};{% endif %}
+		{% if particle.bg_img %}background-image:url('{{ url(particle.bg_img)|e }}');{% endif %}
+		background-size:{{ particle.bg_size|e }};
+		background-attachment:{{ particle.bg_attachement|e }};
+		{{ particle.bg_css|e }}
+	">
+		{% if particle.bg_mask %}<div class="jf_p_global_bg_mask" style="background:{{ particle.bg_mask|e }}"></div>{% endif %}
+		
+		<div class="jf_p_testimonials_cont jf_p_global_cont">
+			<div class="clear"></div>
+			{% if particle.contentW == "default" %}<div class="jf_g_container"><div class="g-content">{% endif %}
+				{{ particle.html_before|html|raw }}
+				
+				<div id="jf_p_testimonials-{{ indentifier|e }}" class="jf_carousel"{% if particle.css3_anim %} data-aos="{{ particle.css3_anim|e }}" data-aos-delay="{{ particle.css3_anim_delay|e }}"{% endif %}>
+					{% for item in particle.items %}
+						<div class="item">
+							<div class="jf_p_t_header">
+								{% if item.avatar %}<img width="{{ item.avatar_width|e }}" height="{{ item.avatar_height|e }}"
+									{% if particle.lazyload %}
+										class="lazyOwl" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 70 70'%2F%3E" data-src="{{ url(item.avatar)|e }}"
+									{% else %}
+										src="{{ url(item.avatar)|e }}"
+									{% endif %} 
+									{% if item.avatar_alt %}alt="{{ item.avatar_alt|e }}"{% endif %}>{% endif %}
+								{% if item.author_name %}<div class="jf_p_t_name">{{ item.author_name|e }}</div>{% endif %}
+								{% if item.author_pos %}<div class="jf_p_t_job">{{ item.author_pos|e }}</div>{% endif %}
+							</div>
+							<div class="jf_p_t_quote">{{ item.quote|html|raw }}</div>
+						</div>
+					{% endfor %}
+				</div>
+					
+				{{ particle.html_after|html|raw }}
+			{% if particle.contentW == "default" %}</div></div>{% endif %}
+			
+			<div class="clear"></div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,377 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_pricing.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/: {  }
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/:
+    -
+      - jf_p_pricing-5167
+    -
+      - jf_p_pricing-3937
+    -
+      - jf_p_pricing-1657
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  jf_p_pricing-5167:
+    title: 'JF Particle - Pricing Tables (Example 1)'
+    attributes:
+      textAlign: left
+      bg_color: '#f8f8f8'
+      html_before: "<h3 style=\"margin:0;font-size:2.3rem;color:#000;line-height:1;text-align:center\" data-aos=\"fade-up\">Pricing Tables (Example 1)</h3>\n<div class=\"small_sep middle\" style=\"margin:30px auto 100px\" data-aos=\"fade-up\"></div>"
+      items:
+        -
+          tableStyle: html
+          col: col-1-3
+          html: "<h3 style=\"font-size:32px;line-height:45px;margin:40px 0 30px;width:60%;color:#000;font-weight:600;letter-spacing:-1px\">Pricing plans and options</h3>\n<p style=\"margin:0 0 50px 0;font-size:16px;width:70%\">Simple, flexible, and predictable pricing. Choose which package is best suited for you.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"margin:0 0 50px 0;padding:14px 34px\">View All Plans</a>\n<a href=\"#\" style=\"display:block;font-size:16px;color:#000\"><strong>Need more? Let's get in touch!</strong></a>"
+          highlighted: '0'
+          html_heading: ''
+          html_subheading: ''
+          html_pricing: ''
+          html_row_1: ''
+          html_row_2: ''
+          html_row_3: ''
+          html_row_4: ''
+          html_row_5: ''
+          html_row_6: ''
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          name: 'Custom HTML'
+        -
+          tableStyle: table
+          col: col-1-3
+          html: ''
+          highlighted: '1'
+          html_heading: Starter
+          html_subheading: 'Basic Solution'
+          html_pricing: $50
+          html_row_1: '<i class="fa fa-check"></i>Well Documented & Video Tutorials'
+          html_row_2: '<i class="fa fa-check"></i>Integrated Online calendars'
+          html_row_3: '<i class="fa fa-check"></i>5 Prototype Versions'
+          html_row_4: '<i class="fa fa-check"></i>Security and Admin Controls'
+          html_row_5: '<i class="fa fa-check"></i>24/7 Phone and Email Dupport'
+          html_row_6: '<a class="btn btn-primary btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          name: 'Row 1'
+        -
+          tableStyle: table
+          col: col-1-3
+          html: ''
+          highlighted: '0'
+          html_heading: Professional
+          html_subheading: 'Advanced Platform'
+          html_pricing: $99
+          html_row_1: '<i class="fa fa-check"></i>Dedicated Account Manager'
+          html_row_2: '<i class="fa fa-check"></i>Configurable Call Recording'
+          html_row_3: '<i class="fa fa-check"></i>Quality & Customer Experience'
+          html_row_4: '<i class="fa fa-check"></i>Routing Using Full Context'
+          html_row_5: '<i class="fa fa-check"></i>Tight IVR/ACD Integration'
+          html_row_6: '<a class="btn btn-inverse btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          name: 'Row 2'
+  jf_p_pricing-3937:
+    title: 'JF Particle - Pricing Tables (Example 2)'
+    attributes:
+      textAlign: center
+      bg_color: '#ffffff'
+      html_before: "<h3 class=\"icon_title\" style=\"margin:0;font-size:2.7rem;font-weight:500;color:#000\" data-aos=\"fade-up\">Pricing Tables (Example 2)</h3><div class=\"small_sep middle\" style=\"margin: 30px auto;\" data-aos=\"fade-up\"></div>\n<p style=\"margin:0 0 100px 0;font-size:15px\" data-aos=\"fade-up\">Simple, flexible, and predictable pricing. Choose which package is best suited for you.</p>"
+      items:
+        -
+          tableStyle: table
+          col: col-1-3
+          html: ''
+          highlighted: '0'
+          html_heading: Flexible
+          html_subheading: 'Light Solution'
+          html_pricing: $29
+          html_row_1: '<i class="fa fa-check"></i>Dedicated Account Manager'
+          html_row_2: '<i class="fa fa-check"></i>Configurable Call Recording'
+          html_row_3: '<i class="fa fa-check"></i>Quality & Customer Experience'
+          html_row_4: '<i class="fa fa-check"></i>Routing Using Full Context'
+          html_row_5: '<i class="fa fa-check"></i>Tight IVR/ACD Integration'
+          html_row_6: '<a class="btn btn-inverse btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          name: 'Row 1'
+        -
+          tableStyle: table
+          col: col-1-3
+          html: ''
+          highlighted: '1'
+          html_heading: Starter
+          html_subheading: 'Basic Solution'
+          html_pricing: $50
+          html_row_1: '<i class="fa fa-check"></i>Well Documented & Video Tutorials'
+          html_row_2: '<i class="fa fa-check"></i>Integrated Online calendars'
+          html_row_3: '<i class="fa fa-check"></i>5 Prototype Versions'
+          html_row_4: '<i class="fa fa-check"></i>Security and Admin Controls'
+          html_row_5: '<i class="fa fa-check"></i>24/7 Phone and Email Dupport'
+          html_row_6: '<a class="btn btn-primary btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          name: 'Row 2'
+        -
+          tableStyle: table
+          col: col-1-3
+          html: ''
+          highlighted: '0'
+          html_heading: Professional
+          html_subheading: 'Advanced Platform'
+          html_pricing: $99
+          html_row_1: '<i class="fa fa-check"></i>Dedicated Account Manager'
+          html_row_2: '<i class="fa fa-check"></i>Configurable Call Recording'
+          html_row_3: '<i class="fa fa-check"></i>Quality & Customer Experience'
+          html_row_4: '<i class="fa fa-check"></i>Routing Using Full Context'
+          html_row_5: '<i class="fa fa-check"></i>Tight IVR/ACD Integration'
+          html_row_6: '<a class="btn btn-inverse btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          name: 'Row 3'
+  jf_p_pricing-1657:
+    title: 'JF Particle - Pricing Tables (Example 3)'
+    attributes:
+      textAlign: center
+      theme: dark
+      bg_color: ''
+      bg_img: 'gantry-media://jf/pages/home_app/testimonials_bg.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.5)'
+      bg_attachement: fixed
+      html_before: "<h3 class=\"icon_title\" style=\"margin:0;font-size:2.7rem;font-weight:500\" data-aos=\"fade-up\">Pricing Tables (Example 3)</h3><div class=\"small_sep middle\" style=\"margin: 30px auto;\" data-aos=\"fade-up\"></div>\n<p style=\"margin:0 0 100px 0;font-size:15px\" data-aos=\"fade-up\">Simple, flexible, and predictable pricing. Choose which package is best suited for you.</p>"
+      items:
+        -
+          tableStyle: table
+          col: col-1-4
+          html: ''
+          highlighted: '0'
+          html_heading: Flexible
+          html_subheading: 'Light Solution'
+          html_pricing: $29
+          html_row_1: '<i class="fa fa-check"></i>Dedicated Account Manager'
+          html_row_2: '<i class="fa fa-check"></i>Configurable Call Recording'
+          html_row_3: '<i class="fa fa-check"></i>Quality & Customer Experience'
+          html_row_4: '<i class="fa fa-check"></i>Routing Using Full Context'
+          html_row_5: '<i class="fa fa-check"></i>Tight IVR/ACD Integration'
+          html_row_6: '<a class="btn btn-inverse btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          name: 'Row 1'
+        -
+          tableStyle: table
+          col: col-1-4
+          html: ''
+          highlighted: '1'
+          html_heading: Starter
+          html_subheading: 'Basic Solution'
+          html_pricing: $50
+          html_row_1: '<i class="fa fa-check"></i>Well Documented & Video Tutorials'
+          html_row_2: '<i class="fa fa-check"></i>Integrated Online calendars'
+          html_row_3: '<i class="fa fa-check"></i>5 Prototype Versions'
+          html_row_4: '<i class="fa fa-check"></i>Security and Admin Controls'
+          html_row_5: '<i class="fa fa-check"></i>24/7 Phone and Email Dupport'
+          html_row_6: '<a class="btn btn-primary btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          name: 'Row 2'
+        -
+          tableStyle: table
+          col: col-1-4
+          html: ''
+          highlighted: '0'
+          html_heading: Professional
+          html_subheading: 'Advanced Platform'
+          html_pricing: $99
+          html_row_1: '<i class="fa fa-check"></i>Dedicated Account Manager'
+          html_row_2: '<i class="fa fa-check"></i>Configurable Call Recording'
+          html_row_3: '<i class="fa fa-check"></i>Quality & Customer Experience'
+          html_row_4: '<i class="fa fa-check"></i>Routing Using Full Context'
+          html_row_5: '<i class="fa fa-check"></i>Tight IVR/ACD Integration'
+          html_row_6: '<a class="btn btn-inverse btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          name: 'Row 3'
+        -
+          tableStyle: table
+          col: col-1-4
+          html: ''
+          highlighted: '0'
+          html_heading: Premium
+          html_subheading: 'Special Platform'
+          html_pricing: $150
+          html_row_1: '<i class="fa fa-check"></i>Dedicated Account Manager'
+          html_row_2: '<i class="fa fa-check"></i>Configurable Call Recording'
+          html_row_3: '<i class="fa fa-check"></i>Quality & Customer Experience'
+          html_row_4: '<i class="fa fa-check"></i>Routing Using Full Context'
+          html_row_5: '<i class="fa fa-check"></i>Tight IVR/ACD Integration'
+          html_row_6: '<a class="btn btn-inverse btn-medium waves-effect waves-light-50" data-tilt="10" href="#" style="margin:30px 0 0 0;padding:14px 34px">Get Started</a>'
+          html_row_7: ''
+          html_row_8: ''
+          html_row_9: ''
+          html_row_10: ''
+          html_row_11: ''
+          html_row_12: ''
+          html_row_13: ''
+          html_row_14: ''
+          html_row_15: ''
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          name: 'Row 4'

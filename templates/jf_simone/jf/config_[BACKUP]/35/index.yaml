@@ -1,0 +1,71 @@
+name: 35
+timestamp: 1494964027
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/shop_default.jpg'
+  name: default
+  timestamp: 1482703875
+positions:
+  slideshow: 'Module Position'
+  right-panel: 'Module Position'
+  news-panel: 'Module Position'
+  footer-b: "Position:\_footer-b"
+  footer-c: "Position:\_footer-c"
+  main-bottom: 'Module Position'
+sections:
+  header: Header
+  navigation: Navigation
+  right-panel: Right-panel
+  news-panel: News-panel
+  full-width-section-1: Full-width-section-1
+  full-width-section-2: Full-width-section-2
+  bottom-footer: Bottom-footer
+  main: Main
+  footer: Footer
+particles:
+  position:
+    position-position-6157: 'Module Position'
+    position-position-5217: 'Module Position'
+    position-position-4662: 'Module Position'
+    position-position-8054: "Position:\_footer-b"
+    position-position-3027: "Position:\_footer-c"
+    position-position-2021: 'Module Position'
+  jf_p_cta:
+    jf_p_cta-8937: 'JF Particle - CTA (Banners)'
+    jf_p_cta-9266: 'JF Particle - CTA'
+    jf_p_cta-8276: 'JF Particle - CTA (Banners)'
+  jf_p_clients:
+    jf_p_clients-6370: 'JF Particle - Clients (Example 3)'
+  logo:
+    logo-1559: Logo
+  menu:
+    menu-5045: Menu
+  custom:
+    custom-4265: 'Footer Copyright'
+  jf_p_subscribe:
+    jf_p_subscribe-9561: 'JF Particle - Mailchimp Subscribe'
+  messages:
+    system-messages-2299: 'System Messages'
+  content:
+    system-content-5089: 'Page Content'
+inherit:
+  default:
+    header: header
+    navigation: navigation
+    right-panel: right-panel
+    news-panel: news-panel
+    footer: footer
+    bottom-footer: bottom-footer
+    logo-1559: logo-8517
+    menu-5045: menu-2176
+    position-position-5217: position-position-7914
+    position-position-4662: position-position-9581
+    custom-4265: custom-3503
+    position-position-8054: position-position-5191
+    position-position-3027: position-position-1028
+    jf_p_subscribe-9561: jf_p_subscribe-6876
+  33:
+    main: main
+    system-messages-2299: system-messages-5855
+    system-content-5089: system-content-9439
+    position-position-2021: position-position-7776

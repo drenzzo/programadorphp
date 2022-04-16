@@ -1,0 +1,243 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_ft.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/: {  }
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/:
+    -
+      - jf_p_ft_intro-9338
+    -
+      - jf_p_ft_intro-3281
+    -
+      - jf_p_ft_intro-7047
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  jf_p_ft_intro-9338:
+    title: 'JF Particle - Features Intro (Example 1)'
+    attributes:
+      padding: '120px 0'
+      bg_color: '#f2f2f2'
+      html_before: "<h3 style=\"margin:0 0 30px;font-size:2.4rem;font-weight:300;color:#000;\" data-aos=\"fade-up\">Particle - Features Intro (Example 1)</h3><div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\" style=\"margin:0 0 50px\">Nisi risus vel. Augue cras, adipiscing porta et, velit turpis augue.</p>"
+      items:
+        -
+          grid: '4'
+          grid_bg_color: 'rgba(0,0,0,0)'
+          grid_bg_hovercolor: '#ffffff'
+          textAl: center
+          icon_type: html
+          image_icon: ''
+          image_alt: ''
+          html_icon: '<svg enable-background="new 0 0 50 50" version="1.1" height="70px" width="70px" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><path d="  M32,35c0,0,8.312,0,9.098,0C45.463,35,49,31.463,49,27.099s-3.537-7.902-7.902-7.902c-0.02,0-0.038,0.003-0.058,0.003  c0.061-0.494,0.103-0.994,0.103-1.504c0-6.71-5.439-12.15-12.15-12.15c-5.229,0-9.672,3.309-11.386,7.941  c-1.087-1.089-2.591-1.764-4.251-1.764c-3.319,0-6.009,2.69-6.009,6.008c0,0.085,0.01,0.167,0.013,0.251  C3.695,18.995,1,22.344,1,26.331C1,31.119,4.881,35,9.67,35c0.827,0,8.33,0,8.33,0" fill="none" stroke="#ff4081" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><polyline fill="none" points="20,28 25,23 30,28   " stroke="#ff4081" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#ff4081" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="25" x2="25" y1="43" y2="23.333"/></svg>'
+          html_header: '<h5 style="font-weight:600;color:#000">Upload Your Ideas</h5>'
+          html_descr: 'Odio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies'
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          name: 'item 1'
+        -
+          grid: '4'
+          grid_bg_color: 'rgba(0,0,0,0)'
+          grid_bg_hovercolor: '#ffffff'
+          textAl: center
+          icon_type: html
+          image_icon: ''
+          image_alt: ''
+          html_icon: '<svg enable-background="new 0 0 50 50" version="1.1" viewBox="0 0 50 50" height="70px" width="70px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><path d="M44,20c0-1.104-0.896-2-2-2s-2,0.896-2,2  c0,0.476,0,14.524,0,15c0,1.104,0.896,2,2,2s2-0.896,2-2C44,34.524,44,20.476,44,20z" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M28,47c1.104,0,2-0.896,2-2s-0.896-2-2-2  c-0.476,0-4.524,0-5,0c-1.104,0-2,0.896-2,2s0.896,2,2,2C23.476,47,27.524,47,28,47z" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M8,19C8,9.611,15.611,2,25,2s17,7.611,17,17" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M44,20c2.762,0,5,3.357,5,7.5  c0,4.141-2.238,7.5-5,7.5" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M6,20c0-1.104,0.896-2,2-2s2,0.896,2,2  c0,0.476,0,14.524,0,15c0,1.104-0.896,2-2,2s-2-0.896-2-2C6,34.524,6,20.476,6,20z" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M6,20c-2.761,0-5,3.357-5,7.5  C1,31.641,3.239,35,6,35" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M42,37c0,5-3,8-8,8h-4" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/></svg>'
+          html_header: '<h5 style="font-weight:600;color:#000">Support 24/7</h5>'
+          html_descr: 'Odio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies'
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          name: 'item 2'
+        -
+          grid: '4'
+          grid_bg_color: 'rgba(0,0,0,0)'
+          grid_bg_hovercolor: '#ffffff'
+          textAl: center
+          icon_type: html
+          image_icon: ''
+          image_alt: ''
+          html_icon: '<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ff4081" stroke="none"><path d="M2331 5109 c-863 -77 -1641 -600 -2042 -1373 -141 -271 -224 -537 -271 -861 -17 -118 -17 -512 0 -630 86 -600 338 -1104 753 -1511 405 -396 891 -632 1474 -716 118 -17 512 -17 630 0 324 47 588 130 863 272 683 354 1181 1014 1331 1765 38 190 46 277 46 505 0 288 -25 465 -101 722 -343 1166 -1472 1934 -2683 1827z m531 -225 c404 -48 826 -227 1163 -492 90 -71 296 -277 367 -367 205 -260 371 -598 447 -910 86 -355 85 -768 -5 -1126 -58 -235 -187 -525 -321 -725 -384 -574 -979 -941 -1673 -1035 -52 -7 -178 -13 -280 -13 -278 0 -486 34 -750 124 -356 120 -633 293 -905 565 -207 207 -330 378 -456 640 -160 330 -230 639 -230 1015 0 376 70 685 230 1015 126 262 249 433 456 640 195 196 365 319 601 439 423 213 866 288 1356 230z"/><path d="M1461 4034 c-219 -59 -391 -275 -391 -490 0 -52 4 -67 25 -92 32 -38 72 -48 118 -28 43 18 62 52 71 129 12 109 70 195 168 248 58 31 70 34 148 34 78 0 90 -3 148 -34 98 -53 156 -139 168 -248 9 -77 28 -111 71 -129 46 -20 86 -10 118 28 20 24 25 40 25 87 0 222 -172 437 -395 496 -73 19 -202 18 -274 -1z"/><path d="M3381 4034 c-219 -59 -391 -275 -391 -490 0 -52 4 -67 25 -92 32 -38 72 -48 118 -28 43 18 62 52 71 129 12 109 70 195 168 248 58 31 70 34 148 34 78 0 90 -3 148 -34 98 -53 156 -139 168 -248 9 -77 28 -111 71 -129 46 -20 86 -10 118 28 21 25 25 40 25 92 0 218 -173 433 -395 491 -73 19 -202 18 -274 -1z"/><path d="M705 2551 c-11 -5 -29 -19 -40 -31 -18 -20 -20 -35 -19 -139 5 -394 216 -837 556 -1167 320 -310 712 -504 1134 -559 700 -92 1444 265 1857 890 175 265 277 571 281 837 1 116 1 118 -27 145 l-27 28 -1848 2 c-1016 1 -1856 -2 -1867 -6z m3555 -221 c0 -39 -39 -218 -64 -295 -39 -117 -146 -326 -223 -435 -83 -115 -250 -291 -358 -376 -241 -188 -516 -307 -820 -355 -103 -16 -367 -16 -470 0 -304 48 -579 167 -820 355 -108 85 -275 261 -358 376 -77 109 -184 318 -223 435 -25 77 -64 256 -64 295 0 20 17 20 1700 20 1683 0 1700 0 1700 -20z"/></g></svg>'
+          html_header: '<h5 style="font-weight:600;color:#000">Enjoy Your Revenue</h5>'
+          html_descr: 'Odio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies'
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          name: 'item 3'
+  jf_p_ft_intro-3281:
+    title: 'JF Particle - Features Intro (Example 2)'
+    attributes:
+      padding: '120px 0'
+      theme: dark
+      bg_color: '#333333'
+      html_before: "<h3 style=\"margin:0 0 30px;font-size:2.4rem;font-weight:300\" data-aos=\"fade-up\">Particle - Features Intro (Example 2)</h3><div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\" style=\"margin:0 0 50px\">Nisi risus vel. Augue cras, adipiscing porta et, velit turpis augue.</p>"
+      items:
+        -
+          grid: '4'
+          grid_bg_color: 'rgba(0,0,0,0)'
+          grid_bg_hovercolor: 'rgba(255, 255, 255, 0.1)'
+          textAl: center
+          icon_type: html
+          image_icon: ''
+          image_alt: ''
+          html_icon: '<svg enable-background="new 0 0 50 50" version="1.1" height="70px" width="70px" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><path d="  M32,35c0,0,8.312,0,9.098,0C45.463,35,49,31.463,49,27.099s-3.537-7.902-7.902-7.902c-0.02,0-0.038,0.003-0.058,0.003  c0.061-0.494,0.103-0.994,0.103-1.504c0-6.71-5.439-12.15-12.15-12.15c-5.229,0-9.672,3.309-11.386,7.941  c-1.087-1.089-2.591-1.764-4.251-1.764c-3.319,0-6.009,2.69-6.009,6.008c0,0.085,0.01,0.167,0.013,0.251  C3.695,18.995,1,22.344,1,26.331C1,31.119,4.881,35,9.67,35c0.827,0,8.33,0,8.33,0" fill="none" stroke="#ff4081" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><polyline fill="none" points="20,28 25,23 30,28   " stroke="#ff4081" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#ff4081" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="25" x2="25" y1="43" y2="23.333"/></svg>'
+          html_header: '<h5 style="font-weight:600">Upload Your Ideas</h5>'
+          html_descr: 'Odio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies'
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          name: 'item 1'
+        -
+          grid: '4'
+          grid_bg_color: 'rgba(0,0,0,0)'
+          grid_bg_hovercolor: 'rgba(255, 255, 255, 0.1)'
+          textAl: center
+          icon_type: html
+          image_icon: ''
+          image_alt: ''
+          html_icon: '<svg enable-background="new 0 0 50 50" version="1.1" viewBox="0 0 50 50" height="70px" width="70px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><path d="M44,20c0-1.104-0.896-2-2-2s-2,0.896-2,2  c0,0.476,0,14.524,0,15c0,1.104,0.896,2,2,2s2-0.896,2-2C44,34.524,44,20.476,44,20z" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M28,47c1.104,0,2-0.896,2-2s-0.896-2-2-2  c-0.476,0-4.524,0-5,0c-1.104,0-2,0.896-2,2s0.896,2,2,2C23.476,47,27.524,47,28,47z" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M8,19C8,9.611,15.611,2,25,2s17,7.611,17,17" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M44,20c2.762,0,5,3.357,5,7.5  c0,4.141-2.238,7.5-5,7.5" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M6,20c0-1.104,0.896-2,2-2s2,0.896,2,2  c0,0.476,0,14.524,0,15c0,1.104-0.896,2-2,2s-2-0.896-2-2C6,34.524,6,20.476,6,20z" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M6,20c-2.761,0-5,3.357-5,7.5  C1,31.641,3.239,35,6,35" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M42,37c0,5-3,8-8,8h-4" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/></svg>'
+          html_header: '<h5 style="font-weight:600">Support 24/7</h5>'
+          html_descr: 'Odio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies'
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          name: 'item 2'
+        -
+          grid: '4'
+          grid_bg_color: 'rgba(0,0,0,0)'
+          grid_bg_hovercolor: 'rgba(255, 255, 255, 0.1)'
+          textAl: center
+          icon_type: html
+          image_icon: ''
+          image_alt: ''
+          html_icon: '<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ff4081" stroke="none"><path d="M2331 5109 c-863 -77 -1641 -600 -2042 -1373 -141 -271 -224 -537 -271 -861 -17 -118 -17 -512 0 -630 86 -600 338 -1104 753 -1511 405 -396 891 -632 1474 -716 118 -17 512 -17 630 0 324 47 588 130 863 272 683 354 1181 1014 1331 1765 38 190 46 277 46 505 0 288 -25 465 -101 722 -343 1166 -1472 1934 -2683 1827z m531 -225 c404 -48 826 -227 1163 -492 90 -71 296 -277 367 -367 205 -260 371 -598 447 -910 86 -355 85 -768 -5 -1126 -58 -235 -187 -525 -321 -725 -384 -574 -979 -941 -1673 -1035 -52 -7 -178 -13 -280 -13 -278 0 -486 34 -750 124 -356 120 -633 293 -905 565 -207 207 -330 378 -456 640 -160 330 -230 639 -230 1015 0 376 70 685 230 1015 126 262 249 433 456 640 195 196 365 319 601 439 423 213 866 288 1356 230z"/><path d="M1461 4034 c-219 -59 -391 -275 -391 -490 0 -52 4 -67 25 -92 32 -38 72 -48 118 -28 43 18 62 52 71 129 12 109 70 195 168 248 58 31 70 34 148 34 78 0 90 -3 148 -34 98 -53 156 -139 168 -248 9 -77 28 -111 71 -129 46 -20 86 -10 118 28 20 24 25 40 25 87 0 222 -172 437 -395 496 -73 19 -202 18 -274 -1z"/><path d="M3381 4034 c-219 -59 -391 -275 -391 -490 0 -52 4 -67 25 -92 32 -38 72 -48 118 -28 43 18 62 52 71 129 12 109 70 195 168 248 58 31 70 34 148 34 78 0 90 -3 148 -34 98 -53 156 -139 168 -248 9 -77 28 -111 71 -129 46 -20 86 -10 118 28 21 25 25 40 25 92 0 218 -173 433 -395 491 -73 19 -202 18 -274 -1z"/><path d="M705 2551 c-11 -5 -29 -19 -40 -31 -18 -20 -20 -35 -19 -139 5 -394 216 -837 556 -1167 320 -310 712 -504 1134 -559 700 -92 1444 265 1857 890 175 265 277 571 281 837 1 116 1 118 -27 145 l-27 28 -1848 2 c-1016 1 -1856 -2 -1867 -6z m3555 -221 c0 -39 -39 -218 -64 -295 -39 -117 -146 -326 -223 -435 -83 -115 -250 -291 -358 -376 -241 -188 -516 -307 -820 -355 -103 -16 -367 -16 -470 0 -304 48 -579 167 -820 355 -108 85 -275 261 -358 376 -77 109 -184 318 -223 435 -25 77 -64 256 -64 295 0 20 17 20 1700 20 1683 0 1700 0 1700 -20z"/></g></svg>'
+          html_header: '<h5 style="font-weight:600">Enjoy Your Revenue</h5>'
+          html_descr: 'Odio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies'
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          name: 'item 3'
+  jf_p_ft_intro-7047:
+    title: 'JF Particle - Features Intro (Example 3)'
+    attributes:
+      padding: '120px 0'
+      theme: dark
+      bg_img: 'gantry-media://jf/blog/4_large.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.6)'
+      bg_attachement: fixed
+      html_before: "<h3 style=\"margin:0 0 30px;font-size:2.4rem;font-weight:300\" data-aos=\"fade-up\">Particle - Features Intro (Example 3)</h3><div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\" style=\"margin:0 0 50px\">Nisi risus vel. Augue cras, adipiscing porta et, velit turpis augue.</p>"
+      items:
+        -
+          grid: '4'
+          grid_bg_color: '#333333'
+          grid_bg_hovercolor: 'rgba(255, 255, 255, 0.1)'
+          textAl: center
+          icon_type: html
+          image_icon: ''
+          image_alt: ''
+          html_icon: '<svg enable-background="new 0 0 50 50" version="1.1" height="70px" width="70px" viewBox="0 0 50 50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><path d="  M32,35c0,0,8.312,0,9.098,0C45.463,35,49,31.463,49,27.099s-3.537-7.902-7.902-7.902c-0.02,0-0.038,0.003-0.058,0.003  c0.061-0.494,0.103-0.994,0.103-1.504c0-6.71-5.439-12.15-12.15-12.15c-5.229,0-9.672,3.309-11.386,7.941  c-1.087-1.089-2.591-1.764-4.251-1.764c-3.319,0-6.009,2.69-6.009,6.008c0,0.085,0.01,0.167,0.013,0.251  C3.695,18.995,1,22.344,1,26.331C1,31.119,4.881,35,9.67,35c0.827,0,8.33,0,8.33,0" fill="none" stroke="#ff4081" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/><polyline fill="none" points="20,28 25,23 30,28   " stroke="#ff4081" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/><line fill="none" stroke="#ff4081" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" x1="25" x2="25" y1="43" y2="23.333"/></svg>'
+          html_header: '<h5 style="font-weight:600">Upload Your Ideas</h5>'
+          html_descr: 'Odio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies'
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          name: 'item 1'
+        -
+          grid: '4'
+          grid_bg_color: '#333333'
+          grid_bg_hovercolor: 'rgba(255, 255, 255, 0.1)'
+          textAl: center
+          icon_type: html
+          image_icon: ''
+          image_alt: ''
+          html_icon: '<svg enable-background="new 0 0 50 50" version="1.1" viewBox="0 0 50 50" height="70px" width="70px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><path d="M44,20c0-1.104-0.896-2-2-2s-2,0.896-2,2  c0,0.476,0,14.524,0,15c0,1.104,0.896,2,2,2s2-0.896,2-2C44,34.524,44,20.476,44,20z" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M28,47c1.104,0,2-0.896,2-2s-0.896-2-2-2  c-0.476,0-4.524,0-5,0c-1.104,0-2,0.896-2,2s0.896,2,2,2C23.476,47,27.524,47,28,47z" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M8,19C8,9.611,15.611,2,25,2s17,7.611,17,17" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M44,20c2.762,0,5,3.357,5,7.5  c0,4.141-2.238,7.5-5,7.5" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M6,20c0-1.104,0.896-2,2-2s2,0.896,2,2  c0,0.476,0,14.524,0,15c0,1.104-0.896,2-2,2s-2-0.896-2-2C6,34.524,6,20.476,6,20z" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M6,20c-2.761,0-5,3.357-5,7.5  C1,31.641,3.239,35,6,35" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/><path d="M42,37c0,5-3,8-8,8h-4" fill="none" stroke="#ff4081" stroke-miterlimit="10" stroke-width="2"/></svg>'
+          html_header: '<h5 style="font-weight:600">Support 24/7</h5>'
+          html_descr: 'Odio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies'
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          name: 'item 2'
+        -
+          grid: '4'
+          grid_bg_color: '#333333'
+          grid_bg_hovercolor: 'rgba(255, 255, 255, 0.1)'
+          textAl: center
+          icon_type: html
+          image_icon: ''
+          image_alt: ''
+          html_icon: '<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ff4081" stroke="none"><path d="M2331 5109 c-863 -77 -1641 -600 -2042 -1373 -141 -271 -224 -537 -271 -861 -17 -118 -17 -512 0 -630 86 -600 338 -1104 753 -1511 405 -396 891 -632 1474 -716 118 -17 512 -17 630 0 324 47 588 130 863 272 683 354 1181 1014 1331 1765 38 190 46 277 46 505 0 288 -25 465 -101 722 -343 1166 -1472 1934 -2683 1827z m531 -225 c404 -48 826 -227 1163 -492 90 -71 296 -277 367 -367 205 -260 371 -598 447 -910 86 -355 85 -768 -5 -1126 -58 -235 -187 -525 -321 -725 -384 -574 -979 -941 -1673 -1035 -52 -7 -178 -13 -280 -13 -278 0 -486 34 -750 124 -356 120 -633 293 -905 565 -207 207 -330 378 -456 640 -160 330 -230 639 -230 1015 0 376 70 685 230 1015 126 262 249 433 456 640 195 196 365 319 601 439 423 213 866 288 1356 230z"/><path d="M1461 4034 c-219 -59 -391 -275 -391 -490 0 -52 4 -67 25 -92 32 -38 72 -48 118 -28 43 18 62 52 71 129 12 109 70 195 168 248 58 31 70 34 148 34 78 0 90 -3 148 -34 98 -53 156 -139 168 -248 9 -77 28 -111 71 -129 46 -20 86 -10 118 28 20 24 25 40 25 87 0 222 -172 437 -395 496 -73 19 -202 18 -274 -1z"/><path d="M3381 4034 c-219 -59 -391 -275 -391 -490 0 -52 4 -67 25 -92 32 -38 72 -48 118 -28 43 18 62 52 71 129 12 109 70 195 168 248 58 31 70 34 148 34 78 0 90 -3 148 -34 98 -53 156 -139 168 -248 9 -77 28 -111 71 -129 46 -20 86 -10 118 28 21 25 25 40 25 92 0 218 -173 433 -395 491 -73 19 -202 18 -274 -1z"/><path d="M705 2551 c-11 -5 -29 -19 -40 -31 -18 -20 -20 -35 -19 -139 5 -394 216 -837 556 -1167 320 -310 712 -504 1134 -559 700 -92 1444 265 1857 890 175 265 277 571 281 837 1 116 1 118 -27 145 l-27 28 -1848 2 c-1016 1 -1856 -2 -1867 -6z m3555 -221 c0 -39 -39 -218 -64 -295 -39 -117 -146 -326 -223 -435 -83 -115 -250 -291 -358 -376 -241 -188 -516 -307 -820 -355 -103 -16 -367 -16 -470 0 -304 48 -579 167 -820 355 -108 85 -275 261 -358 376 -77 109 -184 318 -223 435 -25 77 -64 256 -64 295 0 20 17 20 1700 20 1683 0 1700 0 1700 -20z"/></g></svg>'
+          html_header: '<h5 style="font-weight:600">Enjoy Your Revenue</h5>'
+          html_descr: 'Odio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies'
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          name: 'item 3'

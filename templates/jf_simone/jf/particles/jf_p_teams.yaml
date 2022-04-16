@@ -1,0 +1,343 @@
+name: JF Particle - Teams
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+
+    tabs:
+      type: container.tabs
+      fields:
+        tab_global:
+          label: Block Options
+          fields:
+
+            special_id:
+              type: input.text
+              label: Special Unique ID
+              description: Type Special Unique ID (This is HTML tag ID)
+
+            contentW:
+              type: select.select
+              label: Block Width
+              description: Choose Width type, 'FULL 100%' or 'Default Gantry'
+              placeholder: 'Select...'
+              default: default
+              options:
+                full: Full Width
+                default: Default Gantry
+
+            padding:
+              type: input.text
+              label: Block Height/Padding
+              description: Type CSS 'Top and Bottom' padding value to regulate the height of particle
+              default: 150px 0
+
+            textAlign:
+              type: select.select
+              label: Content Text Align
+              description: Choose Text Align Direction
+              placeholder: 'Select...'
+              default: center
+              options:
+                left: Left
+                center: Center
+                right: Right
+
+            theme:
+              type: select.select
+              label: Theme Style
+              description: Choose Theme Style
+              placeholder: 'Select...'
+              default: default
+              options:
+                default: Light (Default)
+                dark: Dark
+
+        tab_bg:
+          label: Background Options
+          fields:
+
+            bg_color:
+              type: input.colorpicker
+              label: Background Color
+              description: Choose Background Color
+              default: '#ffffff'
+
+            bg_img:
+              type: input.imagepicker
+              label: Background Image
+              description: Choose Image
+
+            bg_mask:
+              type: input.colorpicker
+              label: Background Mask Color
+              description: Choose Background Mask Color
+              default: 'rgba(0, 0, 0, 0)'
+
+            bg_size:
+              type: select.select
+              label: CSS Background Size
+              description: Choose CSS Background Size
+              placeholder: 'Select...'
+              default: cover
+              options:
+                cover: Cover
+                contain: Contain
+
+            bg_attachement:
+              type: select.select
+              label: CSS Background Attachment
+              description: Choose CSS Background Attachment
+              placeholder: 'Select...'
+              default: scroll
+              options:
+                scroll: Default
+                fixed: Fixed
+
+            bg_css:
+              type: input.text
+              label: Custom CSS for Background
+              description: Type Custom CSS
+
+        tab_content:
+          label: Content
+          fields:
+
+            html_before:
+              type: textarea.textarea
+              label: Custom HTML Before the "Content List"
+              description: Enter custom HTML into here.
+
+            items:
+              type: collection.list
+              array: true
+              label: Team Members
+              value: name
+              ajax: true
+
+              fields:
+                .name:
+                  type: input.text
+                  label: Name
+                  skip: true
+
+                tabs:
+                  type: container.tabs
+                  fields:
+                    tab_sub_global:
+                      label: General
+                      fields:
+                        .grid:
+                          type: select.select
+                          label: Choose Grid Width
+                          description: Choose Grid width, check 'Columns' elements types to understand width sizes.
+                          placeholder: 'Select...'
+                          default: 4
+                          options:
+                            1: 1
+                            2: 2
+                            3: 3
+                            4: 4
+                            5: 5
+                            6: 6 (50%)
+                            7: 7
+                            8: 8
+                            9: 9
+                            10: 10
+                            11: 11
+                            12: 12 (100%)
+
+                        .image:
+                          type: input.imagepicker
+                          label: Image
+                          description: Select desired image.
+
+                        .teammate_name:
+                          type: input.text
+                          label: Teammate Name
+                          description: Type your teammate's name
+                          default: 'John Doe'
+
+                        .teammate_pos:
+                          type: input.text
+                          label: Teammate Position
+                          description: Type your teammate's position in your company
+                          default: 'SEO, founder'
+
+                        .css3_anim:
+                          type: select.select
+                          label: Scroll Animation
+                          description: Choose Scroll Animation
+                          placeholder: 'Select...'
+                          default: false
+                          options:
+                              false: Disable
+                              fade: fade
+                              fade-up: fade-up
+                              fade-down: fade-down
+                              fade-left: fade-left
+                              fade-right: fade-right
+                              fade-up-right: fade-up-right
+                              fade-up-left: fade-up-left
+                              fade-down-right: fade-down-right
+                              fade-down-left: fade-down-left
+                              flip-up: flip-up
+                              flip-down: flip-down
+                              flip-left: flip-left
+                              flip-right: flip-right
+                              slide-up: slide-up
+                              slide-down: slide-down
+                              slide-left: slide-left
+                              slide-right: slide-right
+                              zoom-in: zoom-in
+                              zoom-in-up: zoom-in-up
+                              zoom-in-down: zoom-in-down
+                              zoom-in-left: zoom-in-left
+                              zoom-in-right: zoom-in-right
+                              zoom-out: zoom-out
+                              zoom-out-up: zoom-out-up
+                              zoom-out-down: zoom-out-down
+                              zoom-out-left: zoom-out-left
+                              zoom-out-right: zoom-out-right
+
+                        .css3_anim_delay:
+                          type: input.text
+                          label: Scroll Animation Delay
+                          description: Type Scroll Animation Delay (type in milliseconds, for example valua '1000' means 1 second)
+                          default: "0"
+
+                    tab_sub_icon_1:
+                      label: Icon 1
+                      fields:
+                        .icon_1_html:
+                          type: textarea.textarea
+                          label: Icon 1 - HTML
+                          description: Enter custom HTML into here. we use 'FontAwesome' or 'Material' icon tags
+                          default: '<i class="fa fa-facebook"></i>'
+
+                        .icon_1_url:
+                          type: input.text
+                          label: Icon 1 - URL
+                          description: Type your icon URL
+                          default: 'https://www.facebook.com/JoomForest'
+
+                        .icon_1_target:
+                          type: select.select
+                          label: Icon 1 - URL Target
+                          description: Choose Icon URL Target
+                          placeholder: 'Select...'
+                          default: blank
+                          options:
+                            self: Self
+                            blank: Blank
+
+                    tab_sub_icon_2:
+                      label: Icon 2
+                      fields:
+                        .icon_2_html:
+                          type: textarea.textarea
+                          label: Icon 2 - HTML
+                          description: Enter custom HTML into here. we use 'FontAwesome' or 'Material' icon tags
+                          default: ''
+
+                        .icon_2_url:
+                          type: input.text
+                          label: Icon 2 - URL
+                          description: Type your icon URL
+                          default: ''
+
+                        .icon_2_target:
+                          type: select.select
+                          label: Icon 2 - URL Target
+                          description: Choose Icon URL Target
+                          placeholder: 'Select...'
+                          default: blank
+                          options:
+                            self: Self
+                            blank: Blank
+
+                    tab_sub_icon_3:
+                      label: Icon 3
+                      fields:
+                        .icon_3_html:
+                          type: textarea.textarea
+                          label: Icon 3 - HTML
+                          description: Enter custom HTML into here. we use 'FontAwesome' or 'Material' icon tags
+                          default: ''
+
+                        .icon_3_url:
+                          type: input.text
+                          label: Icon 3 - URL
+                          description: Type your icon URL
+                          default: ''
+
+                        .icon_3_target:
+                          type: select.select
+                          label: Icon 3 - URL Target
+                          description: Choose Icon URL Target
+                          placeholder: 'Select...'
+                          default: blank
+                          options:
+                            self: Self
+                            blank: Blank
+
+                    tab_sub_icon_4:
+                      label: Icon 4
+                      fields:
+                        .icon_4_html:
+                          type: textarea.textarea
+                          label: Icon 4 - HTML
+                          description: Enter custom HTML into here. we use 'FontAwesome' or 'Material' icon tags
+                          default: ''
+
+                        .icon_4_url:
+                          type: input.text
+                          label: Icon 4 - URL
+                          description: Type your icon URL
+                          default: ''
+
+                        .icon_4_target:
+                          type: select.select
+                          label: Icon 4 - URL Target
+                          description: Choose Icon URL Target
+                          placeholder: 'Select...'
+                          default: blank
+                          options:
+                            self: Self
+                            blank: Blank
+
+                    tab_sub_icon_5:
+                      label: Icon 5
+                      fields:
+                        .icon_5_html:
+                          type: textarea.textarea
+                          label: Icon 5 - HTML
+                          description: Enter custom HTML into here. we use 'FontAwesome' or 'Material' icon tags
+                          default: ''
+
+                        .icon_5_url:
+                          type: input.text
+                          label: Icon 5 - URL
+                          description: Type your icon URL
+                          default: ''
+
+                        .icon_5_target:
+                          type: select.select
+                          label: Icon 5 - URL Target
+                          description: Choose Icon URL Target
+                          placeholder: 'Select...'
+                          default: blank
+                          options:
+                            self: Self
+                            blank: Blank
+
+            html_after:
+              type: textarea.textarea
+              label: Custom HTML After the "Content List"
+              description: Enter custom HTML into here.

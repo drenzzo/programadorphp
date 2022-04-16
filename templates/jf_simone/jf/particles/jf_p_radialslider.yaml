@@ -1,0 +1,102 @@
+name: JF Particle - Radial Slider
+type: particle
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    tabs:
+      type: container.tabs
+      fields:
+        tab_options:
+          label: Slider Options
+          fields:
+            autoplay:
+              type: enable.enable
+              label: Autoplay
+              description: Enable/Disable Autoplay
+              default: true
+
+            autoplay_delay:
+              type: input.text
+              label: AutoPlay Delay
+              description: Type AutoPlay Delay number in milliseconds (NOTE! - Leave it Empty if you don't want AutoPlay)
+              default: 5000
+
+        tab_content:
+          label: Slide Items
+          fields:
+
+            items:
+              type: collection.list
+              array: true
+              label: Slide Items
+              value: name
+              ajax: true
+
+              fields:
+                .name:
+                  type: input.text
+                  label: Name
+                  skip: true
+
+                .image:
+                  type: input.imagepicker
+                  label: Author Avatar Image
+                  description: Select desired image.
+
+                .html:
+                  type: textarea.textarea
+                  label: HTML Text
+                  description: Type HTML Text.
+                
+                .textAl:
+                  type: select.select
+                  label: Text Align
+                  description: Choose Text Align Direction
+                  placeholder: 'Select...'
+                  default: center
+                  options:
+                    left: Left
+                    center: Center
+                    right: Right
+
+                .parallax:
+                  type: enable.enable
+                  label: Parralax
+                  description: Enable/Disable Parralax Effect on HTMl Text
+                  default: true
+
+                .scrollBtn:
+                  type: enable.enable
+                  label: Scroll Bottom Button
+                  description: Enable/Disable Scroll Bottom Button
+                  default: true
+
+                .scrollBtn_color:
+                  type: input.colorpicker
+                  label: Scroll Bottom Button - Color
+                  description: Choose Color
+                  default: '#ffffff'
+
+                .scrollBtn_url:
+                  type: input.text
+                  label: Scroll Bottom Button - URL
+                  description: Type Scroll Bottom Button URL, for example if you want to scroll down to specific tag, then apply something like this '#features'
+                  default: "#"
+        
+        tab_css:
+          label: Custom CSS
+          fields:
+            css:
+              type: textarea.textarea
+              label: Custom CSS Styles
+              description: Type Custom CSS styles

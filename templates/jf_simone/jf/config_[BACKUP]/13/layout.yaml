@@ -1,0 +1,130 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/kunena.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  full-width-section-1: {  }
+  /container-main/:
+    -
+      -
+        '/main/ 70':
+          -
+            - system-messages-9711
+          -
+            - system-content-1362
+      -
+        'sidebar 20': {  }
+      -
+        'banner 10': {  }
+  full-width-section-2: {  }
+  breadcrumbs: {  }
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  main:
+    attributes:
+      boxed: ''
+      class: noboxshadow
+  sidebar:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  banner:
+    type: section
+  container-main:
+    attributes:
+      boxed: ''
+  full-width-section-2:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  breadcrumbs:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  system-messages-9711:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  system-content-1362:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-content-3497

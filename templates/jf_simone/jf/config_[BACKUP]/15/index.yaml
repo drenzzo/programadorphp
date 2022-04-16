@@ -1,0 +1,108 @@
+name: 15
+timestamp: 1494964027
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/blocks.jpg'
+  name: default
+  timestamp: 1482703875
+positions:
+  right-panel: 'Module Position'
+  news-panel: 'Module Position'
+  banner-top: 'Position "banner-top"'
+  banner-bottom: 'Position"banner-bottom"'
+  breadcrumbs: 'Module Position'
+  footer-b: "Position:\_footer-b"
+  footer-c: "Position:\_footer-c"
+sections:
+  header: Header
+  navigation: Navigation
+  right-panel: Right-panel
+  news-panel: News-panel
+  full-width-section-1: Full-width-section-1
+  full-width-section-2: Full-width-section-2
+  breadcrumbs: Breadcrumbs
+  bottom-footer: Bottom-footer
+  main: Main
+  footer: Footer
+particles:
+  messages:
+    system-messages-3600: 'System Messages'
+  custom:
+    custom-2880: 'Color Styles'
+    custom-2238: 'Box White'
+    custom-9346: 'Box Primary'
+    custom-3863: 'Box Info'
+    custom-6146: "Box\_Success"
+    custom-7997: 'Box Warning'
+    custom-6599: 'Box Danger'
+    custom-4651: 'Box Red'
+    custom-5776: 'Box Pink'
+    custom-9377: 'Box Purple'
+    custom-4843: 'Box Deep-Purple'
+    custom-7794: 'Box Indigo'
+    custom-2302: 'Box Blue'
+    custom-8124: 'Box Light-Blue'
+    custom-9516: 'Box Cyan'
+    custom-1324: 'Box Teal'
+    custom-1513: 'Box Green'
+    custom-3292: 'Box Light-Green'
+    custom-4660: 'Box Lime'
+    custom-4056: 'Box Yellow'
+    custom-1021: 'Box Amber'
+    custom-8475: 'Box Orange'
+    custom-6716: 'Box Deep-Orange'
+    custom-7432: 'Box Brown'
+    custom-4680: 'Box Grey'
+    custom-5229: 'Box Blue-Grey'
+    custom-3114: Dark-Grey
+    custom-9205: 'No Background'
+    custom-7871: 'Shadow Styles'
+    custom-2945: 'Shadow 1'
+    custom-8315: 'Shadow 2'
+    custom-5963: 'Shadow 3'
+    custom-4469: 'Shadow 4'
+    custom-3895: 'Shadow 5'
+    custom-1840: 'Shadow 6'
+    custom-2032: 'Additional Effects & Classes'
+    custom-6687: 'Text Align Left'
+    custom-1451: 'Text Align Center'
+    custom-2573: 'Text Align Right'
+    custom-4828: 'No Padding'
+    custom-4661: 'No Margin'
+    custom-4106: 'Footer Copyright'
+  logo:
+    logo-2842: Logo
+  menu:
+    menu-6810: Menu
+  position:
+    position-position-7191: 'Module Position'
+    position-position-3514: 'Module Position'
+    position-position-2224: 'Position "banner-top"'
+    position-position-2682: 'Position"banner-bottom"'
+    position-position-7421: 'Module Position'
+    position-position-6782: "Position:\_footer-b"
+    position-position-9702: "Position:\_footer-c"
+  jf_p_subscribe:
+    jf_p_subscribe-5486: 'JF Particle - Mailchimp Subscribe'
+inherit:
+  default:
+    header: header
+    navigation: navigation
+    right-panel: right-panel
+    news-panel: news-panel
+    full-width-section-1: full-width-section-1
+    full-width-section-2: full-width-section-2
+    breadcrumbs: breadcrumbs
+    footer: footer
+    bottom-footer: bottom-footer
+    logo-2842: logo-8517
+    menu-6810: menu-2176
+    position-position-7191: position-position-7914
+    position-position-3514: position-position-9581
+    position-position-2224: position-position-5515
+    position-position-2682: position-position-8075
+    position-position-7421: position-position-7658
+    custom-4106: custom-3503
+    position-position-6782: position-position-5191
+    position-position-9702: position-position-1028
+    jf_p_subscribe-5486: jf_p_subscribe-6876

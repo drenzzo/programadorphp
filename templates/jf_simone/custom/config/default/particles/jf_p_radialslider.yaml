@@ -1,0 +1,4 @@
+enabled: '1'
+autoplay: '1'
+autoplay_delay: '5000'
+items: {  }

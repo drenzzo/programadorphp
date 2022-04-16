@@ -1,0 +1,413 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_teams.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/: {  }
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/:
+    -
+      - jf_p_teams-5587
+    -
+      - jf_p_teams-2049
+    -
+      - jf_p_teams-1974
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  jf_p_teams-5587:
+    title: 'JF Particle - Teams (Example 1)'
+    attributes:
+      bg_color: '#f4f4f4'
+      html_before: "<h3 style=\"margin:0;font-size:2.7rem;font-weight:300;color:#000;line-height:1\" data-aos=\"fade-up\">Particle - Teams (Example 1)</h3>\n<div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div><p data-aos=\"fade-up\" style=\"margin:0 0 50px\">Get to know the people behind Simone, Our creative and technical team.</p>"
+      items:
+        -
+          grid: '4'
+          image: 'gantry-media://jf/particles/testimonials/5.jpg'
+          teammate_name: 'John Doe'
+          teammate_pos: 'SEO, founder'
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 1'
+        -
+          grid: '4'
+          image: 'gantry-media://jf/particles/testimonials/1.jpg'
+          teammate_name: 'Jane Doe'
+          teammate_pos: Co-founder
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 2'
+        -
+          grid: '4'
+          image: 'gantry-media://jf/particles/testimonials/2.jpg'
+          teammate_name: 'Tommy King'
+          teammate_pos: 'Senior Consultant'
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 3'
+  jf_p_teams-2049:
+    title: 'JF Particle - Teams (Example 2)'
+    attributes:
+      theme: dark
+      bg_color: '#333333'
+      html_before: "<h3 style=\"margin:0;font-size:2.7rem;font-weight:300;line-height:1\" data-aos=\"fade-up\">Particle - Teams (Example 2)</h3>\n<div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div><p data-aos=\"fade-up\" style=\"margin:0 0 50px\">Get to know the people behind Simone, Our creative and technical team.</p>"
+      items:
+        -
+          grid: '3'
+          image: 'gantry-media://jf/particles/testimonials/5.jpg'
+          teammate_name: 'John Doe'
+          teammate_pos: 'SEO, founder'
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 1'
+        -
+          grid: '3'
+          image: 'gantry-media://jf/particles/testimonials/1.jpg'
+          teammate_name: 'Jane Doe'
+          teammate_pos: Co-founder
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 2'
+        -
+          grid: '3'
+          image: 'gantry-media://jf/particles/testimonials/2.jpg'
+          teammate_name: 'Tommy King'
+          teammate_pos: 'Senior Consultant'
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 3'
+        -
+          grid: '3'
+          image: 'gantry-media://jf/particles/testimonials/6.jpg'
+          teammate_name: 'Lara White'
+          teammate_pos: 'Senior Consultant'
+          css3_anim: fade-up
+          css3_anim_delay: '1500'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 4'
+  jf_p_teams-1974:
+    title: 'JF Particle - Teams (Example 3)'
+    attributes:
+      theme: dark
+      bg_img: 'gantry-media://jf/pages/home_business/why_us.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.6)'
+      bg_attachement: fixed
+      html_before: "<h3 style=\"margin:0;font-size:2.7rem;font-weight:300;line-height:1\" data-aos=\"fade-up\">Particle - Teams (Example 3)</h3>\n<div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div><p data-aos=\"fade-up\" style=\"margin:0 0 50px\">Get to know the people behind Simone, Our creative and technical team.</p>"
+      items:
+        -
+          grid: '2'
+          image: 'gantry-media://jf/particles/testimonials/5.jpg'
+          teammate_name: 'John Doe'
+          teammate_pos: 'SEO, founder'
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 1'
+        -
+          grid: '2'
+          image: 'gantry-media://jf/particles/testimonials/1.jpg'
+          teammate_name: 'Jane Doe'
+          teammate_pos: Co-founder
+          css3_anim: fade-up
+          css3_anim_delay: '500'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 2'
+        -
+          grid: '2'
+          image: 'gantry-media://jf/particles/testimonials/2.jpg'
+          teammate_name: 'Tommy King'
+          teammate_pos: 'Senior Consultant'
+          css3_anim: fade-up
+          css3_anim_delay: '1000'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 3'
+        -
+          grid: '2'
+          image: 'gantry-media://jf/particles/testimonials/6.jpg'
+          teammate_name: 'Lara White'
+          teammate_pos: 'Senior Consultant'
+          css3_anim: fade-up
+          css3_anim_delay: '1500'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 4'
+        -
+          grid: '2'
+          image: 'gantry-media://jf/particles/testimonials/3.jpg'
+          teammate_name: 'Ann Fisher'
+          teammate_pos: 'Senior Consultant'
+          css3_anim: fade-up
+          css3_anim_delay: '2000'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 5'
+        -
+          grid: '2'
+          image: 'gantry-media://jf/particles/testimonials/4.jpg'
+          teammate_name: 'Jessica Bellamy'
+          teammate_pos: 'Senior Consultant'
+          css3_anim: fade-up
+          css3_anim_delay: '2500'
+          icon_1_html: '<i class="fa fa-facebook"></i>'
+          icon_1_url: 'https://www.facebook.com/JoomForest'
+          icon_1_target: blank
+          icon_2_html: '<i class="fa fa-twitter"></i>'
+          icon_2_url: 'https://twitter.com/JoomForest'
+          icon_2_target: blank
+          icon_3_html: '<i class="fa fa-linkedin"></i>'
+          icon_3_url: '#'
+          icon_3_target: blank
+          icon_4_html: ''
+          icon_4_url: ''
+          icon_4_target: blank
+          icon_5_html: ''
+          icon_5_url: ''
+          icon_5_target: blank
+          name: 'Member 6'

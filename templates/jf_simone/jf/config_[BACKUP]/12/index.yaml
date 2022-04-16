@@ -1,0 +1,71 @@
+name: 12
+timestamp: 1494964027
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/home_agency.jpg'
+  name: default
+  timestamp: 1482703875
+positions:
+  right-panel: 'Module Position'
+  news-panel: 'Module Position'
+  footer-b: "Position:\_footer-b"
+  footer-c: "Position:\_footer-c"
+sections:
+  header: Header
+  navigation: Navigation
+  right-panel: Right-panel
+  news-panel: News-panel
+  full-width-section-1: Full-width-section-1
+  full-width-section-2: Full-width-section-2
+  bottom-footer: Bottom-footer
+  main: Main
+  footer: Footer
+particles:
+  jf_p_radialslider:
+    jf_p_radialslider-1917: 'JF Particle - Radial Slider'
+  messages:
+    system-messages-5749: 'System Messages'
+  jf_p_ft_intro:
+    jf_p_ft_intro-9338: 'JF Particle - Features Intro'
+  jf_p_cta:
+    jf_p_cta-4539: 'JF Particle - CTA'
+  jf_p_pricing:
+    jf_p_pricing-5167: 'JF Particle - Pricing Tables'
+  jf_p_portfolio:
+    jf_p_portfolio-3835: 'JF Particle - Portfolio'
+  jf_p_teams:
+    jf_p_teams-5587: 'JF Particle - Teams'
+  jf_p_clients:
+    jf_p_clients-9524: 'JF Particle - Clients'
+  jf_p_testimonials:
+    jf_p_testimonials-8035: 'JF Particle - Testimonials'
+  logo:
+    logo-2842: Logo
+  menu:
+    menu-6810: Menu
+  position:
+    position-position-7191: 'Module Position'
+    position-position-3514: 'Module Position'
+    position-position-6782: "Position:\_footer-b"
+    position-position-9702: "Position:\_footer-c"
+  custom:
+    custom-4106: 'Footer Copyright'
+  jf_p_subscribe:
+    jf_p_subscribe-5690: 'JF Particle - Mailchimp Subscribe'
+inherit:
+  default:
+    header: header
+    navigation: navigation
+    right-panel: right-panel
+    news-panel: news-panel
+    system-messages-5749: system-messages-9589
+    footer: footer
+    bottom-footer: bottom-footer
+    logo-2842: logo-8517
+    menu-6810: menu-2176
+    position-position-7191: position-position-7914
+    position-position-3514: position-position-9581
+    custom-4106: custom-3503
+    position-position-6782: position-position-5191
+    position-position-9702: position-position-1028
+    jf_p_subscribe-5690: jf_p_subscribe-6876

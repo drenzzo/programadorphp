@@ -1,0 +1,75 @@
+name: 40
+timestamp: 1494964028
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/shop_kids.jpg'
+  name: default
+  timestamp: 1482703875
+positions:
+  right-panel: 'Module Position'
+  news-panel: 'Module Position'
+  footer-b: "Position:\_footer-b"
+  footer-c: "Position:\_footer-c"
+  left-sidebar: 'Module Position'
+  main-bottom: 'Module Position'
+sections:
+  header: Header
+  navigation: Navigation
+  right-panel: Right-panel
+  news-panel: News-panel
+  full-width-section-1: Full-width-section-1
+  left-sidebar: Left-sidebar
+  full-width-section-2: Full-width-section-2
+  bottom-footer: Bottom-footer
+  main: Main
+  footer: Footer
+particles:
+  jf_p_radialslider:
+    jf_p_radialslider-4594: 'JF Particle - Radial Slider'
+  jf_p_cta:
+    jf_p_cta-8937: 'JF Particle - CTA (Banners)'
+    jf_p_cta-9266: 'JF Particle - CTA'
+  jf_p_clients:
+    jf_p_clients-5472: 'JF Particle - Clients (Example 3)'
+  logo:
+    logo-7656: Logo
+  menu:
+    menu-4788: Menu
+  position:
+    position-position-9820: 'Module Position'
+    position-position-3544: 'Module Position'
+    position-position-6497: "Position:\_footer-b"
+    position-position-9845: "Position:\_footer-c"
+    position-position-4824: 'Module Position'
+    position-position-6152: 'Module Position'
+  custom:
+    custom-4983: 'Footer Copyright'
+  jf_p_subscribe:
+    jf_p_subscribe-6861: 'JF Particle - Mailchimp Subscribe'
+  messages:
+    system-messages-3195: 'System Messages'
+  content:
+    system-content-3806: 'Page Content'
+inherit:
+  default:
+    header: header
+    navigation: navigation
+    right-panel: right-panel
+    news-panel: news-panel
+    footer: footer
+    bottom-footer: bottom-footer
+    logo-7656: logo-8517
+    menu-4788: menu-2176
+    position-position-9820: position-position-7914
+    position-position-3544: position-position-9581
+    custom-4983: custom-3503
+    position-position-6497: position-position-5191
+    position-position-9845: position-position-1028
+    jf_p_subscribe-6861: jf_p_subscribe-6876
+  33:
+    left-sidebar: left-sidebar
+    main: main
+    position-position-4824: position-position-9343
+    system-messages-3195: system-messages-5855
+    system-content-3806: system-content-9439
+    position-position-6152: position-position-7776

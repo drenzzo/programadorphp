@@ -1,0 +1,321 @@
+name: JF Particle - CTA
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    tabs:
+      type: container.tabs
+      fields:
+        tab_global:
+          label: Block Options
+          fields:
+
+            special_id:
+              type: input.text
+              label: Special Unique ID
+              description: Type Special Unique ID (This is HTML tag ID)
+
+            contentW:
+              type: select.select
+              label: Block Width
+              description: Choose Width type, 'FULL 100%' or 'Default Gantry'
+              placeholder: 'Select...'
+              default: default
+              options:
+                full: Full Width
+                default: Default Gantry
+
+            padding:
+              type: input.text
+              label: Block Height/Padding
+              description: Type CSS 'Top and Bottom' padding value to regulate the height of particle
+              default: 150px 0
+
+            textAlign:
+              type: select.select
+              label: Content Text Align
+              description: Choose Text Align Direction
+              placeholder: 'Select...'
+              default: center
+              options:
+                left: Left
+                center: Center
+                right: Right
+
+            theme:
+              type: select.select
+              label: Theme Style
+              description: Choose Theme Style
+              placeholder: 'Select...'
+              default: default
+              options:
+                default: Light (Default)
+                dark: Dark
+
+        tab_bg:
+          label: Background Options
+          fields:
+
+            bg_color:
+              type: input.colorpicker
+              label: Background Color
+              description: Choose Background Color
+              default: '#ffffff'
+
+            bg_img:
+              type: input.imagepicker
+              label: Background Image
+              description: Choose Image
+
+            bg_mask:
+              type: input.colorpicker
+              label: Background Mask Color
+              description: Choose Background Mask Color
+              default: 'rgba(0, 0, 0, 0)'
+
+            bg_size:
+              type: select.select
+              label: CSS Background Size
+              description: Choose CSS Background Size
+              placeholder: 'Select...'
+              default: cover
+              options:
+                cover: Cover
+                contain: Contain
+
+            bg_attachement:
+              type: select.select
+              label: CSS Background Attachment
+              description: Choose CSS Background Attachment
+              placeholder: 'Select...'
+              default: scroll
+              options:
+                scroll: Default
+                fixed: Fixed
+
+            bg_css:
+              type: input.text
+              label: Custom CSS for Background
+              description: Type Custom CSS
+
+        tab_content:
+          label: Content
+          fields:
+
+            html_before:
+              type: textarea.textarea
+              label: Custom HTML Before the "Content List"
+              description: Enter custom HTML into here.
+
+            items:
+              type: collection.list
+              array: true
+              label: Items
+              value: name
+              ajax: true
+
+              fields:
+                .name:
+                  type: input.text
+                  label: Name
+                  skip: true
+
+                item_tab:
+                  type: container.tabs
+                  fields:
+                    item_tab_content_1:
+                      label: Content Style
+                      fields:
+
+                        .grid:
+                          type: select.select
+                          label: Choose Grid Width
+                          description: Choose Grid width, check 'Columns' elements types to understand width sizes.
+                          placeholder: 'Select...'
+                          default: 6
+                          options:
+                            1: 1
+                            2: 2
+                            3: 3
+                            4: 4
+                            5: 5
+                            6: 6 (50%)
+                            7: 7
+                            8: 8
+                            9: 9
+                            10: 10
+                            11: 11
+                            12: 12 (100%)
+
+                        .contentTextAl:
+                          type: select.select
+                          label: Content Text Align
+                          description: Choose Content Text Direction
+                          placeholder: 'Select...'
+                          default: left
+                          options:
+                            left: Left
+                            center: Center
+                            right: Right
+
+                        .contentStyle:
+                          type: select.select
+                          label: Content Type
+                          description: Choose Type
+                          placeholder: 'Select...'
+                          default: html
+                          options:
+                            html: HTML
+                            image: Image
+
+                        .contentCSS:
+                          type: input.text
+                          label: Content Custom CSS
+                          description: Type Custom CSS Styles for Content Block
+
+                    item_tab_content_2:
+                      label: Content Type - HTML
+                      fields:
+
+                        _info_tab_content_2:
+                          type: separator.note
+                          class: alert alert-info
+                          content: Make Sure you have choosed relevant "Content Type" in "Content Style"
+
+                        .html:
+                          type: textarea.textarea
+                          label: HTML Content
+                          description: Enter custom HTML into here.
+
+                    item_tab_content_3:
+                      label: Content Type - Image
+                      fields:
+
+                        _info_tab_content_3:
+                          type: separator.note
+                          class: alert alert-info
+                          content: Make Sure you have choosed relevant "Content Type" in "Content Style"
+
+                        .image_src:
+                          type: input.imagepicker
+                          label: Image
+                          description: Select desired image.
+
+                        .image_alt:
+                          type: input.text
+                          label: Image Alt Text
+                          description: Type Image "Alt" Text
+
+                        .image_css:
+                          type: input.text
+                          label: Image CSS Style
+                          description: Type Custom CSS Style
+
+                        _custom_url:
+                          type: separator.note
+                          class: alert alert-info
+                          content: Image Custom URL
+
+                        .image_url:
+                          type: input.text
+                          label: Image Link URL
+                          description: Type Link URL (Leave it empty if you do not want it to be linked)
+
+                        .image_urlTarget:
+                          type: select.select
+                          label: Image Link Target
+                          description: Choose Image Link Target
+                          placeholder: 'Select...'
+                          default: self
+                          options:
+                            self: Self
+                            blank: Blank
+
+                        _info_lightbox:
+                          type: separator.note
+                          class: alert alert-info
+                          content: Make Sure you have choosed relevant "VenoBox LightBox" in "JF Features" Atom.
+
+                        .lighbox:
+                          type: select.select
+                          label: LightBox
+                          description: Enable it if you want to have lightbox button on image
+                          placeholder: 'Select...'
+                          default: false
+                          options:
+                            false: Disable
+                            image: Image Lightbox
+                            video_y: Video - Youtube
+                            video_v: Video - Vimeo
+
+                        .lightbox_image:
+                          type: input.imagepicker
+                          label: Lightbox Popup Image
+                          description: Select desired image.
+
+                        .lightbox_video:
+                          type: input.text
+                          label: Lightbox Video URL
+                          description: Type Lightbox Video URL, for example 'https://youtu.be/luhsTvMihi0' or 'http://vimeo.com/75976293'
+
+                        .lightbox_icon_html:
+                          type: textarea.textarea
+                          label: Lightbox Icon HTML
+                          description: Enter custom HTML into here
+
+                    item_tab_content_4:
+                      label: CSS3 Animation
+                      fields:
+
+                        .css3_anim:
+                          type: select.select
+                          label: Scroll Animation
+                          description: Choose Scroll Animation
+                          placeholder: 'Select...'
+                          default: false
+                          options:
+                              false: Disable
+                              fade: fade
+                              fade-up: fade-up
+                              fade-down: fade-down
+                              fade-left: fade-left
+                              fade-right: fade-right
+                              fade-up-right: fade-up-right
+                              fade-up-left: fade-up-left
+                              fade-down-right: fade-down-right
+                              fade-down-left: fade-down-left
+                              flip-up: flip-up
+                              flip-down: flip-down
+                              flip-left: flip-left
+                              flip-right: flip-right
+                              slide-up: slide-up
+                              slide-down: slide-down
+                              slide-left: slide-left
+                              slide-right: slide-right
+                              zoom-in: zoom-in
+                              zoom-in-up: zoom-in-up
+                              zoom-in-down: zoom-in-down
+                              zoom-in-left: zoom-in-left
+                              zoom-in-right: zoom-in-right
+                              zoom-out: zoom-out
+                              zoom-out-up: zoom-out-up
+                              zoom-out-down: zoom-out-down
+                              zoom-out-left: zoom-out-left
+                              zoom-out-right: zoom-out-right
+
+                        .css3_anim_delay:
+                          type: input.text
+                          label: Scroll Animation Delay
+                          description: Type Scroll Animation Delay (type in milliseconds, for example valua '1000' means 1 second)
+                          default: "0"
+
+            html_after:
+              type: textarea.textarea
+              label: Custom HTML After the "Content List"
+              description: Enter custom HTML into here.

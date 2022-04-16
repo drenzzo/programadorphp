@@ -1,0 +1,357 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_cta.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/: {  }
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/:
+    -
+      - jf_p_cta-4539
+    -
+      - jf_p_cta-8743
+    -
+      - jf_p_cta-5752
+    -
+      - jf_p_cta-6295
+    -
+      - jf_p_cta-4575
+    -
+      - jf_p_cta-8238
+    -
+      - jf_p_cta-1913
+    -
+      - jf_p_cta-3803
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  jf_p_cta-4539:
+    title: 'JF Particle - CTA (Example 1)'
+    attributes:
+      padding: '120px 0'
+      bg_color: '#f4f4f4'
+      items:
+        -
+          grid: '6'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:50px 100px 0 0;'
+          html: "<h3 style=\"font-size: 2.2rem;margin:0\">Particle - Call to Action (Example 1)</h3>\n<div class=\"small_sep\" style=\"margin: 30px 0;\"></div>\n<p style=\"font-size:18px\">Understanding your requirements and objectives is important to us. We listen and work together to create a trully unique and unforgettable experience.</p>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: left
+        -
+          grid: '6'
+          contentTextAl: left
+          contentStyle: image
+          contentCSS: ''
+          html: ''
+          image_src: 'gantry-media://jf/pages/home_creative/video.jpg'
+          image_alt: ''
+          lighbox: video_y
+          lightbox_image: ''
+          lightbox_video: 'https://youtu.be/luhsTvMihi0'
+          lightbox_icon_html: '<span class="fa fa-play"></span>'
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: right
+  jf_p_cta-8743:
+    title: 'JF Particle - CTA (Example 2)'
+    attributes:
+      padding: '100px 0'
+      html_before: "<h3 style=\"margin:0 0 30px;font-size:2.7rem;font-weight:300;color:#000;\" data-aos=\"fade-up\">Particle - CTA (Example 2)</h3><p style=\"margin:0 0 100px 0;font-size:15px\" data-aos=\"fade-up\">Scelerisque eros ultricies vel, integer, mauris. Parturient sit, et, </p>\n"
+      items:
+        -
+          grid: '4'
+          contentTextAl: right
+          contentStyle: html
+          contentCSS: ''
+          html: "<div class=\"jf_p_cta_iconbox right\" data-aos=\"fade-right\" data-aos-delay=\"0\" style=\"margin:90px 0\">\n\t<div class=\"icon_right\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 15 7 C 7.8324839 7 2 12.832484 2 20 C 2 34.761905 18.694043 42.047119 24.375 46.78125 L 25 47.3125 L 25.625 46.78125 C 31.305957 42.047119 48 34.761905 48 20 C 48 12.832484 42.167516 7 35 7 C 30.944199 7 27.383797 8.9249177 25 11.84375 C 22.616203 8.9249177 19.055801 7 15 7 z M 15 9 C 18.835004 9 22.185693 10.969285 24.15625 13.9375 L 25 15.1875 L 25.84375 13.9375 C 27.814307 10.969285 31.164996 9 35 9 C 41.086484 9 46 13.913516 46 20 C 46 32.896733 31.592632 39.574446 25 44.78125 C 18.407368 39.574446 4 32.896733 4 20 C 4 13.913516 8.9135161 9 15 9 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Made with Big Love</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox right\" data-aos=\"fade-right\" data-aos-delay=\"200\" style=\"margin:90px 0\">\n\t<div class=\"icon_right\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\" enable-background=\"new 0 0 50 50\">\n\t\t\t<path d=\"M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 34.0625 14.46875 L 23.125 31.46875 L 15.78125 24.84375 L 14.4375 26.34375 L 22.625 33.75 L 23.5 34.53125 L 24.125 33.53125 L 35.75 15.53125 L 34.0625 14.46875 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Amazing Design Beauty</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox right\" data-aos=\"fade-right\" data-aos-delay=\"400\" style=\"margin:90px 0\">\n\t<div class=\"icon_right\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\" enable-background=\"new 0 0 50 50\">\n\t\t\t<path d=\"M 20 8 C 13.541003 8 8.3687552 13.109649 8.09375 19.5 C 3.4161675 20.775428 0 24.996229 0 30 C 0 36.045455 4.9545455 41 11 41 L 41 41 C 45.945455 41 50 36.945455 50 32 C 50 28.100473 47.400722 24.792267 43.90625 23.625 C 43.694002 17.762096 38.911888 13 33 13 C 31.961341 13 30.993822 13.255869 30.03125 13.53125 C 27.881885 10.26209 24.216892 8 20 8 z M 20 10 C 23.726016 10 26.991036 12.092984 28.71875 15.09375 L 29.15625 15.8125 L 29.9375 15.53125 C 30.93689 15.167836 31.911111 15 33 15 C 37.954545 15 42 19.045455 42 24 L 42 24.3125 L 42 25.09375 L 42.78125 25.28125 C 45.713159 25.971111 48 28.768468 48 32 C 48 35.854545 44.854545 39 41 39 L 11 39 C 6.0454545 39 2 34.954545 2 30 C 2 25.672222 5.0580205 21.995442 9.1875 21.1875 L 10 21.03125 L 10 20.1875 L 10 20 C 10 14.435519 14.435519 10 20 10 z M 25 18.59375 L 24.28125 19.28125 L 18.28125 25.28125 L 19.71875 26.71875 L 24 22.4375 L 24 34 L 26 34 L 26 22.4375 L 30.28125 26.71875 L 31.71875 25.28125 L 25.71875 19.28125 L 25 18.59375 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Elegent and Perfect</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: left
+        -
+          grid: '4'
+          contentTextAl: center
+          contentStyle: image
+          contentCSS: ''
+          html: ''
+          image_src: 'gantry-media://jf/pages/home_app/features_3.png'
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-up
+          css3_anim_delay: '200'
+          name: 'middle (image)'
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: ''
+          html: "<div class=\"jf_p_cta_iconbox\" data-aos=\"fade-left\" data-aos-delay=\"0\" style=\"margin:90px 0\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 25 5 C 13.966513 5 5 13.966513 5 25 A 1.0001 1.0001 0 1 0 7 25 C 7 15.047487 15.047487 7 25 7 C 31.245219 7 36.728098 10.179957 39.957031 15 L 33 15 A 1.0001 1.0001 0 1 0 33 17 L 41.761719 17 L 43 17 L 43 7 A 1.0001 1.0001 0 0 0 41.984375 5.9863281 A 1.0001 1.0001 0 0 0 41 7 L 41 13.009766 C 37.34915 8.1484513 31.538723 5 25 5 z M 43.984375 23.986328 A 1.0001 1.0001 0 0 0 43 25 C 43 34.952513 34.952513 43 25 43 C 18.754258 43 13.271088 39.819768 10.042969 35 L 17 35.001953 A 1.0001 1.0001 0 1 0 17 33.001953 L 8.4453125 33 A 1.0001 1.0001 0 0 0 8.0585938 33 L 7 33 L 7 43 A 1.0001 1.0001 0 1 0 9 43 L 9 36.986328 C 12.649688 41.849109 18.459565 45 25 45 C 36.033487 45 45 36.033487 45 25 A 1.0001 1.0001 0 0 0 43.984375 23.986328 z\" color=\"#000\" font-weight=\"400\" font-family=\"sans-serif\" white-space=\"normal\" overflow=\"visible\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">24 hours support</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox\" data-aos=\"fade-left\" data-aos-delay=\"200\" style=\"margin:90px 0\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\" enable-background=\"new 0 0 50 50\">\n\t\t\t<path d=\"M 25 3 C 18.364481 3 13 8.3644809 13 15 L 13 20 L 9 20 C 7.3545455 20 6 21.354545 6 23 L 6 47 C 6 48.645455 7.3545455 50 9 50 L 41 50 C 42.645455 50 44 48.645455 44 47 L 44 23 C 44 21.354545 42.645455 20 41 20 L 37 20 L 37 15 C 37 8.3644809 31.635519 3 25 3 z M 25 5 C 30.564481 5 35 9.4355191 35 15 L 35 20 L 15 20 L 15 15 C 15 9.4355191 19.435519 5 25 5 z M 9 22 L 41 22 C 41.554545 22 42 22.445455 42 23 L 42 47 C 42 47.554545 41.554545 48 41 48 L 9 48 C 8.4454545 48 8 47.554545 8 47 L 8 23 C 8 22.445455 8.4454545 22 9 22 z M 25 30 C 23.3 30 22 31.3 22 33 C 22 33.9 22.4 34.6875 23 35.1875 L 23 38 C 23 39.1 23.9 40 25 40 C 26.1 40 27 39.1 27 38 L 27 35.1875 C 27.6 34.6875 28 33.9 28 33 C 28 31.3 26.7 30 25 30 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Bootstrap framework</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox\" data-aos=\"fade-left\" data-aos-delay=\"400\" style=\"margin:90px 0\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 7 2 C 4.2 2 2 4.2 2 7 L 2 34 C 2 36.8 4.2 39 7 39 L 34 39 C 36.8 39 39 36.8 39 34 L 39 9.8125 L 37 12 L 37 34 C 37 35.7 35.7 37 34 37 L 7 37 C 5.3 37 4 35.7 4 34 L 4 7 C 4 5.3 5.3 4 7 4 L 33.40625 4 L 35.09375 2.09375 C 34.69375 2.09375 34.4 2 34 2 L 7 2 z M 36.25 5.34375 L 18.9375 24.59375 L 10.65625 17.25 L 9.34375 18.75 L 18.34375 26.75 L 19.09375 27.40625 L 19.75 26.65625 L 37.75 6.65625 L 36.25 5.34375 z M 41 11 L 41 13 L 43 13 C 44.7 13 46 14.3 46 16 L 46 43 C 46 44.7 44.7 46 43 46 L 16 46 C 14.3 46 13 44.7 13 43 L 13 41 L 11 41 L 11 43 C 11 45.8 13.2 48 16 48 L 43 48 C 45.8 48 48 45.8 48 43 L 48 16 C 48 13.2 45.8 11 43 11 L 41 11 z\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Gantry 5 Template</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-left
+          css3_anim_delay: '400'
+          name: right
+  jf_p_cta-5752:
+    title: 'JF Particle - CTA (Example 3)'
+    attributes:
+      padding: '80px 0'
+      bg_color: '#eeeeee'
+      items:
+        -
+          grid: '5'
+          contentTextAl: left
+          contentStyle: image
+          contentCSS: ''
+          html: ''
+          image_src: 'gantry-media://jf/pages/home_app/features_1.png'
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: left
+        -
+          grid: '7'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:0 50px;'
+          html: "<h3 style=\"font-size:2.5rem;margin-top:0;\">Particle - CTA (Example 3)</h3>\n<p style=\"font-size:16px;margin:0 0 30px 0;\">Elementum urna ultrices scelerisque ridiculus sit cursus sed nisi nisi enim urna ultrices nunc lorem dolor, adipiscing nunc! Augue eu facilisis in amet ridiculus! Cursus phasellus. Ut auctor! A ridiculus, odio lectus magna nisi mattis montes, aliquam proin? Elementum pulvinar natoque tortor? Sagittis nec massa ultrices dictumst urna! Dignissim hac, turpis! Phasellus.</p>\n<a class=\"btn btn-primary btn-large waves-effect waves-light-50\" href=\"#\" data-tilt=\"20\">Learn More</a>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '300'
+          name: right
+  jf_p_cta-6295:
+    title: 'JF Particle - CTA (Example 4)'
+    attributes:
+      padding: '80px 0 60px'
+      items:
+        -
+          grid: '7'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:0 50px;'
+          html: "<h3 style=\"font-size:2.5rem;margin-top:0;\">Particle - CTA (Example 4)</h3>\n<p style=\"font-size:16px;margin:0 0 30px 0;\">Elementum urna ultrices scelerisque ridiculus sit cursus sed nisi nisi enim urna ultrices nunc lorem dolor, adipiscing nunc! Augue eu facilisis in amet ridiculus! Cursus phasellus. Ut auctor! A ridiculus, odio lectus magna nisi mattis montes, aliquam proin? Elementum pulvinar natoque tortor? Sagittis nec massa ultrices dictumst urna! Dignissim hac, turpis! Phasellus.</p>\n<a class=\"btn btn-primary btn-large waves-effect waves-light-50\" href=\"#\" data-tilt=\"20\">Learn More</a>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: left
+        -
+          grid: '5'
+          contentTextAl: right
+          contentStyle: image
+          contentCSS: ''
+          html: ''
+          image_src: 'gantry-media://jf/pages/home_app/features_2.png'
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: right
+  jf_p_cta-4575:
+    title: 'JF Particle - CTA (Example 5)'
+    attributes:
+      padding: '125px 0 175px'
+      bg_img: 'gantry-media://jf/pages/home_app/play_video_bg.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.4)'
+      bg_attachement: fixed
+      html_before: "<div style=\"display:block;margin:0 0 50px;color:#fff;font-size:2rem;font-weight:500;display:inline-block;\" data-aos=\"fade-up\">Particle - CTA (Example 5)</div>\n<div class=\"jf_p_cta_img_block\" data-aos=\"fade-up\">\n\t<a class=\"jf_p_cta_lightbox_btn jf_venobox waves-effect waves-light-50\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\"><span class=\"fa fa-play\"></span></a>\n</div>"
+  jf_p_cta-8238:
+    title: 'JF Particle - CTA (Example 6)'
+    attributes:
+      special_id: ''
+      contentW: full
+      padding: '0'
+      theme: default
+      bg_img: 'gantry-media://jf/pages/home_business/why_us.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.3)'
+      bg_size: cover
+      bg_attachement: scroll
+      items:
+        -
+          grid: '7'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: ''
+          html: ''
+          image_src: ''
+          image_alt: ''
+          lighbox: video_y
+          lightbox_image: ''
+          lightbox_video: 'https://youtu.be/luhsTvMihi0'
+          lightbox_icon_html: '<span class="fa fa-play"></span>'
+          css3_anim: '0'
+          css3_anim_delay: ''
+          name: left
+        -
+          grid: '5'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:100px 50px;background:#fff'
+          html: "<h3 style=\"font-size:2.2rem;line-height:1;margin:0\">CTA (Example 6)</h3>\n<div class=\"small_sep\" style=\"margin:40px 0\"></div>\n<div class=\"jf_p_cta_iconbox\" data-aos=\"fade-left\" data-aos-delay=\"0\" style=\"margin:60px 0\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 25 0 C 23.153394 0 21.640967 1.2894205 21.1875 3 L 18.15625 3 L 18 3 L 17.90625 3 L 9 3 C 7.3550302 3 6 4.3550302 6 6 L 6 45 C 6 46.64497 7.3550302 48 9 48 L 41 48 C 42.64497 48 44 46.64497 44 45 L 44 6 C 44 4.3550302 42.64497 3 41 3 L 32.15625 3 L 32.0625 3 A 1.0001 1.0001 0 0 0 32 3 L 31.90625 3 L 28.8125 3 C 28.359033 1.2894205 26.846606 0 25 0 z M 25 2 C 26.116666 2 27 2.8833339 27 4 A 1.0001 1.0001 0 0 0 28 5 L 31 5 L 31 7 L 19 7 L 19 5 L 22 5 A 1.0001 1.0001 0 0 0 23 4 C 23 2.8833339 23.883334 2 25 2 z M 9 5 L 17 5 L 17 8 A 1.0001 1.0001 0 0 0 18 9 L 32 9 A 1.0001 1.0001 0 0 0 33 8 L 33 5 L 41 5 C 41.56503 5 42 5.4349698 42 6 L 42 45 C 42 45.56503 41.56503 46 41 46 L 9 46 C 8.4349698 46 8 45.56503 8 45 L 8 6 C 8 5.4349698 8.4349698 5 9 5 z M 33 12 C 33 12 29.737 15 30 15 L 32 15 L 32 17.03125 A 1.0001 1.0001 0 1 0 34 17.03125 L 34 15 L 36 15 L 33 12 z M 14.90625 17.96875 A 1.0001 1.0001 0 0 0 14.78125 18 A 1.0001 1.0001 0 0 0 14.28125 19.71875 L 15.5625 21 L 14.28125 22.28125 A 1.016466 1.016466 0 1 0 15.71875 23.71875 L 17 22.4375 L 18.28125 23.71875 A 1.016466 1.016466 0 1 0 19.71875 22.28125 L 18.4375 21 L 19.71875 19.71875 A 1.0001 1.0001 0 0 0 18.875 18 A 1.0001 1.0001 0 0 0 18.28125 18.28125 L 17 19.5625 L 15.71875 18.28125 A 1.0001 1.0001 0 0 0 14.90625 17.96875 z M 33 19 C 31.895431 19 31 19.895431 31 21 C 31 22.104569 31.895431 23 33 23 C 34.104569 23 35 22.104569 35 21 C 35 19.895431 34.104569 19 33 19 z M 29.4375 22.21875 A 1.0001 1.0001 0 0 0 29 22.375 L 19 28.875 A 1.0001 1.0001 0 1 0 20.09375 30.53125 L 30.09375 24.0625 A 1.0001 1.0001 0 0 0 29.4375 22.21875 z M 32.90625 27.96875 A 1.0001 1.0001 0 0 0 32.78125 28 A 1.0001 1.0001 0 0 0 32.28125 29.71875 L 33.5625 31 L 32.28125 32.28125 A 1.016466 1.016466 0 1 0 33.71875 33.71875 L 35 32.4375 L 36.28125 33.71875 A 1.016466 1.016466 0 1 0 37.71875 32.28125 L 36.4375 31 L 37.71875 29.71875 A 1.0001 1.0001 0 0 0 36.875 28 A 1.0001 1.0001 0 0 0 36.28125 28.28125 L 35 29.5625 L 33.71875 28.28125 A 1.0001 1.0001 0 0 0 32.90625 27.96875 z M 16 30 C 14.895431 30 14 30.895431 14 32 C 14 33.104569 14.895431 34 16 34 C 17.104569 34 18 33.104569 18 32 C 18 30.895431 17.104569 30 16 30 z M 19.34375 33.625 A 1.0001 1.0001 0 0 0 18.90625 35.4375 L 23.71875 39.03125 A 1.0031688 1.0031688 0 0 0 24.9375 37.4375 L 20.09375 33.8125 A 1.0001 1.0001 0 0 0 19.34375 33.625 z M 28 39 C 26.895431 39 26 39.895431 26 41 C 26 42.104569 26.895431 43 28 43 C 29.104569 43 30 42.104569 30 41 C 30 39.895431 29.104569 39 28 39 z\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Strategy</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox\" data-aos=\"fade-left\" data-aos-delay=\"0\" style=\"margin:60px 0\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 25 3 C 16.727648 3 10 9.7266319 10 18 C 10 23.058723 11.928046 26.066338 13.75 28.15625 C 14.660977 29.201206 15.538257 30.047514 16.125 30.8125 C 16.711743 31.577486 17 32.193814 17 33 L 17 38 L 17 39 L 17 43 C 17 44.645455 18.354545 46 20 46 L 21.15625 46 C 21.603362 47.719755 23.146997 49 25 49 C 26.853003 49 28.396638 47.719755 28.84375 46 L 30 46 C 31.645455 46 33 44.645455 33 43 L 33 39 L 33 38 L 33 33 C 33 31.870401 33.330576 31.089867 33.90625 30.28125 C 34.481924 29.472633 35.344984 28.66899 36.25 27.6875 C 38.060032 25.72452 40 22.963385 40 18 C 40 9.7266319 33.272352 3 25 3 z M 25 5 C 32.191648 5 38 10.807368 38 18 C 38 22.468615 36.439968 24.51098 34.75 26.34375 C 33.905016 27.260135 33.018076 28.090023 32.28125 29.125 C 31.544424 30.159977 31 31.437099 31 33 L 31 38 L 19 38 L 19 33 C 19 31.652186 18.413257 30.539982 17.6875 29.59375 C 16.961743 28.647518 16.089023 27.806169 15.25 26.84375 C 13.571954 24.918912 12 22.574277 12 18 C 12 10.807368 17.808352 5 25 5 z M 20.90625 17.96875 A 1.0001 1.0001 0 0 0 20.78125 18 A 1.0001 1.0001 0 0 0 20.28125 19.71875 L 24 23.4375 L 24 36 L 26 36 L 26 23.4375 L 29.71875 19.71875 A 1.016466 1.016466 0 1 0 28.28125 18.28125 L 25 21.5625 L 21.71875 18.28125 A 1.0001 1.0001 0 0 0 20.90625 17.96875 z M 19 40 L 31 40 L 31 43 C 31 43.554545 30.554545 44 30 44 L 22.1875 44 A 1.0001 1.0001 0 0 0 21.78125 44 L 20 44 C 19.445455 44 19 43.554545 19 43 L 19 40 z M 23.28125 46 L 26.71875 46 C 26.375021 46.596936 25.746546 47 25 47 C 24.253454 47 23.624979 46.596936 23.28125 46 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Planning</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>\n<div class=\"jf_p_cta_iconbox\" data-aos=\"fade-left\" data-aos-delay=\"0\" style=\"margin:60px 0 0\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 39.09375 0 C 37.66169 0 36.404534 1.1139264 36.34375 2.59375 L 36.3125 2.59375 L 36.3125 2.6875 L 34.4375 22.09375 A 1.0001 1.0001 0 0 0 34 22 L 33 22 L 33 16 A 1.0001 1.0001 0 0 0 31.5625 15.09375 L 17 21.875 L 17 17 A 1.0001 1.0001 0 0 0 15.53125 16.125 L 0.53125 24.125 A 1.0001 1.0001 0 0 0 0 25 L 0 49 A 1.0001 1.0001 0 0 0 1 50 L 49 50 A 1.0001 1.0001 0 0 0 50 48.9375 L 47.1875 2.75 A 1.0001 1.0001 0 0 0 47.1875 2.6875 C 47.040211 1.214611 45.898843 0 44.40625 0 L 39.09375 0 z M 39.09375 2 L 44.40625 2 C 44.702512 2 45.109968 2.3780876 45.1875 2.875 L 47.9375 48 L 2 48 L 2 25.59375 L 15 18.65625 L 15 23 A 1.0001 1.0001 0 0 0 16 24 L 17 24 A 1.0001 1.0001 0 0 0 17.4375 23.90625 L 31 17.5625 L 31 23 A 1.0001 1.0001 0 0 0 32 24 L 33 24 L 33 36.90625 L 33 37 A 1.001098 1.001098 0 0 0 35 37.09375 L 35 37 L 38.28125 2.78125 A 1.0001 1.0001 0 0 0 38.3125 2.6875 C 38.3125 2.2208333 38.560417 2 39.09375 2 z M 7 27 L 7 32 L 10 32 L 10 27 L 7 27 z M 16 27 L 16 32 L 19 32 L 19 27 L 16 27 z M 25 27 L 25 32 L 28 32 L 28 27 L 25 27 z M 7 36 L 7 41 L 10 41 L 10 36 L 7 36 z M 16 36 L 16 41 L 19 41 L 19 36 L 16 36 z M 25 36 L 25 41 L 28 41 L 28 36 L 25 36 z\" color=\"#000\" overflow=\"visible\" enable-background=\"accumulate\" font-family=\"Bitstream Vera Sans\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">Development</div>\n\t\t<p>\n\t\t\tOdio ridiculus pulvinar purus tortor sed Sociis in sociis, elementum nisi ultricies\n\t\t</p>\n\t</div>\n</div>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-left
+          css3_anim_delay: '0'
+          name: right
+  jf_p_cta-1913:
+    title: 'JF Particle - CTA (Example 7)'
+    attributes:
+      padding: '100px 0'
+      theme: dark
+      bg_color: '#333333'
+      items:
+        -
+          grid: '5'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: ''
+          html: "<h3 style=\"font-size:28px;line-height:45px;margin:15px 0 30px;width:60%;font-weight:600;letter-spacing:-1px\">Particle - CTA (Example 7)</h3>\n<p style=\"margin:0 0 40px 0;font-size:16px;width:70%\">Magnis tristique, arcu turpis diam lorem, aliquet augue pid nisi. Arcu etiam. Ut platea aenean, nec? Placerat enim urna pulvinar in mid ut cursus.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"padding:14px 34px\">Show Projects</a>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: left
+        -
+          grid: '7'
+          contentTextAl: left
+          contentStyle: image
+          contentCSS: ''
+          html: ''
+          image_src: 'gantry-media://jf/pages/home_business/map.png'
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: right
+  jf_p_cta-3803:
+    title: 'JF Particle - CTA (Example 8)'
+    attributes:
+      padding: '100px 0'
+      textAlign: left
+      theme: dark
+      bg_img: 'gantry-media://jf/particles/radialslider/app/1.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0)'
+      bg_attachement: scroll
+      html_before: "<h3 class=\"icon_title\" style=\"margin:0 0 30px;font-size:2.7rem;font-weight:500;\" data-aos=\"fade-up\">Particle - CTA (Example 8)</h3>\n<p style=\"margin:0 0 50px 0;font-size:15px\" data-aos=\"fade-up\">Scelerisque tempor, mus auctor amet arcu. Porttitor augue, odio duis lundium tristique.</p>\n<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background:#fff;font-weight:400;border-radius:100px;color:#ff4081\" data-aos=\"fade-up\" data-tilt=\"10\">\n\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t</div>\n</a>\n<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background:#fff;font-weight:400;border-radius:100px;color:#ff4081\" data-aos=\"fade-up\" data-tilt=\"10\">\n\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t</div>\n</a>"

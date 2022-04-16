@@ -1,0 +1,64 @@
+name: 30
+timestamp: 1494964028
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/p_cta.jpg'
+  name: default
+  timestamp: 1482703875
+positions:
+  right-panel: 'Module Position'
+  news-panel: 'Module Position'
+  footer-b: "Position:\_footer-b"
+  footer-c: "Position:\_footer-c"
+sections:
+  header: Header
+  navigation: Navigation
+  right-panel: Right-panel
+  news-panel: News-panel
+  full-width-section-1: Full-width-section-1
+  full-width-section-2: Full-width-section-2
+  bottom-footer: Bottom-footer
+  main: Main
+  footer: Footer
+particles:
+  messages:
+    system-messages-5749: 'System Messages'
+  jf_p_cta:
+    jf_p_cta-4539: 'JF Particle - CTA (Example 1)'
+    jf_p_cta-8743: 'JF Particle - CTA (Example 2)'
+    jf_p_cta-5752: 'JF Particle - CTA (Example 3)'
+    jf_p_cta-6295: 'JF Particle - CTA (Example 4)'
+    jf_p_cta-4575: 'JF Particle - CTA (Example 5)'
+    jf_p_cta-8238: 'JF Particle - CTA (Example 6)'
+    jf_p_cta-1913: 'JF Particle - CTA (Example 7)'
+    jf_p_cta-3803: 'JF Particle - CTA (Example 8)'
+  logo:
+    logo-4041: Logo
+  menu:
+    menu-4889: Menu
+  position:
+    position-position-1602: 'Module Position'
+    position-position-4764: 'Module Position'
+    position-position-9274: "Position:\_footer-b"
+    position-position-3090: "Position:\_footer-c"
+  custom:
+    custom-5046: 'Footer Copyright'
+  jf_p_subscribe:
+    jf_p_subscribe-3339: 'JF Particle - Mailchimp Subscribe'
+inherit:
+  default:
+    header: header
+    navigation: navigation
+    right-panel: right-panel
+    news-panel: news-panel
+    system-messages-5749: system-messages-9589
+    footer: footer
+    bottom-footer: bottom-footer
+    logo-4041: logo-8517
+    menu-4889: menu-2176
+    position-position-1602: position-position-7914
+    position-position-4764: position-position-9581
+    custom-5046: custom-3503
+    position-position-9274: position-position-5191
+    position-position-3090: position-position-1028
+    jf_p_subscribe-3339: jf_p_subscribe-6876

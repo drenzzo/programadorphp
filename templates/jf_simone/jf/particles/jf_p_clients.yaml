@@ -1,0 +1,218 @@
+name: JF Particle - Clients
+type: particle
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    tabs:
+      type: container.tabs
+      fields:
+        tab_global:
+          label: Block Options
+          fields:
+
+            special_id:
+              type: input.text
+              label: Special Unique ID
+              description: Type Special Unique ID
+
+            contentW:
+              type: select.select
+              label: Block Width
+              description: Choose Width type, 'FULL 100%' or 'Default Gantry'
+              placeholder: 'Select...'
+              default: default
+              options:
+                full: Full Width
+                default: Default Gantry
+
+            padding:
+              type: input.text
+              label: Block Height/Padding
+              description: Type CSS 'Top and Bottom' padding value to regulate the height of particle
+              default: 120px 0
+
+            textAlign:
+              type: select.select
+              label: Content Text Align
+              description: Choose Text Align Direction
+              placeholder: 'Select...'
+              default: center
+              options:
+                left: Left
+                center: Center
+                right: Right
+
+            theme:
+              type: select.select
+              label: Theme Style
+              description: Choose Theme Style
+              placeholder: 'Select...'
+              default: default
+              options:
+                default: Light (Default)
+                dark: Dark
+
+        tab_bg:
+          label: Background Options
+          fields:
+
+            bg_color:
+              type: input.colorpicker
+              label: Background Color
+              description: Choose Background Color
+              default: '#ffffff'
+
+            bg_img:
+              type: input.imagepicker
+              label: Background Image
+              description: Choose Image
+
+            bg_mask:
+              type: input.colorpicker
+              label: Background Mask Color
+              description: Choose Background Mask Color
+              default: 'rgba(0, 0, 0, 0)'
+
+            bg_size:
+              type: select.select
+              label: CSS Background Size
+              description: Choose CSS Background Size
+              placeholder: 'Select...'
+              default: cover
+              options:
+                cover: Cover
+                contain: Contain
+
+            bg_attachement:
+              type: select.select
+              label: CSS Background Attachment
+              description: Choose CSS Background Attachment
+              placeholder: 'Select...'
+              default: scroll
+              options:
+                scroll: Default
+                fixed: Fixed
+
+            bg_css:
+              type: input.text
+              label: Custom CSS for Background
+              description: Type Custom CSS
+
+        tab_options:
+          label: Carousel Options
+          fields:
+            count_items:
+              type: input.text
+              label: Items Amount
+              description: Type number of items you want to show on view
+              default: 4
+
+            autoplay_delay:
+              type: input.text
+              label: AutoPlay Delay
+              description: Type AutoPlay Delay number in milliseconds (NOTE! - Leave it Empty if you don't want AutoPlay)
+              default: 3000
+
+            stophover:
+              type: enable.enable
+              label: Stop Autoplay On Hover
+              description: Stop Autoplay on Hover
+              default: true
+
+            speed:
+              type: input.text
+              label: Speed Delay
+              description: Type AutoPlay Delay number in milliseconds
+              default: 300
+
+            pagination:
+              type: enable.enable
+              label: Pagination
+              description: Enable/Disable Arrow Navigation
+              default: false
+
+            lazyload:
+              type: enable.enable
+              label: Lazyload
+              description: Enable/Disable Lazyload Images
+              default: true
+
+            autoHeight:
+              type: enable.enable
+              label: Auto Height
+              description: Enable/Disable Auto Height Items
+              default: false
+
+            mouseDrag:
+              type: enable.enable
+              label: MouseDrag
+              description: Enable/Disable MouseDrag
+              default: true
+
+            touchDrag:
+              type: enable.enable
+              label: TouchDrag
+              description: Enable/Disable TouchDrag
+              default: true
+
+        tab_content:
+          label: Items
+          fields:
+
+            html_before:
+              type: textarea.textarea
+              label: Custom HTML Before the "Items"
+              description: Enter custom HTML into here.
+
+            items:
+              type: collection.list
+              array: true
+              label: Items
+              value: name
+              ajax: true
+
+              fields:
+                .name:
+                  type: input.text
+                  label: Name
+                  skip: true
+
+                .link_url:
+                  type: input.text
+                  label: Link URL
+                  description: Type your icon URL (NOTE! - Leave it Empty if you don't want link at all)
+
+                .link_target:
+                  type: select.select
+                  label: Link Target
+                  description: Choose URL Target 
+                  placeholder: 'Select...'
+                  default: self
+                  options:
+                    self: Self
+                    blank: Blank
+
+                .image:
+                  type: input.imagepicker
+                  label: Item Image
+                  description: Select desired image.
+
+                .image_alt:
+                  type: input.text
+                  label: Image ALT Text
+                  description: Type content image ALT attribute text.
+
+            html_after:
+              type: textarea.textarea
+              label: Custom HTML After the "Items"
+              description: Enter custom HTML into here.

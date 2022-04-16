@@ -1,0 +1,286 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/shop_women.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/:
+    -
+      - position-position-6157
+    -
+      - jf_p_cta-8937
+    -
+      - jf_p_cta-9266
+  /container-main/:
+    -
+      -
+        'left-sidebar 25': {  }
+      -
+        'main 75': {  }
+  /full-width-section-2/:
+    -
+      - jf_p_clients-6370
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  left-sidebar:
+    type: section
+    inherit:
+      outline: '33'
+      include:
+        - attributes
+        - block
+        - children
+  main:
+    inherit:
+      outline: '33'
+      include:
+        - attributes
+        - block
+        - children
+  container-main:
+    attributes:
+      boxed: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  position-position-6157:
+    title: 'Module Position'
+    attributes:
+      key: slideshow
+  jf_p_cta-8937:
+    title: 'JF Particle - CTA (Banners)'
+    attributes:
+      padding: '40px 0 0'
+      bg_color: '#eeeeee'
+      html_before: ''
+      items:
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: image
+          contentCSS: '-webkit-box-shadow:0 1px 1px rgba(0,0,0,.12);-moz-box-shadow:0 1px 1px rgba(0,0,0,.12);box-shadow:0 1px 1px rgba(0,0,0,.12)'
+          html: ''
+          image_src: 'gantry-media://jf/pages/shop_women/banner_1.jpg'
+          image_alt: ''
+          image_css: 'width:100%;-webkit-border-radius:0;-khtml-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0'
+          image_url: '#'
+          image_urlTarget: self
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          name: 'item 1'
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: image
+          contentCSS: '-webkit-box-shadow:0 1px 1px rgba(0,0,0,.12);-moz-box-shadow:0 1px 1px rgba(0,0,0,.12);box-shadow:0 1px 1px rgba(0,0,0,.12)'
+          html: ''
+          image_src: 'gantry-media://jf/pages/shop_women/banner_2.jpg'
+          image_alt: ''
+          image_css: 'width:100%;-webkit-border-radius:0;-khtml-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0'
+          image_url: '#'
+          image_urlTarget: self
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-up
+          css3_anim_delay: '200'
+          name: 'item 2'
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: image
+          contentCSS: '-webkit-box-shadow:0 1px 1px rgba(0,0,0,.12);-moz-box-shadow:0 1px 1px rgba(0,0,0,.12);box-shadow:0 1px 1px rgba(0,0,0,.12)'
+          html: ''
+          image_src: 'gantry-media://jf/pages/shop_women/banner_3.jpg'
+          image_alt: ''
+          image_css: 'width:100%;-webkit-border-radius:0;-khtml-border-radius:0;-moz-border-radius:0;-ms-border-radius:0;-o-border-radius:0;border-radius:0'
+          image_url: '#'
+          image_urlTarget: self
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-up
+          css3_anim_delay: '400'
+          name: 'item 3'
+  jf_p_cta-9266:
+    title: 'JF Particle - CTA'
+    attributes:
+      padding: '0'
+      bg_color: '#eeeeee'
+      html_before: ''
+      items:
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: '-webkit-box-shadow:0 1px 1px rgba(0,0,0,.12);-moz-box-shadow:0 1px 1px rgba(0,0,0,.12);box-shadow:0 1px 1px rgba(0,0,0,.12);background:#fff;padding:20px'
+          html: "<div class=\"jf_p_cta_iconbox\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 46.40625 0.1875 C 46.086446 0.21132235 45.758047 0.2754079 45.4375 0.34375 C 44.155314 0.61711849 42.779361 1.2126313 41.4375 1.90625 C 38.76406 3.2881729 36.342459 5.037241 35.3125 6.125 L 35.28125 6.125 L 28.53125 12.84375 L 4.53125 9.59375 A 1.0001 1.0001 0 0 0 3.6875 9.90625 L 0.28125 13.40625 A 1.0001 1.0001 0 0 0 0.625 15.03125 L 19.125 22.28125 L 9.59375 32 L 5 32 A 1.0001 1.0001 0 0 0 4.34375 32.25 L 0.34375 35.625 A 1.0001 1.0001 0 0 0 0.75 37.375 L 10.28125 39.71875 L 12.625 49.25 A 1.0001 1.0001 0 0 0 14.25 49.75 L 17.65625 46.75 A 1.0001 1.0001 0 0 0 18 46 L 18 40.40625 L 27.8125 30.875 L 34.96875 49.375 A 1.0001 1.0001 0 0 0 36.59375 49.71875 L 40.09375 46.3125 A 1.0001 1.0001 0 0 0 40.40625 45.46875 L 37.15625 21.46875 L 43.90625 14.71875 C 44.943425 13.681575 46.706772 11.201506 48.09375 8.53125 C 48.787239 7.1961219 49.382468 5.837792 49.65625 4.5625 C 49.930032 3.287208 49.935391 1.945238 49.03125 1 A 1.0001 1.0001 0 0 0 49 0.96875 C 48.526073 0.51542866 47.956727 0.296013 47.34375 0.21875 C 47.037261 0.1801185 46.726054 0.16367765 46.40625 0.1875 z M 46.5 2.21875 C 47.070506 2.1807654 47.403799 2.2967153 47.5625 2.4375 C 47.752495 2.6512583 47.894352 3.1927202 47.6875 4.15625 C 47.476907 5.137208 46.956511 6.3851281 46.3125 7.625 C 45.024478 10.104744 43.162825 12.618425 42.5 13.28125 L 35.40625 20.40625 A 1.0001 1.0001 0 0 0 35.09375 21.21875 L 38.34375 45.25 L 36.3125 47.21875 L 29.125 28.75 A 1.0001 1.0001 0 0 0 27.5 28.375 L 16.3125 39.28125 A 1.0001 1.0001 0 0 0 16 40 L 16 45.5625 L 14.15625 47.15625 L 12.0625 38.65625 A 1.0001 1.0001 0 0 0 11.34375 37.9375 L 3.125 35.90625 L 5.375 34 L 10 34 A 1.0001 1.0001 0 0 0 10.71875 33.6875 L 21.625 22.59375 A 1.0001 1.0001 0 0 0 21.25 20.96875 L 2.78125 13.71875 L 4.75 11.65625 L 28.78125 14.90625 A 1.0001 1.0001 0 0 0 29.59375 14.59375 L 36.71875 7.5 C 37.295744 6.8869434 39.852471 4.9752625 42.34375 3.6875 C 43.589389 3.0436187 44.854061 2.5235065 45.84375 2.3125 C 46.086776 2.2606856 46.309831 2.2314115 46.5 2.21875 z\" color=\"#000\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">FREE SHIPPING WORLDWIDE</div>\n\t\t<p>\n\t\t\tOn All Orders Of USD 200.00+.\n\t\t</p>\n\t</div>\n</div>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-up
+          css3_anim_delay: '0'
+          name: 'item 1'
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: '-webkit-box-shadow:0 1px 1px rgba(0,0,0,.12);-moz-box-shadow:0 1px 1px rgba(0,0,0,.12);box-shadow:0 1px 1px rgba(0,0,0,.12);background:#fff;padding:20px'
+          html: "<div class=\"jf_p_cta_iconbox\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path class=\"icon_hover_svg_stroke\" d=\"M44,20c0-1.104-0.896-2-2-2s-2,0.896-2,2 c0,0.476,0,14.524,0,15c0,1.104,0.896,2,2,2s2-0.896,2-2C44,34.524,44,20.476,44,20z\" fill=\"none\" stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\"2\"></path>\n\t\t\t<path class=\"icon_hover_svg_stroke\" d=\"M28,47c1.104,0,2-0.896,2-2s-0.896-2-2-2 c-0.476,0-4.524,0-5,0c-1.104,0-2,0.896-2,2s0.896,2,2,2C23.476,47,27.524,47,28,47z\" fill=\"none\" stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\"2\"></path>\n\t\t\t<path class=\"icon_hover_svg_stroke\" d=\"M8,19C8,9.611,15.611,2,25,2s17,7.611,17,17\" fill=\"none\" stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\"2\"></path>\n\t\t\t<path class=\"icon_hover_svg_stroke\" d=\"M44,20c2.762,0,5,3.357,5,7.5 c0,4.141-2.238,7.5-5,7.5\" fill=\"none\" stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\"2\"></path>\n\t\t\t<path class=\"icon_hover_svg_stroke\" d=\"M6,20c0-1.104,0.896-2,2-2s2,0.896,2,2 c0,0.476,0,14.524,0,15c0,1.104-0.896,2-2,2s-2-0.896-2-2C6,34.524,6,20.476,6,20z\" fill=\"none\" stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\"2\"></path>\n\t\t\t<path class=\"icon_hover_svg_stroke\" d=\"M6,20c-2.761,0-5,3.357-5,7.5 C1,31.641,3.239,35,6,35\" fill=\"none\" stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\"2\"></path>\n\t\t\t<path class=\"icon_hover_svg_stroke\" d=\"M42,37c0,5-3,8-8,8h-4\" fill=\"none\" stroke=\"#000\" stroke-miterlimit=\"10\" stroke-width=\"2\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">24/7 CUSTOMER SERVICE</div>\n\t\t<p>\n\t\t\tGet Help When You Need It.\n\t\t</p>\n\t</div>\n</div>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-up
+          css3_anim_delay: '200'
+          name: 'item 2'
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: '-webkit-box-shadow:0 1px 1px rgba(0,0,0,.12);-moz-box-shadow:0 1px 1px rgba(0,0,0,.12);box-shadow:0 1px 1px rgba(0,0,0,.12);background:#fff;padding:20px'
+          html: "<div class=\"jf_p_cta_iconbox\">\n\t<div class=\"icon_left\">\n\t\t<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"50\" viewBox=\"0 0 50 50\">\n\t\t\t<path d=\"M 25 5 C 13.966513 5 5 13.966513 5 25 A 1.0001 1.0001 0 1 0 7 25 C 7 15.047487 15.047487 7 25 7 C 31.245219 7 36.728098 10.179957 39.957031 15 L 33 15 A 1.0001 1.0001 0 1 0 33 17 L 41.761719 17 L 43 17 L 43 7 A 1.0001 1.0001 0 0 0 41.984375 5.9863281 A 1.0001 1.0001 0 0 0 41 7 L 41 13.009766 C 37.34915 8.1484513 31.538723 5 25 5 z M 43.984375 23.986328 A 1.0001 1.0001 0 0 0 43 25 C 43 34.952513 34.952513 43 25 43 C 18.754258 43 13.271088 39.819768 10.042969 35 L 17 35.001953 A 1.0001 1.0001 0 1 0 17 33.001953 L 8.4453125 33 A 1.0001 1.0001 0 0 0 8.0585938 33 L 7 33 L 7 43 A 1.0001 1.0001 0 1 0 9 43 L 9 36.986328 C 12.649688 41.849109 18.459565 45 25 45 C 36.033487 45 45 36.033487 45 25 A 1.0001 1.0001 0 0 0 43.984375 23.986328 z\" color=\"#000\" font-weight=\"400\" font-family=\"sans-serif\" white-space=\"normal\" overflow=\"visible\"></path>\n\t\t</svg>\n\t</div>\n\t<div class=\"iconbox_content\">\n\t\t<div class=\"icon_title\">100% MONEY BACK</div>\n\t\t<p>\n\t\t\t30 Day Money Back Guarantee.\n\t\t</p>\n\t</div>\n</div>"
+          image_src: ''
+          image_alt: ''
+          lighbox: '0'
+          lightbox_image: ''
+          lightbox_video: ''
+          lightbox_icon_html: ''
+          css3_anim: fade-up
+          css3_anim_delay: '400'
+          name: 'item 3'
+  jf_p_clients-6370:
+    title: 'JF Particle - Clients (Example 3)'
+    attributes:
+      special_id: ''
+      padding: '100px 0'
+      theme: dark
+      bg_img: 'gantry-media://jf/modules/jf_owlslider/shop_women/02.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.2)'
+      bg_attachement: fixed
+      count_items: '6'
+      autoplay_delay: '4000'
+      speed: '800'
+      pagination: '0'
+      html_before: ''
+      items:
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/1_light.png'
+          image_alt: ''
+          name: 'Logo 1'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/2_light.png'
+          image_alt: ''
+          name: 'Logo 2'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/3_light.png'
+          image_alt: ''
+          name: 'Logo 3'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/4_light.png'
+          image_alt: ''
+          name: 'Logo 4'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/5_light.png'
+          image_alt: ''
+          name: 'Logo 5'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/6_light.png'
+          image_alt: ''
+          name: 'Logo 6'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/7_light.png'
+          image_alt: ''
+          name: 'Logo 7'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/8_light.png'
+          image_alt: ''
+          aos_anim: '0'
+          aos_anim_delay: '0'
+          name: 'Logo 8'

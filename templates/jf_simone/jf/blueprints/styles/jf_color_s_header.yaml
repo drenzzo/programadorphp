@@ -1,0 +1,19 @@
+name: Header Colors
+description: Header colors for the theme
+type: section
+
+form:
+  fields:
+
+    background:
+      type: input.colorpicker
+      label: Background
+      default: "#ffffff"
+    shadow:
+      type: input.colorpicker
+      label: Header Shadow
+      default: "#dcdcdc"
+    text-color:
+      type: input.colorpicker
+      label: Text
+      default: "#444444"

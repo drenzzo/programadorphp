@@ -1,0 +1,276 @@
+name: JF Particle - Portfolio
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    tabs:
+      type: container.tabs
+      fields:
+        tab_global:
+          label: Block Options
+          fields:
+
+            special_id:
+              type: input.text
+              label: Special Unique ID
+              description: Type Special Unique ID (This is HTML tag ID)
+
+            contentW:
+              type: select.select
+              label: Block Width
+              description: Choose Width type, 'FULL 100%' or 'Default Gantry'
+              placeholder: 'Select...'
+              default: default
+              options:
+                full: Full Width
+                default: Default Gantry
+
+            padding:
+              type: input.text
+              label: Block Height/Padding
+              description: Type CSS 'Top and Bottom' padding value to regulate the height of particle
+              default: 150px 0
+
+            textAlign:
+              type: select.select
+              label: Content Text Align
+              description: Choose Text Align Direction
+              placeholder: 'Select...'
+              default: center
+              options:
+                left: Left
+                center: Center
+                right: Right
+
+            theme:
+              type: select.select
+              label: Theme Style
+              description: Choose Theme Style
+              placeholder: 'Select...'
+              default: default
+              options:
+                default: Light (Default)
+                dark: Dark
+
+        tab_bg:
+          label: Background Options
+          fields:
+
+            bg_color:
+              type: input.colorpicker
+              label: Background Color
+              description: Choose Background Color
+              default: '#ffffff'
+
+            bg_img:
+              type: input.imagepicker
+              label: Background Image
+              description: Choose Image
+
+            bg_mask:
+              type: input.colorpicker
+              label: Background Mask Color
+              description: Choose Background Mask Color
+              default: 'rgba(0, 0, 0, 0)'
+
+            bg_size:
+              type: select.select
+              label: CSS Background Size
+              description: Choose CSS Background Size
+              placeholder: 'Select...'
+              default: cover
+              options:
+                cover: Cover
+                contain: Contain
+
+            bg_attachement:
+              type: select.select
+              label: CSS Background Attachment
+              description: Choose CSS Background Attachment
+              placeholder: 'Select...'
+              default: scroll
+              options:
+                scroll: Default
+                fixed: Fixed
+
+            bg_css:
+              type: input.text
+              label: Custom CSS for Background
+              description: Type Custom CSS
+
+        tab_content:
+          label: Portfolio Content
+          fields:
+
+            html_before:
+              type: textarea.textarea
+              label: Custom HTML Before the "Content List"
+              description: Enter custom HTML into here.
+
+            filterbar:
+              type: enable.enable
+              label: Filterbar
+              description: Enable/Disable Filterbar
+              default: true
+
+            filterbar_all:
+              type: enable.enable
+              label: Filterbar's ALL Button
+              description: Enable/Disable Filterbar's ALL Button
+              default: true
+
+            filterbar_all_txt:
+              type: input.text
+              label: Filterbar's ALL Button - Text
+              description: Enable/Disable Filterbar's ALL Button
+              default: All
+
+            filterbar_items:
+              type: collection.list
+              array: true
+              label: Filterbar Buttons
+              value: name
+              ajax: true
+
+              fields:
+                .name:
+                  type: input.text
+                  label: Name
+                  skip: true
+
+                .filter_id:
+                  type: input.text
+                  label: Filter Button ID
+                  description: Type Filter Button ID, for example 'wallpaper' or anything you want. Filter Button sis used to filter portfolio items
+
+                .filter_text:
+                  type: input.text
+                  label: Filter Button Text
+                  description: Type Filter Button ID, for example 'Wallpaper' or anything you want.
+
+            items_width:
+              type: select.select
+              label: Portfolio Items Width
+              description: Choose Portfolio Items Width
+              placeholder: 'Select...'
+              default: 25
+              options:
+                20: 20%
+                25: 25%
+                33: 33%
+                50: 50%
+                10: 100%
+
+            items:
+              type: collection.list
+              array: true
+              label: Portfolio Items
+              value: name
+              ajax: true
+
+              fields:
+                .name:
+                  type: input.text
+                  label: Name
+                  skip: true
+
+                .filteritem_id:
+                  type: input.text
+                  label: Filter ID
+                  description: Type Filter ID, make sure you have typed correct id which you have defined in 'Filterbar Buttons' items.
+
+                .image_src:
+                  type: input.imagepicker
+                  label: Image
+                  description: Select desired image.
+
+                .image_text:
+                  type: input.text
+                  label: Image Hover Text
+                  description: Type Image Hover Text, also this is image 'alt' text too.
+
+                _info_lightbox:
+                  type: separator.note
+                  class: alert alert-info
+                  content: Make Sure you have choosed relevant "VenoBox LightBox" in "JF Features" Atom.
+
+                .linktype:
+                  type: select.select
+                  label: Link Type
+                  description: Choose Item Link Type
+                  placeholder: 'Select...'
+                  default: false
+                  options:
+                    false: Disable
+                    url: Custom URL
+                    image: Image Lightbox
+                    video_y: Video - Youtube
+                    video_v: Video - Vimeo
+                
+                .url:
+                  type: input.text
+                  label: Custom URL
+                  description: Type Custom URL.
+
+                .lightbox_image:
+                  type: input.imagepicker
+                  label: Lightbox Popup Image
+                  description: Select desired image.
+
+                .lightbox_video:
+                  type: input.text
+                  label: Lightbox Video URL
+                  description: Type Lightbox Video URL, for example 'https://youtu.be/luhsTvMihi0' or 'http://vimeo.com/75976293'
+
+            css3_anim:
+              type: select.select
+              label: Scroll Animation
+              description: Choose Scroll Animation
+              placeholder: 'Select...'
+              default: false
+              options:
+                  false: Disable
+                  fade: fade
+                  fade-up: fade-up
+                  fade-down: fade-down
+                  fade-left: fade-left
+                  fade-right: fade-right
+                  fade-up-right: fade-up-right
+                  fade-up-left: fade-up-left
+                  fade-down-right: fade-down-right
+                  fade-down-left: fade-down-left
+                  flip-up: flip-up
+                  flip-down: flip-down
+                  flip-left: flip-left
+                  flip-right: flip-right
+                  slide-up: slide-up
+                  slide-down: slide-down
+                  slide-left: slide-left
+                  slide-right: slide-right
+                  zoom-in: zoom-in
+                  zoom-in-up: zoom-in-up
+                  zoom-in-down: zoom-in-down
+                  zoom-in-left: zoom-in-left
+                  zoom-in-right: zoom-in-right
+                  zoom-out: zoom-out
+                  zoom-out-up: zoom-out-up
+                  zoom-out-down: zoom-out-down
+                  zoom-out-left: zoom-out-left
+                  zoom-out-right: zoom-out-right
+
+            css3_anim_delay:
+              type: input.text
+              label: Scroll Animation Delay
+              description: Type Scroll Animation Delay (type in milliseconds, for example valua '1000' means 1 second)
+              default: "0"
+
+            html_after:
+              type: textarea.textarea
+              label: Custom HTML After the "Content List"
+              description: Enter custom HTML into here.

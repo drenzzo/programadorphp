@@ -1,0 +1,59 @@
+name: 24
+timestamp: 1494964028
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/p_carousels.jpg'
+  name: default
+  timestamp: 1482703875
+positions:
+  right-panel: 'Module Position'
+  news-panel: 'Module Position'
+  footer-b: "Position:\_footer-b"
+  footer-c: "Position:\_footer-c"
+sections:
+  header: Header
+  navigation: Navigation
+  right-panel: Right-panel
+  news-panel: News-panel
+  full-width-section-1: Full-width-section-1
+  full-width-section-2: Full-width-section-2
+  bottom-footer: Bottom-footer
+  main: Main
+  footer: Footer
+particles:
+  messages:
+    system-messages-5749: 'System Messages'
+  jf_p_carousel:
+    jf_p_carousel-3929: 'JF Particle - Carousel (Example 1)'
+    jf_p_carousel-9270: 'JF Particle - Carousel (Example 2)'
+    jf_p_carousel-3154: 'JF Particle - Carousel (Example 3)'
+  logo:
+    logo-8376: Logo
+  menu:
+    menu-3802: Menu
+  position:
+    position-position-7923: 'Module Position'
+    position-position-4186: 'Module Position'
+    position-position-8222: "Position:\_footer-b"
+    position-position-4244: "Position:\_footer-c"
+  custom:
+    custom-3932: 'Footer Copyright'
+  jf_p_subscribe:
+    jf_p_subscribe-6452: 'JF Particle - Mailchimp Subscribe'
+inherit:
+  default:
+    header: header
+    navigation: navigation
+    right-panel: right-panel
+    news-panel: news-panel
+    system-messages-5749: system-messages-9589
+    footer: footer
+    bottom-footer: bottom-footer
+    logo-8376: logo-8517
+    menu-3802: menu-2176
+    position-position-7923: position-position-7914
+    position-position-4186: position-position-9581
+    custom-3932: custom-3503
+    position-position-8222: position-position-5191
+    position-position-4244: position-position-1028
+    jf_p_subscribe-6452: jf_p_subscribe-6876

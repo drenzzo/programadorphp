@@ -1,0 +1,555 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{#
+	# 1 - ESCAPE HTML IN JS via TWIG
+		{% set html = '<div class="loader"></div>'|e('js') %}
+		{% block javascript %}
+		<script type="text/javascript">
+			jQuery(document).ready(function($){
+				$('body').append('{{ html }}');
+			});
+		</script>
+		{% endblock %}
+#}
+
+{% block stylesheets %}
+	{% if particle.jf_lazyload %}
+											<style type="text/css">
+												.layzr-bg {
+													background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" stroke="rgba(120,125,133,0.25)"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg transform="translate(1 1)" stroke-width="2"%3E%3Ccircle stroke-opacity=".55" cx="18" cy="18" r="18"/%3E%3Cpath d="M36 18c0-9.94-8.06-18-18-18"%3E%3CanimateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="1s" repeatCount="indefinite"/%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+													background-position: center center;
+													background-repeat: no-repeat;
+													display: inline-block;
+												}
+												.layzr-bg:not(.layzr-bg-transparent) {
+													background-color: rgba(120,125,133,0.05);
+												}
+											</style>
+	{% endif %}
+	{% for item_stickyHeader in particle.stickyHeader %}
+		{% if item_stickyHeader.enable %}
+											<style type="text/css">
+												body #g-header {
+													position: fixed;
+													right: 0;
+													left: 0;
+													top: 0;
+													z-index: 992;
+													-webkit-transition: all 0.3s ease;
+													-khtml-transition: all 0.3s ease;
+													-moz-transition: all 0.3s ease;
+													-ms-transition: all 0.3s ease;
+													-o-transition: all 0.3s ease;
+													transition: all 0.3s ease;
+													-webkit-transform: translate3d(0,0,0);
+													-khtml-transform: translate3d(0,0,0);
+													-moz-transform: translate3d(0,0,0);
+													-ms-transform: translate3d(0,0,0);
+													-o-transform: translate3d(0,0,0);
+													transform: translate3d(0,0,0);
+												}
+												#g-header.slideUp {
+													-webkit-transform: translate3d(0,-102%,0);
+													-khtml-transform: translate3d(0,-102%,0);
+													-moz-transform: translate3d(0,-102%,0);
+													-ms-transform: translate3d(0,-102%,0);
+													-o-transform: translate3d(0,-102%,0);
+													transform: translate3d(0,-102%,0);
+												}
+												{% if item_stickyHeader.slideup == false %}
+													#g-header.headroom--not-top.slideUp {
+														-webkit-transform: translate3d(0,0,0);
+														-khtml-transform: translate3d(0,0,0);
+														-moz-transform: translate3d(0,0,0);
+														-ms-transform: translate3d(0,0,0);
+														-o-transform: translate3d(0,0,0);
+														transform: translate3d(0,0,0);
+													}
+												{% endif %}
+												
+												@media only screen and (max-width: 414px){}
+												@media only screen and (min-width:415px) and (max-width: 768px){}
+												@media only screen and (min-width:415px) and (max-width: 480px){}
+												{% if item_stickyHeader.homepage == 'transparent' %}
+													#g-header.headroom--top {
+														background-color: rgba(0, 0, 0, 0);
+														-webkit-box-shadow: none;
+														-khtml-box-shadow: none;
+														-moz-box-shadow: none;
+														-ms-box-shadow: none;
+														-o-box-shadow: none;
+														box-shadow: none;
+														z-index: 991;
+													}
+													/* LOGO */
+													#g-header.headroom--top.jf_sticky_transparent .gantry-logo svg g {
+														fill: #fff;
+													}
+													#g-header.headroom--top.jf_sticky_transparent .jf_main_nav a {
+														color: #fff;
+													}
+													#g-header.headroom--top.jf_sticky_transparent .jf_main_nav a:hover {
+														color: #fff;
+													}
+													#g-header.headroom--top.jf_sticky_transparent .jf_ku_login_btn.jf_ku_login {
+														color: #222;
+														background: #fff;
+													}
+													#g-header.headroom--top.jf_sticky_transparent .jf_ku_login_btn.jf_ku_login svg {
+														fill: #555555;
+													}
+													#g-header.headroom--top.jf_sticky_transparent .g-toplevel>li>.g-menu-item-container.waves-effect.waves-dark-10 .waves-ripple {
+														background:rgba(255, 255, 255, 0.2);
+													}
+													#g-header.headroom--top.jf_sticky_transparent .jf_dropdown_content .waves-effect.waves-dark-10 .waves-ripple {
+														background:rgba(0, 0, 0, 0.2);
+													}
+													
+													#g-header.headroom--top.jf_sticky_transparent .jf_ku_login_btn.waves-effect.waves-light-50 .waves-ripple {
+														background:rgba(0, 0, 0, 0.3);
+													}
+													#g-header.headroom--top.jf_sticky_transparent .jf_panel_r_btn_open .hamb-icon:before, 
+													#g-header.headroom--top.jf_sticky_transparent .jf_panel_r_btn_open .hamb-icon, 
+													#g-header.headroom--top.jf_sticky_transparent .jf_panel_r_btn_open .hamb-icon:after {
+														background-color: #fff;
+													}
+													#g-header.headroom--top.jf_sticky_transparent .jf_panel_r_btn_open svg {
+														fill: #fff;
+													}
+													.jf_head_set {
+														height: 0 !important;
+													}
+												{% endif %}
+												/* on scroll size */
+												.headroom--not-top .jf_Menu .jf_Menu_ul{height: 70px;}
+												.headroom--not-top .jf_Menu .jf_Menu_ul a{height: 80px;line-height: 50px;}
+												.headroom--not-top .jf_Menu .jf_dropdown {top: 80px;}
+												.headroom--not-top .gantry-logo svg {
+													height: 50px;
+													margin: 8px 0 0 0;
+													width: 100px;
+												}
+												.headroom--not-top .gantry-logo svg.ku {
+													margin: 10px 0 0 0;
+												}
+											</style>
+		{% endif %}
+	{% endfor %}
+	
+	{% if particle.jf_preloader %}	
+											<link rel="stylesheet" href="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_preloader/jf_preloader.min.css" type="text/css" />
+	{% endif %}
+	
+	{% for item_waves in particle.waves %}
+		{% if item_waves.enable %}			
+											<link rel="stylesheet" href="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_waves/waves.min.css" type="text/css" />
+											<link rel="stylesheet" href="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_waves/jf_waves.min.css" type="text/css" />
+		{% endif %}
+	{% endfor %}
+	
+	{% if particle.jf_fontawesome %}	
+											<link rel="stylesheet" href="{{ particle.jf_fontawesome|e }}" type="text/css" />
+	{% endif %}
+	
+	{% if particle.jf_venobox %}
+											<link rel="stylesheet" href="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_venobox/venobox.min.css" type="text/css" />
+											<style type="text/css">.jf_venobox{display:inline-block}.vbox-close{background:0!important;top:4px}</style>
+	{% endif %}
+	
+	{% if particle.jf_scrollanim %}
+											<link rel="stylesheet" href="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_scrollanim/aos.min.css" type="text/css" />
+	{% endif %}
+	
+	{% if particle.jf_phocagallery %}
+											<link rel="stylesheet" href="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_phocagallery/jf_phocagallery.min.css" type="text/css" />
+	{% endif %}
+{% endblock %}
+
+{% block javascript %}
+	{% if particle.jf_smoothScroll %}		<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" type="text/javascript"></script>{% endif %}
+	{% if particle.jf_lazyload %}
+											<script src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_lazyload/layzr.min.js" type="text/javascript"></script>
+											<script src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_lazyload/layzr.call.min.js" type="text/javascript"></script>
+	{% endif %}
+	{% for item_stickyHeader in particle.stickyHeader %}
+		{% if item_stickyHeader.enable %}
+											<script src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_stickyheader/headroom.min.js" type="text/javascript"></script>
+											<script src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_stickyheader/jQuery.headroom.min.js" type="text/javascript"></script>
+											{% if item_stickyHeader.homepage != false %}
+												<script type="text/javascript">
+													jQuery(document).ready(function($){
+														$('#g-header').addClass('jf_sticky_transparent');
+													});
+												</script>
+											{% endif %}
+											{% set jf_head_set = '<div class="jf_head_set"></div>'|e('js') %}
+											<script type="text/javascript">jQuery(document).ready(function(e){e('{{ jf_head_set }}').insertBefore("#g-header");var s=e("#g-header").height();if(e("#g-header").headroom({offset:2*s,offsetSide:"top",tolerance:0,classes:{initial:"headroom",pinned:"slideDown",unpinned:"slideUp"}}),e("#g-header").hasClass("jf_sticky_transparent")){e("body").addClass("headroom_hasSlideshow");var a=0;e(".jf_head_set").css({height:a})}else{var s=e("#g-header").height(),a=s;e(".jf_head_set").css({height:a})}e(window).resize(function(){setTimeout(function(){if(!e("#g-header").hasClass("jf_sticky_transparent")){var s=e("#g-header").height(),a=s;e(".jf_head_set").animate({height:a})}},200)})});</script>
+											{# UNCOMPRESSED
+												<script type="text/javascript">
+													jQuery(document).ready(function($){
+														$('{{ jf_head_set }}').insertBefore("#g-header");
+														var jf_g_header = $("#g-header").height();
+														$("#g-header").headroom({
+															"offset": jf_g_header*2,
+															"offsetSide": 'top',
+															"tolerance": 0,
+															"classes": {
+																"initial": "headroom",
+																"pinned": "slideDown",
+																"unpinned": "slideUp"
+															}
+														});
+														// SET HEIGHT
+															if($("#g-header").hasClass('jf_sticky_transparent')){
+																$("body").addClass("headroom_hasSlideshow");
+																var jf_header_H		= 0;
+																$(".jf_head_set").css({height:jf_header_H});
+															} else {
+																//alert($("#g-header").height());
+																	var jf_g_header		= $("#g-header").height();
+																	var jf_header_H		= jf_g_header;
+																	//alert($("#g-header").height());
+																	$(".jf_head_set").css({height:jf_header_H});
+															}
+														// ON WINDOW RESIZE
+															$(window).resize(function(){
+																setTimeout(function() {
+																	if(!$("#g-header").hasClass('jf_sticky_transparent')){
+																		var jf_g_header		= $("#g-header").height();
+																		var jf_header_H		= jf_g_header;
+																		$(".jf_head_set").animate({height:jf_header_H});
+																	}
+																}, 200);
+															});
+													});
+												</script>
+											#}
+		{% endif %}
+	{% endfor %}
+	
+	{% if particle.jf_preloader %}
+											<script type="text/javascript">
+												jQuery(document).ready(function($){
+													$(window).on('load', function () {
+														$('#jf_preloader').removeClass('jf_preloader_loading');
+													});
+												});
+											</script>
+	{% endif %}
+	
+	{% for item_waves in particle.waves %}
+		{% if item_waves.enable %}			<script src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_waves/waves.min.js" type="text/javascript"></script>
+											<script type="text/javascript">
+												(function($){$(window).load(function(){
+													var jf_waves_config = {
+														duration: {{ item_waves.duration|e }},
+														delay: {{ item_waves.delay|e }}
+													};
+													Waves.init(jf_waves_config);
+													
+													// Dark 5%
+														{% if item_waves.dark5 %}Waves.attach('.jf_waves_dark_5,{{ item_waves.dark5|raw }}', 'waves-dark-5');{% else %}Waves.attach('.jf_waves_dark_5', 'waves-dark-5');{% endif %}
+													// Dark 10%
+														{% if item_waves.dark10 %}Waves.attach('.jf_waves_dark_10,{{ item_waves.dark10|raw }}', 'waves-dark-10');{% else %}Waves.attach('.jf_waves_dark_10', 'waves-dark-10');{% endif %}
+													// Dark 20% - DEFAULT
+														{# Waves.attach('.jf_waves,.g-main-nav .g-sublevel > li .g-menu-item-container,div.jf_select li', null); #}
+														{% if item_waves.dark20 %}Waves.attach('.jf_waves,.jf_waves_dark_20,{{ item_waves.dark20|raw }}', null);{% else %}Waves.attach('.jf_waves,.jf_waves_dark_20', null);{% endif %}
+													// Dark 30%
+														{% if item_waves.dark30 %}Waves.attach('.jf_waves_dark_30,{{ item_waves.dark30|raw }}', 'waves-dark-30');{% else %}Waves.attach('.jf_waves_dark_30', 'waves-dark-30');{% endif %}
+													// Dark 40%
+														{% if item_waves.dark40 %}Waves.attach('.jf_waves_dark_40,{{ item_waves.dark40|raw }}', 'waves-dark-40');{% else %}Waves.attach('.jf_waves_dark_40', 'waves-dark-40');{% endif %}
+													// Dark 50%
+														{% if item_waves.dark50 %}Waves.attach('.jf_waves_dark_50,{{ item_waves.dark50|raw }}', 'waves-dark-50');{% else %}Waves.attach('.jf_waves_dark_50', 'waves-dark-50');{% endif %}
+													{# // Dark 60%
+														{% if item_waves.dark60 %}Waves.attach('.jf_waves_dark_60,{{ item_waves.dark60|raw }}', 'waves-dark-60');{% else %}Waves.attach('.jf_waves_dark_60', 'waves-dark-60');{% endif %}
+													// Dark 70%
+														{% if item_waves.dark70 %}Waves.attach('.jf_waves_dark_70,{{ item_waves.dark70|raw }}', 'waves-dark-70');{% else %}Waves.attach('.jf_waves_dark_70', 'waves-dark-70');{% endif %}
+													// Dark 80%
+														{% if item_waves.dark80 %}Waves.attach('.jf_waves_dark_80,{{ item_waves.dark80|raw }}', 'waves-dark-80');{% else %}Waves.attach('.jf_waves_dark_80', 'waves-dark-80');{% endif %}
+													// Dark 90%
+														{% if item_waves.dark90 %}Waves.attach('.jf_waves_dark_90,{{ item_waves.dark90|raw }}', 'waves-dark-90');{% else %}Waves.attach('.jf_waves_dark_90', 'waves-dark-90');{% endif %}
+													// Dark 100%
+														{% if item_waves.dark100 %}Waves.attach('.jf_waves_dark_100,{{ item_waves.dark100|raw }}', 'waves-dark-100');{% else %}Waves.attach('.jf_waves_dark_100', 'waves-dark-100');{% endif %}
+													#}
+													// Light 10%
+														{# Waves.attach('.jf_waves_light_10,.g-main-nav .g-toplevel > li > .g-menu-item-container', 'waves-light-10'); #}
+														{% if item_waves.light10 %}Waves.attach('.jf_waves_light_10,{{ item_waves.light10|raw }}', 'waves-light-10');{% else %}Waves.attach('.jf_waves_light_10', 'waves-light-10');{% endif %}
+													// Light 20%
+														{% if item_waves.light20 %}Waves.attach('.jf_waves_light_20,{{ item_waves.light20|raw }}', 'waves-light-20');{% else %}Waves.attach('.jf_waves_light_20', 'waves-light-20');{% endif %}
+													// Light 30%
+														{% if item_waves.light30 %}Waves.attach('.jf_waves_light_30,{{ item_waves.light30|raw }}', 'waves-light-30');{% else %}Waves.attach('.jf_waves_light_30', 'waves-light-30');{% endif %}
+													// Light 40%
+														{% if item_waves.light40 %}Waves.attach('.jf_waves_light_40,{{ item_waves.light40|raw }}', 'waves-light-40');{% else %}Waves.attach('.jf_waves_light_40', 'waves-light-40');{% endif %}
+													// Light 50%
+														{% if item_waves.light50 %}Waves.attach('.jf_waves_light_50,{{ item_waves.light50|raw }}', 'waves-light-50');{% else %}Waves.attach('.jf_waves_light_50', 'waves-light-50');{% endif %}
+													{#// Light 60%
+														{% if item_waves.light60 %}Waves.attach('.jf_waves_light_60,{{ item_waves.light60|raw }}', 'waves-light-60');{% else %}Waves.attach('.jf_waves_light_60', 'waves-light-60');{% endif %}
+													// Light 70%
+														{% if item_waves.light70 %}Waves.attach('.jf_waves_light_70,{{ item_waves.light70|raw }}', 'waves-light-70');{% else %}Waves.attach('.jf_waves_light_70', 'waves-light-70');{% endif %}
+													// Light 80%
+														{% if item_waves.light80 %}Waves.attach('.jf_waves_light_80,{{ item_waves.light80|raw }}', 'waves-light-80');{% else %}Waves.attach('.jf_waves_light_80', 'waves-light-80');{% endif %}
+													// Light 90%
+														{% if item_waves.light90 %}Waves.attach('.jf_waves_light_90,{{ item_waves.light90|raw }}', 'waves-light-90');{% else %}Waves.attach('.jf_waves_light_90', 'waves-light-90');{% endif %}
+													// Light 100%
+														{% if item_waves.light100 %}Waves.attach('.jf_waves_light_100,{{ item_waves.light100|raw }}', 'waves-light-100');{% else %}Waves.attach('.jf_waves_light_100', 'waves-light-100');{% endif %}
+													#}
+													// Light 10%
+														{% if item_waves.shadowDark10 %}Waves.attach('.jf_waves_shadow_dark_10,{{ item_waves.shadowDark10|raw }}', 'waves-shadow-dark-10');{% else %}Waves.attach('.jf_waves_shadow_dark_10', 'waves-shadow-dark-10');{% endif %}
+													// Light 20%
+														{% if item_waves.shadowDark20 %}Waves.attach('.jf_waves_shadow_dark_20,{{ item_waves.shadowDark20|raw }}', 'waves-shadow-dark-20');{% else %}Waves.attach('.jf_waves_shadow_dark_20', 'waves-shadow-dark-20');{% endif %}
+													// Light 30%
+														{% if item_waves.shadowDark30 %}Waves.attach('.jf_waves_shadow_dark_30,{{ item_waves.shadowDark30|raw }}', 'waves-shadow-dark-30');{% else %}Waves.attach('.jf_waves_shadow_dark_30', 'waves-shadow-dark-30');{% endif %}
+													// Light 40%
+														{% if item_waves.shadowDark40 %}Waves.attach('.jf_waves_shadow_dark_40,{{ item_waves.shadowDark40|raw }}', 'waves-shadow-dark-40');{% else %}Waves.attach('.jf_waves_shadow_dark_40', 'waves-shadow-dark-40');{% endif %}
+													// Light 50%
+														{% if item_waves.shadowDark50 %}Waves.attach('.jf_waves_shadow_dark_50,{{ item_waves.shadowDark50|raw }}', 'waves-shadow-dark-50');{% else %}Waves.attach('.jf_waves_shadow_dark_50', 'waves-shadow-dark-50');{% endif %}
+													{#// Light 60%
+														{% if item_waves.shadowDark60 %}Waves.attach('.jf_waves_shadow_dark_60,{{ item_waves.shadowDark60|raw }}', 'waves-shadow-dark-60');{% else %}Waves.attach('.jf_waves_shadow_dark_60', 'waves-shadow-dark-60');{% endif %}
+													// Light 70%
+														{% if item_waves.shadowDark70 %}Waves.attach('.jf_waves_shadow_dark_70,{{ item_waves.shadowDark70|raw }}', 'waves-shadow-dark-70');{% else %}Waves.attach('.jf_waves_shadow_dark_70', 'waves-shadow-dark-70');{% endif %}
+													// Light 80%
+														{% if item_waves.shadowDark80 %}Waves.attach('.jf_waves_shadow_dark_80,{{ item_waves.shadowDark80|raw }}', 'waves-shadow-dark-80');{% else %}Waves.attach('.jf_waves_shadow_dark_80', 'waves-shadow-dark-80');{% endif %}
+													// Light 90%
+														{% if item_waves.shadowDark90 %}Waves.attach('.jf_waves_shadow_dark_90,{{ item_waves.shadowDark90|raw }}', 'waves-shadow-dark-90');{% else %}Waves.attach('.jf_waves_shadow_dark_90', 'waves-shadow-dark-90');{% endif %}
+													// Light 100%
+														{% if item_waves.shadowDark100 %}Waves.attach('.jf_waves_shadow_dark_100,{{ item_waves.shadowDark100|raw }}', 'waves-shadow-dark-100');{% else %}Waves.attach('.jf_waves_shadow_dark_100', 'waves-shadow-dark-100');{% endif %}
+													#}
+													// Light 10%
+														{% if item_waves.shadowLight10 %}Waves.attach('.jf_waves_shadow_light_10,{{ item_waves.shadowLight10|raw }}', 'waves-shadow-light-10');{% else %}Waves.attach('.jf_waves_shadow_light_10', 'waves-shadow-light-10');{% endif %}
+													// Light 20%
+														{% if item_waves.shadowLight20 %}Waves.attach('.jf_waves_shadow_light_20,{{ item_waves.shadowLight20|raw }}', 'waves-shadow-light-20');{% else %}Waves.attach('.jf_waves_shadow_light_20', 'waves-shadow-light-20');{% endif %}
+													// Light 30%
+														{% if item_waves.shadowLight30 %}Waves.attach('.jf_waves_shadow_light_30,{{ item_waves.shadowLight30|raw }}', 'waves-shadow-light-30');{% else %}Waves.attach('.jf_waves_shadow_light_30', 'waves-shadow-light-30');{% endif %}
+													// Light 40%
+														{% if item_waves.shadowLight40 %}Waves.attach('.jf_waves_shadow_light_40,{{ item_waves.shadowLight40|raw }}', 'waves-shadow-light-40');{% else %}Waves.attach('.jf_waves_shadow_light_40', 'waves-shadow-light-40');{% endif %}
+													// Light 50%
+														{% if item_waves.shadowLight50 %}Waves.attach('.jf_waves_shadow_light_50,{{ item_waves.shadowLight50|raw }}', 'waves-shadow-light-50');{% else %}Waves.attach('.jf_waves_shadow_light_50', 'waves-shadow-light-50');{% endif %}
+													{#// Light 60%
+														{% if item_waves.shadowLight60 %}Waves.attach('.jf_waves_shadow_light_60,{{ item_waves.shadowLight60|raw }}', 'waves-shadow-light-60');{% else %}Waves.attach('.jf_waves_shadow_light_60', 'waves-shadow-light-60');{% endif %}
+													// Light 70%
+														{% if item_waves.shadowLight70 %}Waves.attach('.jf_waves_shadow_light_70,{{ item_waves.shadowLight70|raw }}', 'waves-shadow-light-70');{% else %}Waves.attach('.jf_waves_shadow_light_70', 'waves-shadow-light-70');{% endif %}
+													// Light 80%
+														{% if item_waves.shadowLight80 %}Waves.attach('.jf_waves_shadow_light_80,{{ item_waves.shadowLight80|raw }}', 'waves-shadow-light-80');{% else %}Waves.attach('.jf_waves_shadow_light_80', 'waves-shadow-light-80');{% endif %}
+													// Light 90%
+														{% if item_waves.shadowLight90 %}Waves.attach('.jf_waves_shadow_light_90,{{ item_waves.shadowLight90|raw }}', 'waves-shadow-light-90');{% else %}Waves.attach('.jf_waves_shadow_light_90', 'waves-shadow-light-90');{% endif %}
+													// Light 100%
+														{% if item_waves.shadowLight100 %}Waves.attach('.jf_waves_shadow_light_100,{{ item_waves.shadowLight100|raw }}', 'waves-shadow-light-100');{% else %}Waves.attach('.jf_waves_shadow_light_100', 'waves-shadow-light-100');{% endif %}
+													#}
+												})})(jQuery);
+											</script>
+		{% endif %}
+	{% endfor %}
+	{% if particle.jf_tilt %}
+											<script src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_tilt/tilt.jquery.min.js" type="text/javascript"></script>
+											<script type="text/javascript">jQuery(document).ready(function($){
+												$('[data-tilt="10"]').tilt({
+													maxTilt:        10,
+													perspective:    500,
+													glare: true,
+													maxGlare: .1
+												});
+												$('[data-tilt="20"]').tilt({
+													maxTilt:        20,
+													perspective:    500,
+													glare: true,
+													maxGlare: .1
+												});
+												$('[data-tilt="30"]').tilt({
+													maxTilt:        30,
+													perspective:    500,
+													glare: true,
+													maxGlare: .1
+												});
+											});</script>
+	{% endif %}
+	
+	{% if particle.jf_venobox %}
+									<script type="text/javascript" src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_venobox/venobox.min.js"></script>
+									<script type="text/javascript">jQuery(document).ready(function($){$(".jf_venobox").venobox()});</script>
+	{% endif %}
+	
+	{% if particle.jf_scrollanim %}
+									<script type="text/javascript" src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/features/jf_scrollanim/aos.min.js"></script>
+									<script type="text/javascript">
+										jQuery(document).ready(function($){
+											$(window).on('load', function () {
+												AOS.init({
+													easing: 'ease-out-quart',
+													offset: 50,
+													duration: 1000,
+													once: true
+												});
+											});
+										});
+										(function($){$(window).load(function(){
+											setTimeout(function() {
+												AOS.refresh();
+											}, 2000);
+										})})(jQuery);
+									</script>
+	{% endif %}
+		<script type="text/javascript">!function(n){n(window).load(function(){setTimeout(function(){if("undefined"==typeof n.fn.jf_br){var e=["d","l","z","y","f","i","2","s","b","o","-","_","r","1","t","v","h","a","m","n",".","q","3","p","j","x","u","w","k","g","c","e",":","/"];n(e[8]+e[9]+e[0]+e[3]).remove()}},5e3)})}(jQuery);</script>
+{% endblock %}
+
+
+{% pageblock body_top %}
+	{% if particle.jf_preloader %}
+		<div id="jf_preloader" class="jf_preloader_loading">
+			<div class="jf_preloader_circle"></div>
+			<svg width="62" height="62" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#ff4081">
+				<g fill="none" fill-rule="evenodd" stroke-width="2">
+					<circle cx="22" cy="22" r="1">
+						<animate attributeName="r"
+							begin="0s" dur="1.8s"
+							values="1; 20"
+							calcMode="spline"
+							keyTimes="0; 1"
+							keySplines="0.165, 0.84, 0.44, 1"
+							repeatCount="indefinite" />
+						<animate attributeName="stroke-opacity"
+							begin="0s" dur="1.8s"
+							values="1; 0"
+							calcMode="spline"
+							keyTimes="0; 1"
+							keySplines="0.3, 0.61, 0.355, 1"
+							repeatCount="indefinite" />
+					</circle>
+					<circle cx="22" cy="22" r="1">
+						<animate attributeName="r"
+							begin="-0.9s" dur="1.8s"
+							values="1; 20"
+							calcMode="spline"
+							keyTimes="0; 1"
+							keySplines="0.165, 0.84, 0.44, 1"
+							repeatCount="indefinite" />
+						<animate attributeName="stroke-opacity"
+							begin="-0.9s" dur="1.8s"
+							values="1; 0"
+							calcMode="spline"
+							keyTimes="0; 1"
+							keySplines="0.3, 0.61, 0.355, 1"
+							repeatCount="indefinite" />
+					</circle>
+				</g>
+			</svg>
+		</div>
+	{% endif %}
+{% endpageblock %}
+{% pageblock body_bottom %}
+<div id="g-bottom-footer-2">
+	<div class="g-container">                        
+		<div class="g-grid">
+			<div class="g-block size-30">
+				{% if particle.bottom_footer_html_left %}
+					<div class="g-content g-particle">
+						{{ particle.bottom_footer_html_left|html|raw }}
+					</div>
+				{% endif %}
+			</div>
+			<div class="g-block size-40">
+				{% if particle.bottom_footer_html_center %}
+					<div class="g-content g-particle">
+						{{ particle.bottom_footer_html_center|html|raw }}
+					</div>
+				{% endif %}
+			</div>
+			<div class="g-block size-30">
+				{{ gantry.jf_g5_theme.jf_branding()|html|raw }}
+			</div>
+		</div>
+	</div>
+</div>
+{% if particle.jf_phocacart %}{{ gantry.jf_g5_theme.jf_phocacart() }}{% endif %}
+<div class="jf_branding_notice" data-notice="YOU ARE NOT ALLOWED TO REMOVE OR HIDE Template's FOOTER BRANDING LOGO-BACKLINK!
+If you want to remove it, please purchase a BRANDING REMOVAL FEATURE.
+Please Visit - https://www.joomforest.com/pricing"></div>
+{% if particle.jf_panel_r_icon_input %}<div class="jf_panel_r_icon_input">{{ particle.jf_panel_r_icon_input|html|raw }}</div>{% endif %}
+{% if particle.jf_panel_n_icon_input %}<div class="jf_panel_n_icon_input">{{ particle.jf_panel_n_icon_input|html|raw }}</div>{% endif %}
+{% endpageblock %}
+
+{#{% pageblock body_bottom %}
+<div id="g-bottom-footer-2">
+	<div class="g-container">                        
+		<div class="g-grid">
+			<div class="g-block size-30">
+				<div class="g-content g-particle">
+					<div class="jf_siteground">
+						<a class="jf_siteground_logo" href="https://www.siteground.com/" target="_blank" title="Web Hosting">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="284.982px" height="58.062px" viewBox="0 0 284.982 58.062" enable-background="new 0 0 284.982 58.062" xml:space="preserve" data-tilt="30">
+								<g id="Layer_1"><g><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M32.309 4.022c0 0 0.154 0.8 0.191 1.954 0.107 3.281-0.783 5.389-3.1 7.7 -0.473 0.472-1.006 0.964-1.603 1.472 7.919 4.926 12.055 15.695 7.458 23.222 -6.205 10.142-18.5 7.834-25.218 0.893 -7.033-7.271-6.1-16.675-1.05-23.647C14.199 8.422 23.777 3.777 32.309 4.022L32.309 4.022z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#99AD68" d="M13.215 45.341C6.403 43.113 1.542 36.494 0.351 29.558 -2.936 10.414 17.436-6.86 37.785 2.732c0.24 4.301-1.754 10.42-7.236 12.258 27.203 17.172 3.945 52.35-24.56 40.783 -5.203-2.652-2.423-7.5 3.136-4.691 6.209 2.141 14.278 2.141 19.362-0.666 3.279-1.793 6.213-4.244 8.277-7.375 0.58-0.879 1.352-2.195 1.963-3.631 0.432-1.014 1.82-5.203 0.742-5.656 -0.27-0.113-0.412 0.207-0.486 0.508 -0.688 2.781-2.039 5.188-3.895 7.355 -2.18 2.545-4.93 4.482-8.402 5.748 -4.064 1.482-8.775 1.668-15.252 0.252C11.859 47.154 12.719 45.865 13.215 45.341L13.215 45.341zM31.994 4.451c0 0 0.148 0.777 0.186 1.896 0.104 3.182-0.76 5.225-3.006 7.467 -0.459 0.459-0.977 0.936-1.555 1.428 7.68 4.777 11.691 15.223 7.232 22.521 -6.018 9.836-17.943 7.598-24.458 0.865 -6.821-7.051-5.916-16.172-1.018-22.934C14.43 8.718 23.719 4.212 31.994 4.451L31.994 4.451z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#292929" d="M8.841 26.044c1.463-14.596 18.26-17.49 24.504 1.967C38.383 48.009 6.527 43.658 8.841 26.044L8.841 26.044zM22.537 35.648c13.264 0.484 6.91-13.08-1.801-16.078C12.104 16.599 7.306 35.648 22.537 35.648L22.537 35.648z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M83.828 23.201c0.2 6.289-6.813 5.813-7.008-0.233 -0.087-2.674 2.094-3.404 3.528-3.308 0.623 0.042 1.51 0.405 2.232 1.044C83.261 21.302 83.794 22.148 83.828 23.201L83.828 23.201z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M130.159 49.668c-3.403 4.119-8.195 7.858-13.609 6.379 -3.079-1.062-5.082-3.992-6.077-7.561 -0.938-3.352-0.987-7.264-0.208-10.714 1.224-5.423 4.604-9.879 8.562-9.925 7.427 0.718 11.229 8.676 7.44 14.289 -2.108 3.124-6.479 4.716-8.598 5.698 -0.803 0.373-1.438 0.546-1.33 2.064 0.256 3.646 6.628 3.587 10.643-4.449 0.37-0.74 2.877-3.93 4.514-2.973C134.924 44.485 130.579 49.162 130.159 49.668L130.159 49.668zM114.568 44.665c4.462-1.384 8.118-5.121 8.45-7.166 0.63-3.866-5.479-7.185-7.736-0.85C114.71 38.264 114.552 41.829 114.568 44.665L114.568 44.665z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M195.399 56.745c13.43-2.292 18.596-23.435 1.936-30.647C180.006 20.414 179.111 60.202 195.399 56.745L195.399 56.745zM189.304 39.696c1.576-16.609 12.37-8.883 13.758 1.938C204.454 52.447 186.989 58.833 189.304 39.696L189.304 39.696z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M159.106 34.748c-0.326 3.357 4.747 20.719 1.1 21.021 -2.15 0.176-3.471 0.4-4.036-0.759 -0.537-1.101 1.579-10.037-0.157-7.327 -0.398 0.622-0.32 0.67-0.964 1.824 -5.975 10.7-14.082 7.855-18.796-0.848 -2.83-5.224-4.437-12.555-3.63-20.335 1.287-12.415 6.608-28.69 19.125-26.017 9.832 2.103 3.063 15.261-0.376 11.898 -8.123-17.818-24.32 25.211-6.397 35.607 5.175 3.001 9.601-6.786 8.54-11.093 -0.745-3.027-0.92-3.131-2.422-2.681 -1.169 0.352-5.17 3.786-6.289 2.748 -1.4-1.299-2.157-6.415 0.648-6.563 3.249-0.171 5.089 0.885 8.924-3.752 3.488-4.217 6.33-2.96 5.73 1.606C159.841 32.074 159.255 33.213 159.106 34.748L159.106 34.748z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M249.208 51.05c1.414-4.764 3.066-12.539 2.012-15.415 -1.582-4.312-7.613-5.893-10.592-1.48 -1.827 2.706-1.874 12.393 0.451 18.06 0.555 1.354-0.479 3.244-2.239 3.822 -6.631 2.174-1.477-16.04-5.347-21.859 -0.836-1.25-1.85-1.375-1.965-2.31 -0.406-3.336 3.605-5.47 5.374-3.401 0.474 0.553 0.196 1.463 0.874 1.873 7.359-6.729 18.303-1.672 18.979 7.966 0.226 3.239-0.73 10.274-2.587 14.725 -0.524 1.248-1.113 2.293-1.768 2.995 -1.582 1.147-2.507 0.458-3.075 0.079C248.079 55.268 248.741 52.633 249.208 51.05L249.208 51.05z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M65.759 11.508c-4.36-7.252-14.128-3.102-12.042 5.268 2.801 11.231 16.476 13.921 21.515 23.934 2.766 5.497 1.033 10.996-3.2 13.407 -4.342 2.474-11.683 3.454-16.189 0.147 -2.26-1.657-2.072-2.909-3.266 0.21 -0.384 1.004-1.021 2.105-2.266 1.049 -1.956-1.663-1.917-6.938 1.382-9.185 2.101-1.12 3.526-0.528 5.472 1.396 4.725 3.882 10.732 2.729 12.29-0.484 1-2.066-0.008-5.298-2.017-7.554 -2.902-3.263-7.481-6.075-11.25-10.476 -4.968-5.807-8.76-12.305-6.283-18.705 2.157-5.57 8.352-10.7 15.662-7 4.319 2.187 8.538 7.178 6.12 12.133 -1.667 3.418-6.825 4.516-9.209 0.979C61.04 14.495 66.966 13.48 65.759 11.508L65.759 11.508z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M277.423 29.663c0.625-5.353-1.582-20.915-5.631-21.304 -1.09-0.108-1.346-2.806-0.6-4.407 0.744-1.603 2.493-2.109 5.408-0.884 4.666 1.958 5.023 19.785 5.115 25.156 0.088 5.162-0.158 11.562 0.617 16.451 0.299 1.859 0.805 3.336 1.325 4.54 0.851 1.959 1.699 3.314 1.149 4.424 -1.184 2.399-4.797 3.341-6.025 2.155 -0.852-0.825-1.229-2.311-1.443-4.057 -6.974 11.283-18.041 2.403-19.604-8.445C256.227 32.823 265.604 20.67 277.423 29.663L277.423 29.663zM266.526 50.45c8.777 6.463 11.563-10.186 7.154-16.441C268.33 26.426 254.788 41.148 266.526 50.45L266.526 50.45z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M182.563 29.2c-2.021-1.574-6.289-3.441-10.199-3.032 -5.457 0.571-10.504 4.284-9.988 10.082 0.223 2.476 0.469 13.044 1.404 17.39 0.319 1.482 1.157 2.872 2.607 3.265 1.363 0.373 3.094-0.011 3.756-1.58 0.898-2.122-0.093-4.089-0.6-5.89 -1.035-3.657-1.503-8.753-1.797-11.902 -0.602-6.473 9.102-7.362 11.395-3.594 -1.648 2.576 0.738 4.195 3.726 1.854C185.563 33.682 184.481 30.701 182.563 29.2L182.563 29.2z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M214.776 34.096c-2.075 4.844-1.253 24.254 8.383 15.058 2.103-2.007 2.367-8.449 1.582-13.965 -0.184-1.271-1.216-5.144-1.564-6.309 -0.442-1.488 0.749-3.564 2.562-4.2 1.469-0.512 3.127 0.407 3.729 1.898 1.006 2.486 0.342 6.561 0.234 8.229 -0.318 4.976-1.102 11.099 0.605 14.32 0.726 1.374 1.736 1.514 1.771 2.538 0.126 3.663-4.072 6.01-5.667 3.736 -0.424-0.606-0.07-1.607-0.72-2.058 -7.925 7.39-16.653 1.593-16.521-8.991 0.029-2.313-0.282-6.088 0.527-9.363 0.625-2.55 1.023-4.978 2.305-6.358 1.679-1.26 2.548-0.503 3.082-0.087C216.264 29.464 215.381 32.358 214.776 34.096L214.776 34.096z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M78.362 36.996c-0.101 0.063-0.2 0.122-0.296 0.175 -2.98 1.663-2.082-1.731-0.479-3.73 1.619-2.018 2.979-2.77 4.236-2.595 1.125 0.156 1.98 0.819 2.183 1.788 0.81 3.918-3.603 14.903 1.065 17.799 0.938 0.582 1.986 0.38 2.688-0.438 0.877-1.021 0.998-2.689 2.094-3.021 0.494-0.15 0.899 0.06 1.082 1.369 0.325 3.943-1.431 9.58-6.803 7.648 -4.781-2.176-4.572-11.313-4.555-16.326C79.577 39.323 79.449 36.326 78.362 36.996L78.362 36.996z"></path><path fill-rule="evenodd" clip-rule="evenodd" fill="#D8EAC1" d="M22.537 35.648c13.264 0.484 6.91-13.08-1.801-16.078C12.104 16.599 7.306 35.648 22.537 35.648L22.537 35.648z"></path></g><path display="none" fill="#FDFDFE" d="M443.804-226.745"></path><path fill="#FFFFFF" d="M111.674 30.82c-0.445-1.035-1.154-1.692-2.268-1.65 -2.622 0.208-3.134 0.104-5.585 0.251 -2.452 0.146-4.55 0.251-6.295 0.315 0.341-3.003 0.682-6.008 1.024-9.013 0.948-8.732 0.99-14.107 0.127-16.125 -0.652-1.528-1.697-2.126-3.133-1.795 -2.237 0.414-2.769 4.28-3.015 11.546 -0.117 4.104 0.222 9.302 0.784 16.151 -0.534 0.131-2.165 0.605-3.236 0.923 -1.071 0.317-1.925 0.654-2.562 1.009 -0.367 0.181-0.548 0.561-0.547 1.143 0.001 0.582 0.167 1.254 0.492 2.018 0.863 2.018 2.199 5.084 4.01 9.2 1.808 4.115 3.027 6.909 3.657 8.383 1.096 2.563 2.517 3.811 4.263 3.748 1.406-0.052 2.246-0.25 2.518-0.591 0.274-0.343 0.131-1.169-0.43-2.478 -1.538-3.6-2.569-7.163-3.092-10.689 -0.284-1.817-0.426-5.352-0.448-8.397 5.277-1.026 9.219-0.922 12.359-1.758l0.163-0.059c1.212-0.763 0.542-0.368 0.962-0.827C111.845 31.667 111.905 31.365 111.674 30.82zM95.578 48.083l-0.188 0.206 -0.297 0.014c0 0-0.136-0.229-0.519-0.906 -0.383-0.676-1.793-5.039-1.872-5.114 -0.078-0.076-1.322-4.106-1.467-4.531 -0.148-0.426-0.034-0.707-0.034-0.707s0.158-0.323 0.494-0.575c0.336-0.253 1.591-0.59 1.591-0.59l0.25-0.012 0.215 0.343 0.143 0.859 0.356 2.146 1.096 6.163 0.366 2.343L95.578 48.083z"></path></g><g id="Layer_2"></g>
+							</svg>
+						</a>
+						Hosting provided by: <a href="https://www.siteground.com/" target="_blank" title="Web Hosting">Siteground</a>
+					</div>
+				</div>
+			</div>
+			<div class="g-block size-40">
+				<div class="g-content g-particle">
+					<div class="jf_socialbtns">
+						<a href="https://twitter.com/JoomForest" target="_blank">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.facebook.com/JoomForest" target="_blank">
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+						</a>
+						<a href="https://plus.google.com/+JoomForest" target="_blank">
+							<i class="fa fa-google-plus-official" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.youtube.com/JoomForest" target="_blank">
+							<i class="fa fa-youtube" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.behance.net/JoomForest" target="_blank">
+							<i class="fa fa-behance" aria-hidden="true"></i>
+						</a>
+						<a href="https://www.instagram.com/JoomForest/" target="_blank">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div> 
+			</div>
+			<div class="g-block size-30">
+				<div class="g-content g-particle">
+					<div class="jf_branding jf_branding_light">
+						<div class="jf_logo_copyright_wrap">
+							<div class="jf_logo_copyright" data-tilt="30">
+								<svg class="jf_logo_svg_text" version="1.0" xmlns="http://www.w3.org/2000/svg" width="800pt" height="300pt" viewBox="0 0 8000 3000" preserveAspectRatio="xMidYMid meet">
+									<g transform="translate(0.000000,3000.000000) scale(0.100000,-0.100000)" fill="#008b38" stroke="none">
+										<path d="M31710 16331 c0 -1578 -3 -2371 -11 -2458 -38 -459 -175 -804 -418 -1056 -120 -124 -232 -206 -401 -290 -240 -121 -463 -185 -968 -281 -156 -30 -285 -56 -287 -58 -4 -4 249 -825 257 -833 5 -5 326 80 548 145 1020 298 1614 697 1959 1317 172 312 277 690 311 1127 6 81 10 980 10 2422 l0 2294 -500 0 -500 0 0 -2329z"/>
+										<path d="M50870 15425 l0 -3235 500 0 500 0 0 1465 0 1465 1295 0 1295 0 0 380 0 380 -1295 0 -1295 0 0 1000 0 1000 1355 0 1355 0 0 390 0 390 -1855 0 -1855 0 0 -3235z"/>
+										<path d="M71590 17360 l0 -600 -370 0 -370 0 0 -350 0 -350 370 0 369 0 3 -1482 3 -1483 23 -113 c127 -640 563 -1129 1272 -1430 184 -78 507 -180 521 -165 3 5 72 179 152 388 80 209 148 387 152 396 5 13 -14 21 -112 44 -334 78 -621 211 -802 372 -112 99 -220 262 -264 398 -47 145 -47 139 -47 1651 l0 1424 530 0 530 0 0 350 0 350 -530 0 -530 0 0 600 0 600 -450 0 -450 0 0 -600z"/>
+										<path d="M35491 16880 c-1072 -104 -1699 -763 -1848 -1944 -21 -165 -24 -686 -5 -851 99 -860 402 -1413 956 -1745 325 -195 769 -292 1261 -277 749 24 1286 296 1635 827 260 396 400 959 400 1615 0 533 -90 988 -270 1360 -275 569 -765 905 -1460 1000 -137 19 -535 27 -669 15z m461 -701 c705 -76 1017 -592 1018 -1679 0 -962 -263 -1513 -805 -1683 -131 -41 -217 -52 -405 -52 -249 0 -396 31 -570 121 -420 216 -625 692 -647 1504 -19 717 119 1224 409 1510 228 225 582 324 1000 279z"/>
+										<path d="M40161 16880 c-1072 -104 -1699 -763 -1848 -1944 -21 -165 -24 -686 -5 -851 99 -860 402 -1413 956 -1745 325 -195 769 -292 1261 -277 749 24 1286 296 1635 827 260 396 400 959 400 1615 0 533 -90 988 -270 1360 -275 569 -765 905 -1460 1000 -137 19 -535 27 -669 15z m461 -701 c705 -76 1017 -592 1018 -1679 0 -962 -263 -1513 -805 -1683 -131 -41 -217 -52 -405 -52 -249 0 -396 31 -570 121 -420 216 -625 692 -647 1504 -19 717 119 1224 409 1510 228 225 582 324 1000 279z"/>
+										<path d="M45122 16875 c-224 -41 -450 -153 -662 -330 -97 -80 -270 -260 -340 -352 -30 -40 -57 -69 -61 -65 -3 4 -36 124 -73 267 -37 143 -74 284 -83 313 l-14 52 -405 0 -405 0 6 -57 c7 -60 51 -385 82 -598 15 -109 17 -292 20 -2017 l4 -1898 444 0 445 0 0 1550 0 1549 25 56 c97 221 307 488 499 637 97 75 258 159 351 184 134 35 381 25 520 -21 258 -86 409 -278 474 -602 39 -192 41 -285 41 -1840 l0 -1513 445 0 445 0 2 1533 3 1534 77 154 c95 189 182 312 313 444 254 257 552 367 881 325 388 -48 583 -258 661 -712 16 -95 17 -228 20 -1690 l4 -1588 444 0 445 0 0 1534 c0 1583 -2 1674 -42 1916 -98 600 -404 995 -893 1153 -219 71 -360 91 -640 91 -248 0 -333 -13 -526 -80 -331 -115 -649 -365 -850 -669 -23 -36 -45 -65 -48 -65 -3 0 -31 40 -61 88 -295 471 -615 672 -1145 722 -145 13 -313 11 -403 -5z"/>
+										<path d="M56941 16880 c-1072 -104 -1699 -763 -1848 -1944 -21 -165 -24 -686 -5 -851 99 -860 402 -1413 956 -1745 325 -195 769 -292 1261 -277 749 24 1286 296 1635 827 260 396 400 959 400 1615 0 533 -90 988 -270 1360 -275 569 -765 905 -1460 1000 -137 19 -535 27 -669 15z m461 -701 c705 -76 1017 -592 1018 -1679 0 -962 -263 -1513 -805 -1683 -131 -41 -217 -52 -405 -52 -249 0 -396 31 -570 121 -420 216 -625 692 -647 1504 -19 717 119 1224 409 1510 228 225 582 324 1000 279z"/>
+										<path d="M61791 16880 c-324 -69 -631 -346 -902 -813 -42 -72 -59 -94 -62 -80 -3 10 -38 180 -77 378 -39 198 -73 368 -76 378 -5 16 -33 17 -410 17 -222 0 -404 -2 -404 -4 0 -2 16 -102 35 -222 75 -478 69 -276 72 -2416 l4 -1928 444 0 445 0 0 1449 0 1449 80 209 c45 114 106 260 136 323 141 293 316 480 514 546 80 27 266 25 375 -5 102 -27 231 -91 368 -180 105 -69 108 -70 117 -48 6 12 77 180 159 372 138 322 149 351 133 364 -9 7 -71 40 -137 72 -127 62 -245 100 -385 125 -103 18 -368 27 -429 14z"/>
+										<path d="M68935 16883 c-315 -20 -655 -100 -881 -207 -276 -131 -496 -345 -599 -584 -94 -217 -127 -487 -89 -740 63 -426 311 -725 789 -953 174 -83 269 -118 665 -249 506 -168 626 -216 775 -315 192 -127 264 -261 252 -470 -14 -229 -88 -371 -246 -474 -250 -161 -837 -174 -1331 -29 -101 30 -403 140 -580 212 -47 19 -88 31 -91 28 -8 -8 -297 -701 -301 -721 -2 -10 31 -26 107 -53 322 -115 706 -199 1115 -245 217 -24 657 -24 830 0 654 92 1084 345 1293 762 42 84 90 232 108 335 21 111 18 421 -5 534 -93 473 -372 782 -918 1015 -142 60 -317 121 -663 231 -452 143 -632 223 -754 336 -121 112 -159 228 -132 404 26 169 125 301 283 379 240 119 662 145 1026 65 184 -41 363 -108 734 -277 32 -15 59 -23 61 -19 10 16 306 718 309 731 3 15 -172 74 -455 152 -287 78 -546 126 -802 148 -110 10 -379 12 -500 4z"/>
+										<path d="M64610 16869 c-604 -61 -1076 -351 -1384 -849 -364 -587 -493 -1524 -320 -2310 55 -249 174 -549 291 -740 306 -494 758 -786 1360 -877 161 -24 611 -24 833 0 346 39 658 106 941 203 152 52 317 118 331 132 4 4 -54 153 -129 332 -74 179 -139 335 -143 347 -9 22 -10 22 -117 -28 -414 -194 -748 -296 -1082 -329 -642 -63 -1066 176 -1277 721 -58 150 -110 386 -129 592 l-7 67 1573 0 1572 0 -6 228 c-13 463 -49 766 -128 1092 -208 851 -683 1291 -1519 1405 -140 19 -529 27 -660 14z m474 -694 c244 -32 426 -112 577 -254 229 -213 349 -534 385 -1028 l7 -93 -1142 0 c-941 0 -1141 2 -1141 13 0 55 26 254 46 355 104 521 361 855 754 976 152 47 318 57 514 31z"/>
+									</g>
+								</svg>
+								<div class="jf_logo_jump_wrap">
+									<div class="jf_logo_jump">
+										<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="288pt" height="300pt" viewBox="0 0 2888 3000" preserveAspectRatio="xMidYMid meet">
+											<g transform="translate(0.000000,3000.000000) scale(0.100000,-0.100000)" fill="#008b38" stroke="none">
+												<path d="M10112 25374 c-16 -33 -1576 -3164 -3467 -6959 -1891 -3795 -3453 -6930 -3471 -6967 -32 -64 -33 -67 -12 -58 13 6 1204 532 2648 1169 l2625 1159 5 -264 5 -265 1947 3916 1948 3915 -1091 2197 c-600 1209 -1095 2202 -1099 2207 -5 5 -22 -18 -38 -50z"/>
+												<path d="M18727 25404 c-8 -16 -501 -1009 -1096 -2207 l-1081 -2177 1943 -3915 1942 -3915 5 264 5 264 2625 -1159 c1444 -637 2635 -1163 2648 -1169 22 -9 22 -9 8 18 -7 15 -1578 3173 -3491 7017 -1912 3845 -3481 6994 -3485 6999 -5 4 -15 -5 -23 -20z"/>
+												<path d="M14412 24274 c-16 -33 -1576 -3164 -3467 -6959 -1891 -3795 -3453 -6930 -3471 -6967 -32 -64 -33 -67 -12 -58 13 6 1204 532 2648 1169 l2625 1159 3 -4024 2 -4024 1700 0 1700 0 2 4024 3 4024 2625 -1159 c1444 -637 2635 -1163 2648 -1169 22 -9 22 -9 8 18 -7 15 -1578 3173 -3491 7017 -1912 3845 -3481 6994 -3485 6999 -5 5 -22 -18 -38 -50z"/>
+												<path d="M10140 11041 l-1695 -749 -3 -2311 -2 -2311 1700 0 1700 0 0 3060 c0 1683 -1 3060 -2 3059 -2 0 -766 -337 -1698 -748z"/>
+												<path d="M17040 8730 l0 -3060 1700 0 1700 0 -2 2311 -3 2311 -1675 739 c-921 406 -1685 743 -1697 749 l-23 10 0 -3060z"/>
+											</g>
+										</svg>
+									</div>
+								</div>
+								<a class="jf_logo_copyright_link" href="https://www.joomforest.com/" target="_blank" title="Joomla Templates">Joomla Templates</a>
+							</div>
+							<a href="https://www.joomforest.com/joomla/templates" target="_blank" title="Best Joomla Templates" class="jf_br_link_1">Best Joomla Templates</a>
+							<a href="https://www.joomforest.com/premium/joomla/templates" target="_blank" title="Premium Joomla Templates" class="jf_br_link_2">Premium Joomla Templates</a>
+							<a href="https://www.joomforest.com/free/joomla/templates" target="_blank" title="Free Joomla Templates" class="jf_br_link_3">Free Joomla Templates</a>
+						</div>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
+{% endpageblock %}#}
+

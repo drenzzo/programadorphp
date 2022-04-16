@@ -1,0 +1,144 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/phoca_cart.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  full-width-section-1: {  }
+  /container-main/:
+    -
+      -
+        'left-sidebar 25':
+          -
+            - position-position-9343
+      -
+        '/main/ 75':
+          -
+            - system-messages-5855
+          -
+            - system-content-9439
+          -
+            - position-position-7776
+  full-width-section-2: {  }
+  breadcrumbs: {  }
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  left-sidebar:
+    type: section
+    attributes:
+      class: ''
+      extra:
+        -
+          data-aos: fade-up
+        -
+          data-aos-delay: '0'
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra:
+        -
+          data-aos: fade-up
+        -
+          data-aos-delay: '200'
+  container-main:
+    attributes:
+      boxed: ''
+  full-width-section-2:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  breadcrumbs:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  position-position-9343:
+    title: 'Module Position'
+    attributes:
+      key: left-sidebar
+  system-messages-5855:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  system-content-9439:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-content-3497
+  position-position-7776:
+    title: 'Module Position'
+    attributes:
+      key: main-bottom

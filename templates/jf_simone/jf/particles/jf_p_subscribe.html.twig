@@ -1,0 +1,35 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+{% set indentifier = random() %}
+
+{% block javascript %}
+	<script type="text/javascript" src="{{ gantry.jf_g5_theme.tmpl_root() }}jf/particles/jf_p_subscribe/jquery.ajaxchimp.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($){
+			$.ajaxChimp.translations.jf = {
+				"submit": "{{ particle.lang_sending|e }}",
+				0: "{{ particle.lang_callback_1|e }}",
+				1: "{{ particle.lang_callback_2|e }}",
+				2: "{{ particle.lang_callback_3|e }}",
+				3: "{{ particle.lang_callback_4|e }}",
+				4: "{{ particle.lang_callback_5|e }}",
+				5: "{{ particle.lang_callback_6|e }}"
+			};
+			$("#jf_p_subscribe_{{ indentifier|e }} form").ajaxChimp({
+				language: "jf",
+				url: "{{ particle.post_url|e }}"
+			});
+		});
+	</script>
+{% endblock %}
+
+{% block particle %}
+	<div id="jf_p_subscribe_{{ indentifier|e }}" class="jf_ajaxchimp">
+		{{ particle.html_before|html|raw }}
+		{% if particle.title %}<p>{{ particle.title|e }}</p>{% endif %}
+		<form>
+			<input id="jf_p_subscribe_{{ indentifier|e }}_email" type="email" placeholder="{{ particle.lang_input|e }}" name="EMAIL">
+			<button type="submit">{{ particle.lang_btn|e }}</button>
+			<label for="jf_p_subscribe_{{ indentifier|e }}_email"></label>
+		</form>
+	</div>
+{% endblock %}

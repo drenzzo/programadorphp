@@ -1,0 +1,78 @@
+name: 11
+timestamp: 1494964027
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.jpg'
+  name: default
+  timestamp: 1482703875
+positions:
+  right-panel: 'Module Position'
+  news-panel: 'Module Position'
+  banner-top: 'Position "banner-top"'
+  sidebar: 'Module Position'
+  banner-bottom: 'Position"banner-bottom"'
+  breadcrumbs: 'Module Position'
+  footer-b: "Position:\_footer-b"
+  footer-c: "Position:\_footer-c"
+sections:
+  header: Header
+  navigation: Navigation
+  right-panel: Right-panel
+  news-panel: News-panel
+  full-width-section-1: Full-width-section-1
+  sidebar: Sidebar
+  banner: Banner
+  full-width-section-2: Full-width-section-2
+  breadcrumbs: Breadcrumbs
+  bottom-footer: Bottom-footer
+  main: Main
+  footer: Footer
+particles:
+  logo:
+    logo-5754: Logo
+  menu:
+    menu-5773: Menu
+  position:
+    position-position-5631: 'Module Position'
+    position-position-9760: 'Module Position'
+    position-position-7424: 'Position "banner-top"'
+    position-position-6156: 'Module Position'
+    position-position-6368: 'Position"banner-bottom"'
+    position-position-8661: 'Module Position'
+    position-position-9452: "Position:\_footer-b"
+    position-position-6851: "Position:\_footer-c"
+  messages:
+    system-messages-5165: 'System Messages'
+  content:
+    system-content-2972: 'Page Content'
+  custom:
+    custom-3658: 'Footer Copyright'
+  jf_p_subscribe:
+    jf_p_subscribe-1230: 'JF Particle - Mailchimp Subscribe'
+inherit:
+  default:
+    header: header
+    navigation: navigation
+    right-panel: right-panel
+    news-panel: news-panel
+    full-width-section-1: full-width-section-1
+    main: main
+    sidebar: sidebar
+    full-width-section-2: full-width-section-2
+    breadcrumbs: breadcrumbs
+    footer: footer
+    bottom-footer: bottom-footer
+    logo-5754: logo-8517
+    menu-5773: menu-2176
+    position-position-5631: position-position-7914
+    position-position-9760: position-position-9581
+    position-position-7424: position-position-5515
+    system-messages-5165: system-messages-9589
+    system-content-2972: system-content-3497
+    position-position-6156: position-position-7479
+    position-position-6368: position-position-8075
+    position-position-8661: position-position-7658
+    custom-3658: custom-3503
+    position-position-9452: position-position-5191
+    position-position-6851: position-position-1028
+    jf_p_subscribe-1230: jf_p_subscribe-6876

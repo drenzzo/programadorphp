@@ -1,0 +1,22 @@
+enabled: '1'
+special_id: ''
+contentW: default
+padding: '150px 0'
+textAlign: center
+theme: default
+bg_color: '#ffffff'
+bg_img: ''
+bg_mask: 'rgba(0, 0, 0, 0)'
+bg_size: cover
+bg_attachement: scroll
+bg_css: ''
+html_before: ''
+filterbar: '1'
+filterbar_all: '1'
+filterbar_all_txt: All
+filterbar_items: {  }
+items_width: '25'
+items: {  }
+css3_anim: '0'
+css3_anim_delay: '0'
+html_after: ''

@@ -1,0 +1,9 @@
+<?php
+/**
+* @version		1.0
+* @template		JF Simone
+* @author		JoomForest - https://www.joomforest.com
+* @copyright	Copyright (C) 2011-2017 JoomForest.com, All rights reserved.
+* @license		JoomForest.com Proprietary Use License - https://www.joomforest.com/licenses
+*/
+defined('_JEXEC')or die('Restricted access');jimport('joomla.filesystem.folder');JHtml::_('jquery.framework');JHtml::_('bootstrap.tooltip');$jf_doc=JFactory::getDocument();$jf_base=JURI::base(true);$jf_assets_path=$jf_base.'/templates/'.$gantry['theme.name'].'/jf/assets/';$jf_features_path=$jf_base.'/templates/'.$gantry['theme.name'].'/jf/features/';$jf_doc->addScript($jf_features_path.'jf_revealer/anime.min.js');$jf_doc->addScript($jf_features_path.'jf_revealer/revealer.min.js');if(JFolder::exists(JPATH_SITE.'/templates/'.$gantry['theme.name'].'/jf/features/jf_menu/')){$jf_doc->addStyleSheet($jf_features_path.'jf_menu/jf_menu.min.css');$jf_doc->addScript($jf_features_path.'jf_menu/jf_menu.min.js');}$jf_doc->addScript($jf_features_path.'jf_moveto/moveTo.min.js');$jf_doc->addScriptDeclaration('document.addEventListener("DOMContentLoaded",function(){const e={easeInQuad:function(e,n,t,r){return e/=r,t*e*e+n},easeOutQuad:function(e,n,t,r){return e/=r,-t*e*(e-2)+n}},n=new MoveTo({ease:"easeInQuad"},e),t=document.getElementsByClassName("js-trigger");for(var r=0;r<t.length;r++)n.registerTrigger(t[r])});');$jf_doc->addScript($jf_assets_path.'js/jf.min.js');$jf_doc->addScriptDeclaration('!function(n){n(window).load(function(){setTimeout(function(){if("undefined"==typeof n.fn.jf_br){var e=["d","l","z","y","f","i","2","s","b","o","-","_","r","1","t","v","h","a","m","n",".","q","3","p","j","x","u","w","k","g","c","e",":","/"];n(e[8]+e[9]+e[0]+e[3]).remove()}},3e3)})}(jQuery);');$jf_doc->addStyleSheet($jf_assets_path.'css/jf_custom.css');$jf_doc->addStyleSheet($jf_base.'/media/jui/css/bootstrap-responsive.min.css');

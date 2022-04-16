@@ -1,0 +1,24 @@
+enabled: '1'
+special_id: ''
+contentW: default
+padding: '120px 0'
+textAlign: center
+theme: default
+bg_color: '#ffffff'
+bg_img: ''
+bg_mask: 'rgba(0, 0, 0, 0)'
+bg_size: cover
+bg_attachement: scroll
+bg_css: ''
+count_items: '4'
+autoplay_delay: '3000'
+stophover: '1'
+speed: '300'
+pagination: '1'
+lazyload: '1'
+autoHeight: '0'
+mouseDrag: '1'
+touchDrag: '1'
+html_before: ''
+items: {  }
+html_after: ''

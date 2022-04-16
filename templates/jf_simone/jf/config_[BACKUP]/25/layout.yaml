@@ -1,0 +1,281 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_testimon.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/: {  }
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/:
+    -
+      - jf_p_testimonials-8035
+    -
+      - jf_p_testimonials-6225
+    -
+      - jf_p_testimonials-4601
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  jf_p_testimonials-8035:
+    title: 'JF Particle - Testimonials (Example 1)'
+    attributes:
+      bg_color: '#efefef'
+      autoplay_delay: '6000'
+      html_before: '<h3 style="text-align:center;font-size:28px;margin:0 0 100px;">Particle - Testimonials (Example 1)</h3>'
+      items:
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/1.jpg'
+          avatar_alt: 'Jane Doe - Web Developer'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Jane Doe'
+          author_pos: 'Web Developer'
+          quote: '<h5>Highly recommend</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 1'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/2.jpg'
+          avatar_alt: 'Tony Antony - CEO'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Tony Antony'
+          author_pos: CEO
+          quote: '<h5>Best Forum Software</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 2'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/3.jpg'
+          avatar_alt: 'Melisa Ferdinand - Marketing Manager'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Melisa Ferdinand'
+          author_pos: 'Sales Manager'
+          quote: '<h5>Modern Design</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 3'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/4.jpg'
+          avatar_alt: 'Jessica Sutton - Web Designer'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Jessica Sutton'
+          author_pos: 'Web Designer'
+          quote: '<h5>High Professionalism</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 4'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/5.jpg'
+          avatar_alt: 'Mark Adams - Web Developor'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Mark Adams'
+          author_pos: 'Web Developor'
+          quote: '<h5>Fantastic work</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 5'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/6.jpg'
+          avatar_alt: 'Scarlett Hugo - CEO'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Scarlett Hugo'
+          author_pos: CEO
+          quote: '<h5>It''s Amazing</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 6'
+  jf_p_testimonials-6225:
+    title: 'JF Particle - Testimonials (Example 2)'
+    attributes:
+      theme: dark
+      bg_color: '#333333'
+      count_items: '1'
+      autoplay_delay: '6000'
+      html_before: '<h3 style="text-align:center;font-size:28px;margin:0 0 100px;">Particle - Testimonials (Example 2)</h3>'
+      items:
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/1.jpg'
+          avatar_alt: 'Jane Doe - Web Developer'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Jane Doe'
+          author_pos: 'Web Developer'
+          quote: '<h5>Highly recommend</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 1'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/2.jpg'
+          avatar_alt: 'Tony Antony - CEO'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Tony Antony'
+          author_pos: CEO
+          quote: '<h5>Best Forum Software</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 2'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/3.jpg'
+          avatar_alt: 'Melisa Ferdinand - Marketing Manager'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Melisa Ferdinand'
+          author_pos: 'Sales Manager'
+          quote: '<h5>Modern Design</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 3'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/4.jpg'
+          avatar_alt: 'Jessica Sutton - Web Designer'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Jessica Sutton'
+          author_pos: 'Web Designer'
+          quote: '<h5>High Professionalism</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 4'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/5.jpg'
+          avatar_alt: 'Mark Adams - Web Developor'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Mark Adams'
+          author_pos: 'Web Developor'
+          quote: '<h5>Fantastic work</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 5'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/6.jpg'
+          avatar_alt: 'Scarlett Hugo - CEO'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Scarlett Hugo'
+          author_pos: CEO
+          quote: '<h5>It''s Amazing</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 6'
+  jf_p_testimonials-4601:
+    title: 'JF Particle - Testimonials (Example 3)'
+    attributes:
+      theme: dark
+      bg_img: 'gantry-media://jf/pages/home_business/testimonials_bg.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.5)'
+      bg_attachement: fixed
+      count_items: '4'
+      autoplay_delay: '6000'
+      html_before: '<h3 style="text-align:center;font-size:28px;margin:0 0 100px;">Particle - Testimonials (Example 3)</h3>'
+      items:
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/1.jpg'
+          avatar_alt: 'Jane Doe - Web Developer'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Jane Doe'
+          author_pos: 'Web Developer'
+          quote: '<h5>Highly recommend</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 1'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/2.jpg'
+          avatar_alt: 'Tony Antony - CEO'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Tony Antony'
+          author_pos: CEO
+          quote: '<h5>Best Forum Software</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 2'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/3.jpg'
+          avatar_alt: 'Melisa Ferdinand - Marketing Manager'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Melisa Ferdinand'
+          author_pos: 'Sales Manager'
+          quote: '<h5>Modern Design</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 3'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/4.jpg'
+          avatar_alt: 'Jessica Sutton - Web Designer'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Jessica Sutton'
+          author_pos: 'Web Designer'
+          quote: '<h5>High Professionalism</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 4'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/5.jpg'
+          avatar_alt: 'Mark Adams - Web Developor'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Mark Adams'
+          author_pos: 'Web Developor'
+          quote: '<h5>Fantastic work</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 5'
+        -
+          avatar: 'gantry-media://jf/particles/testimonials/6.jpg'
+          avatar_alt: 'Scarlett Hugo - CEO'
+          avatar_width: '70'
+          avatar_height: '70'
+          author_name: 'Scarlett Hugo'
+          author_pos: CEO
+          quote: '<h5>It''s Amazing</h5>Natoque pellentesque nascetur purus nascetur, sed et et vel, lorem ridiculus, phasellus proin scelerisque sed dapibus odio lectus hac eros ultricies.'
+          name: 'Quote 6'

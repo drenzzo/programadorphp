@@ -1,0 +1,91 @@
+pink:
+  image: 'gantry-admin://images/pink.jpg'
+  description: 'Pink'
+
+  styles:
+    jf_color_base:
+      background: '#eeeeee'
+      text-color: '#666666'
+      tag-color: '#4d4d4d'
+      accent-1: '#ff4081'
+      login-left: '#c61590'
+      login-right: '#1e80dc'
+    jf_color_menu:
+      toplevel-default: '#222222'
+      toplevel-active: '#ff4081'
+      dropdown-bg: '#ffffff'
+      dropdown-default: '#222222'
+      dropdown-active: '#ff4081'
+    jf_color_s_header:
+      background: '#ffffff'
+      shadow: '#dcdcdc'
+      text-color: '#444444'
+
+purple:
+  image: 'gantry-admin://images/purple.jpg'
+  description: 'Purple'
+
+  styles:
+    jf_color_base:
+      background: '#eeeeee'
+      text-color: '#666666'
+      tag-color: '#4d4d4d'
+      accent-1: '#9b26af'
+      login-left: '#c61590'
+      login-right: '#1e80dc'
+    jf_color_menu:
+      toplevel-default: '#222222'
+      toplevel-active: '#9b26af'
+      dropdown-bg: '#ffffff'
+      dropdown-default: '#222222'
+      dropdown-active: '#9b26af'
+    jf_color_s_header:
+      background: '#ffffff'
+      shadow: '#dcdcdc'
+      text-color: '#444444'
+
+indigo:
+  image: 'gantry-admin://images/indigo.jpg'
+  description: 'Indigo'
+
+  styles:
+    jf_color_base:
+      background: '#eeeeee'
+      text-color: '#666666'
+      tag-color: '#4d4d4d'
+      accent-1: '#3e50b4'
+      login-left: '#c61590'
+      login-right: '#1e80dc'
+    jf_color_menu:
+      toplevel-default: '#222222'
+      toplevel-active: '#3e50b4'
+      dropdown-bg: '#ffffff'
+      dropdown-default: '#222222'
+      dropdown-active: '#3e50b4'
+    jf_color_s_header:
+      background: '#ffffff'
+      shadow: '#dcdcdc'
+      text-color: '#444444'
+
+orange:
+  image: 'gantry-admin://images/orange.jpg'
+  description: 'Orange'
+
+  styles:
+    jf_color_base:
+      background: '#eeeeee'
+      text-color: '#666666'
+      tag-color: '#4d4d4d'
+      accent-1: '#f39c12'
+      login-left: '#c61590'
+      login-right: '#1e80dc'
+    jf_color_menu:
+      toplevel-default: '#222222'
+      toplevel-active: '#f39c12'
+      dropdown-bg: '#ffffff'
+      dropdown-default: '#222222'
+      dropdown-active: '#f39c12'
+    jf_color_s_header:
+      background: '#ffffff'
+      shadow: '#dcdcdc'
+      text-color: '#444444'

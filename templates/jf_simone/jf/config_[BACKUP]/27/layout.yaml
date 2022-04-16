@@ -1,0 +1,468 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_portfolio.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/: {  }
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/:
+    -
+      - jf_p_portfolio-3835
+    -
+      - jf_p_portfolio-5263
+    -
+      - jf_p_portfolio-4758
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  jf_p_portfolio-3835:
+    title: 'JF Particle - Portfolio (Example 1)'
+    attributes:
+      padding: '100px 0 170px'
+      bg_color: '#f4f4f4'
+      html_before: '<h3 style="margin:0 0 30px;font-size:2.7rem;font-weight:300;color:#000;" data-aos="fade-up">Particle - Portfolio (Example 1)</h3>'
+      filterbar_items:
+        -
+          filter_id: wallpaper
+          filter_text: Wallpaper
+          name: wallpaper
+        -
+          filter_id: graphic
+          filter_text: 'Graphic Design'
+          name: graphic
+        -
+          filter_id: photos
+          filter_text: Photos
+          name: photos
+        -
+          filter_id: 3d
+          filter_text: '3D Renders'
+          name: 3d
+      items:
+        -
+          filteritem_id: wallpaper
+          image_src: 'gantry-media://jf/pages/portfolio/1.jpg'
+          image_text: 'Print Media'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/1.jpg'
+          lightbox_video: ''
+          name: 'item 1'
+        -
+          filteritem_id: wallpaper
+          image_src: 'gantry-media://jf/pages/portfolio/2.jpg'
+          image_text: 'Black and White'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/2.jpg'
+          lightbox_video: ''
+          name: 'item 2'
+        -
+          filteritem_id: wallpaper
+          image_src: 'gantry-media://jf/pages/portfolio/3.jpg'
+          image_text: 'Magazine Design'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/3.jpg'
+          lightbox_video: ''
+          name: 'item 3'
+        -
+          filteritem_id: graphic
+          image_src: 'gantry-media://jf/pages/portfolio/4.jpg'
+          image_text: 'Vertical Slider'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/4.jpg'
+          lightbox_video: ''
+          name: 'item 4'
+        -
+          filteritem_id: graphic
+          image_src: 'gantry-media://jf/pages/portfolio/5.jpg'
+          image_text: 'Product Mockup'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/5.jpg'
+          lightbox_video: ''
+          name: 'item 5'
+        -
+          filteritem_id: graphic
+          image_src: 'gantry-media://jf/pages/portfolio/6.jpg'
+          image_text: Headphones
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/6.jpg'
+          lightbox_video: ''
+          name: 'item 6'
+        -
+          filteritem_id: photos
+          image_src: 'gantry-media://jf/pages/portfolio/7.jpg'
+          image_text: 'Carousel Gallery'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/7.jpg'
+          lightbox_video: ''
+          name: 'item 7'
+        -
+          filteritem_id: photos
+          image_src: 'gantry-media://jf/pages/portfolio/8.jpg'
+          image_text: 'Lightbox Gallery'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/8.jpg'
+          lightbox_video: ''
+          name: 'item 8'
+        -
+          filteritem_id: photos
+          image_src: 'gantry-media://jf/pages/portfolio/9.jpg'
+          image_text: 'Left Fixed Sidebar'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/9.jpg'
+          lightbox_video: ''
+          name: 'item 9'
+        -
+          filteritem_id: 3d
+          image_src: 'gantry-media://jf/pages/portfolio/10.jpg'
+          image_text: 'Sidebar Slider'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/10.jpg'
+          lightbox_video: ''
+          name: 'item 10'
+        -
+          filteritem_id: 3d
+          image_src: 'gantry-media://jf/pages/portfolio/11.jpg'
+          image_text: 'Left Floating Sidebar'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/11.jpg'
+          lightbox_video: ''
+          name: 'item 11'
+      css3_anim: fade-up
+  jf_p_portfolio-5263:
+    title: 'JF Particle - Portfolio (Example 2)'
+    attributes:
+      padding: '100px 0 170px'
+      theme: dark
+      bg_color: '#333333'
+      html_before: '<h3 style="margin:0 0 30px;font-size:2.7rem;font-weight:300;" data-aos="fade-up">Particle - Portfolio (Example 2)</h3>'
+      filterbar_items:
+        -
+          filter_id: wallpaper
+          filter_text: Wallpaper
+          name: wallpaper
+        -
+          filter_id: graphic
+          filter_text: 'Graphic Design'
+          name: graphic
+        -
+          filter_id: photos
+          filter_text: Photos
+          name: photos
+        -
+          filter_id: 3d
+          filter_text: '3D Renders'
+          name: 3d
+      items:
+        -
+          filteritem_id: wallpaper
+          image_src: 'gantry-media://jf/pages/portfolio/1.jpg'
+          image_text: 'Print Media'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/1.jpg'
+          lightbox_video: ''
+          name: 'item 1'
+        -
+          filteritem_id: wallpaper
+          image_src: 'gantry-media://jf/pages/portfolio/2.jpg'
+          image_text: 'Black and White'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/2.jpg'
+          lightbox_video: ''
+          name: 'item 2'
+        -
+          filteritem_id: wallpaper
+          image_src: 'gantry-media://jf/pages/portfolio/3.jpg'
+          image_text: 'Magazine Design'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/3.jpg'
+          lightbox_video: ''
+          name: 'item 3'
+        -
+          filteritem_id: graphic
+          image_src: 'gantry-media://jf/pages/portfolio/4.jpg'
+          image_text: 'Vertical Slider'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/4.jpg'
+          lightbox_video: ''
+          name: 'item 4'
+        -
+          filteritem_id: graphic
+          image_src: 'gantry-media://jf/pages/portfolio/5.jpg'
+          image_text: 'Product Mockup'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/5.jpg'
+          lightbox_video: ''
+          name: 'item 5'
+        -
+          filteritem_id: graphic
+          image_src: 'gantry-media://jf/pages/portfolio/6.jpg'
+          image_text: Headphones
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/6.jpg'
+          lightbox_video: ''
+          name: 'item 6'
+        -
+          filteritem_id: photos
+          image_src: 'gantry-media://jf/pages/portfolio/7.jpg'
+          image_text: 'Carousel Gallery'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/7.jpg'
+          lightbox_video: ''
+          name: 'item 7'
+        -
+          filteritem_id: photos
+          image_src: 'gantry-media://jf/pages/portfolio/8.jpg'
+          image_text: 'Lightbox Gallery'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/8.jpg'
+          lightbox_video: ''
+          name: 'item 8'
+        -
+          filteritem_id: photos
+          image_src: 'gantry-media://jf/pages/portfolio/9.jpg'
+          image_text: 'Left Fixed Sidebar'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/9.jpg'
+          lightbox_video: ''
+          name: 'item 9'
+        -
+          filteritem_id: 3d
+          image_src: 'gantry-media://jf/pages/portfolio/10.jpg'
+          image_text: 'Sidebar Slider'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/10.jpg'
+          lightbox_video: ''
+          name: 'item 10'
+        -
+          filteritem_id: 3d
+          image_src: 'gantry-media://jf/pages/portfolio/11.jpg'
+          image_text: 'Left Floating Sidebar'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/11.jpg'
+          lightbox_video: ''
+          name: 'item 11'
+      css3_anim: fade-up
+  jf_p_portfolio-4758:
+    title: 'JF Particle - Portfolio (Example 3)'
+    attributes:
+      padding: '100px 0 170px'
+      theme: dark
+      bg_img: 'gantry-media://jf/blog/3_large.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.5)'
+      bg_attachement: fixed
+      html_before: '<h3 style="margin:0 0 30px;font-size:2.7rem;font-weight:300;" data-aos="fade-up">Particle - Portfolio (Example 3)</h3>'
+      filterbar_items:
+        -
+          filter_id: wallpaper
+          filter_text: Wallpaper
+          name: wallpaper
+        -
+          filter_id: graphic
+          filter_text: 'Graphic Design'
+          name: graphic
+        -
+          filter_id: photos
+          filter_text: Photos
+          name: photos
+        -
+          filter_id: 3d
+          filter_text: '3D Renders'
+          name: 3d
+      items:
+        -
+          filteritem_id: wallpaper
+          image_src: 'gantry-media://jf/pages/portfolio/1.jpg'
+          image_text: 'Print Media'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/1.jpg'
+          lightbox_video: ''
+          name: 'item 1'
+        -
+          filteritem_id: wallpaper
+          image_src: 'gantry-media://jf/pages/portfolio/2.jpg'
+          image_text: 'Black and White'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/2.jpg'
+          lightbox_video: ''
+          name: 'item 2'
+        -
+          filteritem_id: wallpaper
+          image_src: 'gantry-media://jf/pages/portfolio/3.jpg'
+          image_text: 'Magazine Design'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/3.jpg'
+          lightbox_video: ''
+          name: 'item 3'
+        -
+          filteritem_id: graphic
+          image_src: 'gantry-media://jf/pages/portfolio/4.jpg'
+          image_text: 'Vertical Slider'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/4.jpg'
+          lightbox_video: ''
+          name: 'item 4'
+        -
+          filteritem_id: graphic
+          image_src: 'gantry-media://jf/pages/portfolio/5.jpg'
+          image_text: 'Product Mockup'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/5.jpg'
+          lightbox_video: ''
+          name: 'item 5'
+        -
+          filteritem_id: graphic
+          image_src: 'gantry-media://jf/pages/portfolio/6.jpg'
+          image_text: Headphones
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/6.jpg'
+          lightbox_video: ''
+          name: 'item 6'
+        -
+          filteritem_id: photos
+          image_src: 'gantry-media://jf/pages/portfolio/7.jpg'
+          image_text: 'Carousel Gallery'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/7.jpg'
+          lightbox_video: ''
+          name: 'item 7'
+        -
+          filteritem_id: photos
+          image_src: 'gantry-media://jf/pages/portfolio/8.jpg'
+          image_text: 'Lightbox Gallery'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/8.jpg'
+          lightbox_video: ''
+          name: 'item 8'
+        -
+          filteritem_id: photos
+          image_src: 'gantry-media://jf/pages/portfolio/9.jpg'
+          image_text: 'Left Fixed Sidebar'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/9.jpg'
+          lightbox_video: ''
+          name: 'item 9'
+        -
+          filteritem_id: 3d
+          image_src: 'gantry-media://jf/pages/portfolio/10.jpg'
+          image_text: 'Sidebar Slider'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/10.jpg'
+          lightbox_video: ''
+          name: 'item 10'
+        -
+          filteritem_id: 3d
+          image_src: 'gantry-media://jf/pages/portfolio/11.jpg'
+          image_text: 'Left Floating Sidebar'
+          linktype: image
+          url: ''
+          lightbox_image: 'gantry-media://jf/pages/portfolio/11.jpg'
+          lightbox_video: ''
+          name: 'item 11'
+      css3_anim: fade-up

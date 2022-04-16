@@ -1,0 +1,100 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/page_portfolio.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/:
+    -
+      - jf_p_cta-4539
+  /main/:
+    -
+      - system-messages-5749
+    -
+      - system-content-2070
+  /full-width-section-2/: {  }
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: noboxshadow
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  jf_p_cta-4539:
+    title: 'JF Particle - CTA'
+    attributes:
+      padding: '180px 0 80px 0'
+      theme: dark
+      bg_img: 'gantry-media://jf/pages/gallery/gallery_bg.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.35)'
+      bg_size: cover
+      bg_attachement: fixed
+      html_before: "<h3 style=\"margin:0;font-size:2.3rem;line-height:1;font-weight:600;\" data-aos=\"fade-up\">Photo Gallery</h3>\n<div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\">Phoca Gallery Joomla! Component</p>"
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589

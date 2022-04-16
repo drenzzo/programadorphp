@@ -1,0 +1,16 @@
+enabled: '1'
+special_id: ''
+contentW: default
+padding: '150px 0'
+textAlign: center
+theme: default
+bg_color: '#ffffff'
+bg_img: ''
+bg_mask: 'rgba(0, 0, 0, 0)'
+bg_size: cover
+bg_attachement: scroll
+bg_css: ''
+html_before: ''
+style: style_1
+items: {  }
+html_after: ''

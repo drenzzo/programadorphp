@@ -1,0 +1,95 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_mailchimp.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/:
+    -
+      - 'jf_p_subscribe-4778 40'
+      - 'custom-2081 60'
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/: {  }
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: ''
+      class: padding_100_0
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  jf_p_subscribe-4778:
+    title: 'JF Particle - Mailchimp Subscribe'
+  custom-2081:
+    title: 'Custom HTML'
+    attributes:
+      html: "<h3 style=\"margin:0 0 30px;font-size:2rem;font-weight:300\" data-aos=\"fade-up\">Particle - MailChimp<sup>®</sup> Subscribe</h3>\n<div class=\"small_sep\" style=\"margin:30px auto 30px 0;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\">MailChimp<sup>®</sup> Subscribe Gantry 5 Particle, relies on an undocumented feature at MailChimp<sup>®</sup> that uses JSONP to allow cross-domain ajax to work. <br>Particle is based on jQuery plugin - https://github.com/scdoshi/jquery-ajaxchimp</p>"
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589

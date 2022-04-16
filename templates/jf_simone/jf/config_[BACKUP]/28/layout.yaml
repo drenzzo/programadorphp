@@ -1,0 +1,278 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_clients.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/: {  }
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/:
+    -
+      - jf_p_clients-7944
+    -
+      - jf_p_clients-2653
+    -
+      - jf_p_clients-9524
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  jf_p_clients-7944:
+    title: 'JF Particle - Clients (Example 1)'
+    attributes:
+      bg_color: '#f4f4f4'
+      count_items: '6'
+      autoplay_delay: '4000'
+      speed: '800'
+      pagination: '1'
+      html_before: '<h3 style="text-align:center;font-size:28px;margin:0 0 100px">Particle - Clients (Example 1)</h3>'
+      items:
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/1.png'
+          image_alt: ''
+          name: 'Logo 1'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/2.png'
+          image_alt: ''
+          name: 'Logo 2'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/3.png'
+          image_alt: ''
+          name: 'Logo 3'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/4.png'
+          image_alt: ''
+          name: 'Logo 4'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/5.png'
+          image_alt: ''
+          name: 'Logo 5'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/6.png'
+          image_alt: ''
+          name: 'Logo 6'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/7.png'
+          image_alt: ''
+          name: 'Logo 7'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/8.png'
+          image_alt: ''
+          aos_anim: '0'
+          aos_anim_delay: '0'
+          name: 'Logo 8'
+  jf_p_clients-2653:
+    title: 'JF Particle - Clients (Example 2)'
+    attributes:
+      special_id: ''
+      theme: dark
+      bg_color: '#333333'
+      count_items: '6'
+      autoplay_delay: '4000'
+      speed: '800'
+      pagination: '1'
+      html_before: '<h3 style="color:#fff;text-align:center;font-size:28px;margin:0 0 100px">Particle - Clients (Example 2)</h3>'
+      items:
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/1_light.png'
+          image_alt: ''
+          name: 'Logo 1'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/2_light.png'
+          image_alt: ''
+          name: 'Logo 2'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/3_light.png'
+          image_alt: ''
+          name: 'Logo 3'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/4_light.png'
+          image_alt: ''
+          name: 'Logo 4'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/5_light.png'
+          image_alt: ''
+          name: 'Logo 5'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/6_light.png'
+          image_alt: ''
+          name: 'Logo 6'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/7_light.png'
+          image_alt: ''
+          name: 'Logo 7'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/8_light.png'
+          image_alt: ''
+          aos_anim: '0'
+          aos_anim_delay: '0'
+          name: 'Logo 8'
+  jf_p_clients-9524:
+    title: 'JF Particle - Clients (Example 3)'
+    attributes:
+      special_id: ''
+      theme: dark
+      bg_img: 'gantry-media://jf/particles/clients/clients_bg.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.4)'
+      bg_attachement: fixed
+      count_items: '6'
+      autoplay_delay: '4000'
+      speed: '800'
+      pagination: '1'
+      html_before: '<h3 style="color:#fff;text-align:center;font-size:28px;margin:0 0 100px">Particle - Clients (Example 3)</h3>'
+      items:
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/1_light.png'
+          image_alt: ''
+          name: 'Logo 1'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/2_light.png'
+          image_alt: ''
+          name: 'Logo 2'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/3_light.png'
+          image_alt: ''
+          name: 'Logo 3'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/4_light.png'
+          image_alt: ''
+          name: 'Logo 4'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/5_light.png'
+          image_alt: ''
+          name: 'Logo 5'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/6_light.png'
+          image_alt: ''
+          name: 'Logo 6'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/7_light.png'
+          image_alt: ''
+          name: 'Logo 7'
+        -
+          link_url: '#'
+          link_target: self
+          image: 'gantry-media://jf/particles/clients/8_light.png'
+          image_alt: ''
+          aos_anim: '0'
+          aos_anim_delay: '0'
+          name: 'Logo 8'

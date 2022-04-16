@@ -1,0 +1,143 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  /header/:
+    -
+      - 'logo-8517 18'
+      - 'menu-2176 82'
+  /navigation/: {  }
+  /right-panel/:
+    -
+      - position-position-7914
+  /news-panel/:
+    -
+      - position-position-9581
+  /full-width-section-1/:
+    -
+      - position-position-5515
+  /container-main/:
+    -
+      -
+        '/main/ 70':
+          -
+            - system-messages-9589
+          -
+            - system-content-3497
+      -
+        'sidebar 30':
+          -
+            - position-position-7479
+  /full-width-section-2/:
+    -
+      - position-position-8075
+  /breadcrumbs/:
+    -
+      - position-position-7658
+  /footer/:
+    -
+      - 'custom-3503 35'
+      - 'position-position-5191 14'
+      - 'position-position-1028 18'
+      - 'jf_p_subscribe-6876 33'
+  /bottom-footer/: {  }
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  right-panel:
+    type: section
+    attributes:
+      boxed: ''
+  news-panel:
+    type: section
+    attributes:
+      boxed: ''
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+      extra:
+        -
+          data-aos: fade-up
+        -
+          data-aos-delay: '0'
+  sidebar:
+    type: section
+    attributes:
+      class: ''
+      extra:
+        -
+          data-aos: fade-up
+        -
+          data-aos-delay: '300'
+  container-main:
+    attributes:
+      boxed: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: ''
+  breadcrumbs:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  footer:
+    attributes:
+      boxed: ''
+  bottom-footer:
+    type: section
+    attributes:
+      boxed: ''
+content:
+  position-position-7914:
+    title: 'Module Position'
+    attributes:
+      key: right-panel
+  position-position-9581:
+    title: 'Module Position'
+    attributes:
+      key: news-panel
+  position-position-5515:
+    title: 'Position "banner-top"'
+    attributes:
+      key: banner-top
+  position-position-7479:
+    title: 'Module Position'
+    attributes:
+      key: sidebar
+  position-position-8075:
+    title: 'Position"banner-bottom"'
+    attributes:
+      key: banner-bottom
+  position-position-7658:
+    title: 'Module Position'
+    attributes:
+      key: breadcrumbs
+  custom-3503:
+    title: 'Footer Copyright'
+    attributes:
+      html: "<div style=\"display:block;margin:30px 0 0 0;font-size:12px;\">\n\t<div class=\"jf_logo_wrap\"><div class=\"jf_logo_animation white\">\n\t<svg version=\"1.0\" xmlns=\"http://www.w3.org/2000/svg\" data-tilt=\"20\" width=\"363.000000pt\" height=\"89.000000pt\" viewBox=\"0 0 363.000000 89.000000\" preserveAspectRatio=\"xMidYMid meet\" style=\"width:175px;height:auto;margin:0 0 12px 0;border-bottom:2px solid #ff4081;padding:0 0 14px;display:block;\"><g transform=\"translate(0.000000,89.000000) scale(0.100000,-0.100000)\" fill=\"#ffffff\" stroke=\"none\"><path d=\"M258 861 c-179 -58 -259 -197 -192 -335 8 -17 39 -60 68 -95 61 -71 73 -101 56 -142 -13 -31 -71 -63 -132 -74 -23 -5 -38 -13 -38 -21 0 -16 60 -138 83 -168 14 -19 16 -19 82 -1 113 30 211 110 244 198 18 46 13 133 -8 176 -11 20 -39 62 -64 92 -85 104 -95 154 -37 184 16 8 50 15 76 15 33 0 45 4 41 13 -85 196 -79 190 -179 158z\"></path><path d=\"M574 841 c-30 -13 -64 -59 -64 -87 0 -67 59 -110 139 -101 129 14 120 182 -11 193 -24 2 -53 0 -64 -5z\"></path><path d=\"M3242 622 c-116 -42 -185 -149 -185 -287 -1 -133 55 -225 168 -277 41 -19 67 -23 145 -23 104 0 154 13 200 51 26 22 28 28 19 52 -6 15 -22 42 -35 59 l-25 33 -39 -20 c-83 -43 -179 -35 -220 17 -11 14 -19 27 -18 29 2 1 77 9 168 18 148 15 167 19 183 38 34 41 4 163 -57 236 -71 83 -195 113 -304 74z m139 -161 c16 -17 29 -40 29 -54 0 -24 -4 -26 -76 -32 -49 -5 -79 -4 -86 3 -15 15 -1 60 27 88 33 32 70 31 106 -5z\"></path><path d=\"M915 608 c-93 -14 -110 -21 -107 -44 1 -10 5 -133 9 -272 l6 -253 101 3 101 3 3 178 2 178 33 19 c41 26 69 25 93 -1 17 -19 19 -40 21 -193 1 -94 2 -175 3 -179 0 -4 46 -6 103 -5 l102 3 -4 146 c-4 168 5 211 49 234 40 21 63 19 86 -6 17 -19 19 -39 21 -186 1 -90 4 -171 7 -179 7 -19 192 -21 198 -2 3 11 3 405 -1 460 -2 29 -58 84 -99 96 -22 7 -57 12 -78 12 -47 0 -130 -38 -163 -74 l-24 -26 -19 31 c-28 45 -97 73 -167 66 -42 -5 -68 -15 -113 -46 l-58 -40 0 29 c0 40 -10 60 -29 59 -9 -1 -43 -6 -76 -11z\"></path><path d=\"M1990 605 c-63 -20 -124 -75 -157 -143 -24 -49 -28 -69 -28 -142 1 -72 5 -93 27 -136 29 -56 68 -93 132 -127 58 -31 200 -31 266 -1 54 25 103 72 133 128 18 34 22 57 22 141 0 83 -4 107 -22 141 -29 55 -79 102 -133 127 -58 26 -178 32 -240 12z m172 -194 c30 -27 33 -35 33 -86 0 -51 -3 -59 -33 -86 -71 -63 -164 -14 -164 87 0 99 94 148 164 85z\"></path><path d=\"M2516 604 c-109 -18 -106 -16 -94 -61 5 -21 12 -141 16 -268 l7 -230 100 0 100 0 3 178 2 178 33 19 c38 24 66 25 93 6 17 -13 19 -31 24 -198 l5 -183 100 0 100 0 3 235 c3 269 0 280 -80 319 -68 33 -123 28 -212 -18 -75 -39 -76 -39 -76 -16 0 59 -2 60 -124 39z\"></path><path d=\"M518 335 c2 -148 5 -276 7 -283 5 -13 190 -18 198 -4 3 4 7 130 8 281 l4 273 -111 2 -110 1 4 -270z\"></path></g></svg>\n\t</div></div>\n\t<div>\n\t\t© JoomForest.com 2011 - 2017. All Rights Reserved.<br>\n\t\tThe Joomla!<sup>®</sup> name is used under a limited license from Open Source Matters in the United States and other countries. JoomForest.com is not affiliated with or endorsed by Open Source Matters or the Joomla! Project.\n\t</div>\n</div>"
+  position-position-5191:
+    title: "Position:\_footer-b"
+    attributes:
+      key: footer-b
+  position-position-1028:
+    title: "Position:\_footer-c"
+    attributes:
+      key: footer-c
+    block:
+      class: hide-module-title
+  jf_p_subscribe-6876:
+    title: 'JF Particle - Mailchimp Subscribe'

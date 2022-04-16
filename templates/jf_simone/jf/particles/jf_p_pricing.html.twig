@@ -1,0 +1,55 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div{% if particle.special_id %} id="{{ particle.special_id|e }}"{% endif %} class="jf_p_global jf_p_pricing{% if particle.theme == 'dark' %} dark{% endif %}" style="
+		{% if particle.padding %}padding:{{ particle.padding|e }};{% endif %}
+		{% if particle.textAlign %}text-align:{{ particle.textAlign|e }};{% endif %}
+		{% if particle.bg_color %}background-color:{{ particle.bg_color|e }};{% endif %}
+		{% if particle.bg_img %}background-image:url('{{ url(particle.bg_img)|e }}');{% endif %}
+		background-size:{{ particle.bg_size|e }};
+		background-attachment:{{ particle.bg_attachement|e }};
+		{{ particle.bg_css|e }}
+	">
+		{% if particle.bg_mask %}<div class="jf_p_global_bg_mask" style="background:{{ particle.bg_mask|e }}"></div>{% endif %}
+		<div class="jf_p_global_cont">
+			<div class="clear"></div>
+			{% if particle.contentW == "default" %}<div class="jf_g_container"><div class="g-content">{% endif %}
+				{{ particle.html_before|html|raw }}
+				<div class="jf_col_fluid jf_pricing">
+					{% for item in particle.items %}
+						{% if item.tableStyle == "html" %}
+							<div class="col {{ item.col|e }}"{% if item.css3_anim %} data-aos="fade-up" data-aos-delay="{{ item.css3_anim_delay|e }}"{% endif %}>
+								{{ item.html|html|raw }}
+							</div>
+						{% else %}
+							<div class="col {{ item.col|e }}{% if item.highlighted %} highlighted{% endif %}"{% if item.css3_anim %} data-aos="fade-up" data-aos-delay="{{ item.css3_anim_delay|e }}"{% endif %}>
+								<div>
+									{% if item.html_heading %}<span class="cell heading">{{ item.html_heading|html|raw }}</span>{% endif %}
+									{% if item.html_subheading %}<span class="cell subheading">{{ item.html_subheading|html|raw }}</span>{% endif %}
+									{% if item.html_pricing %}<span class="cell pricing">{{ item.html_pricing|html|raw }}</span>{% endif %}
+									{% if item.html_row_1 %}<span class="cell">{{ item.html_row_1|html|raw }}</span>{% endif %}
+									{% if item.html_row_2 %}<span class="cell">{{ item.html_row_2|html|raw }}</span>{% endif %}
+									{% if item.html_row_3 %}<span class="cell">{{ item.html_row_3|html|raw }}</span>{% endif %}
+									{% if item.html_row_4 %}<span class="cell">{{ item.html_row_4|html|raw }}</span>{% endif %}
+									{% if item.html_row_5 %}<span class="cell">{{ item.html_row_5|html|raw }}</span>{% endif %}
+									{% if item.html_row_6 %}<span class="cell">{{ item.html_row_6|html|raw }}</span>{% endif %}
+									{% if item.html_row_7 %}<span class="cell">{{ item.html_row_7|html|raw }}</span>{% endif %}
+									{% if item.html_row_8 %}<span class="cell">{{ item.html_row_8|html|raw }}</span>{% endif %}
+									{% if item.html_row_9 %}<span class="cell">{{ item.html_row_9|html|raw }}</span>{% endif %}
+									{% if item.html_row_10 %}<span class="cell">{{ item.html_row_10|html|raw }}</span>{% endif %}
+									{% if item.html_row_11 %}<span class="cell">{{ item.html_row_11|html|raw }}</span>{% endif %}
+									{% if item.html_row_12 %}<span class="cell">{{ item.html_row_12|html|raw }}</span>{% endif %}
+									{% if item.html_row_13 %}<span class="cell">{{ item.html_row_13|html|raw }}</span>{% endif %}
+									{% if item.html_row_14 %}<span class="cell">{{ item.html_row_14|html|raw }}</span>{% endif %}
+									{% if item.html_row_15 %}<span class="cell">{{ item.html_row_15|html|raw }}</span>{% endif %}
+								</div>
+							</div>
+						{% endif %}
+					{% endfor %}
+				</div>
+				{{ particle.html_after|html|raw }}
+			{% if particle.contentW == "default" %}</div></div>{% endif %}
+			<div class="clear"></div>
+		</div>
+	</div>
+{% endblock %}

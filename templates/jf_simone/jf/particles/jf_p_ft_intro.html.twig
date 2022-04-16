@@ -1,0 +1,46 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+{% set indentifier = random() %}
+
+{% block stylesheets %}
+	<style>{% for item in particle.items %}.jf_icon_box-{{ loop.index }}-{{ indentifier|e }} .jf_icon_box_wrap:hover{background:{{ item.grid_bg_hovercolor|e }}!important}{% endfor %}</style>
+{% endblock %}
+
+{% block particle %}
+	<div{% if particle.special_id %} id="{{ particle.special_id|e }}"{% endif %} class="jf_p_ft_intro_wrap jf_p_global{% if particle.theme == 'dark' %} dark{% endif %}" style="
+		{% if particle.padding %}padding:{{ particle.padding|e }};{% endif %}
+		{% if particle.textAlign %}text-align:{{ particle.textAlign|e }};{% endif %}
+		{% if particle.bg_color %}background-color:{{ particle.bg_color|e }};{% endif %}
+		{% if particle.bg_img %}background-image:url('{{ url(particle.bg_img)|e }}');{% endif %}
+		background-size:{{ particle.bg_size|e }};
+		background-attachment:{{ particle.bg_attachement|e }};
+		{{ particle.bg_css|e }}
+	">
+		{% if particle.bg_mask %}<div class="jf_p_ft_intro_bg_mask jf_p_global_bg_mask" style="background:{{ particle.bg_mask|e }}"></div>{% endif %}
+		<div class="jf_p_ft_intro_cont">
+			<div class="clear"></div>
+			{% if particle.contentW == "default" %}<div class="jf_g_container"><div class="g-content">{% endif %}
+				{{ particle.html_before|html|raw }}
+				<div class="row-fluid">
+					{% for item in particle.items %}
+						<div class="jf_icon_box-{{ loop.index }}-{{ indentifier|e }} span{{ item.grid }}" style="text-align:{{ item.textAl|e }};background:{{ item.grid_bg_color|e }}"
+							{% if item.css3_anim %} data-aos="{{ item.css3_anim|e }}" data-aos-delay="{{ item.css3_anim_delay|e }}"{% endif %}>
+							<div class="jf_icon_box_wrap">
+								<div class="icon">
+									{% if item.icon_type == "html" %}
+										{{ item.html_icon|html|raw }}
+									{% else %}
+										<img src="{{ url(item.image_icon)|e }}"{% if item.image_alt %} alt="{{ item.image_alt|e }}"{% endif %}>
+									{% endif %}
+								</div>
+								<div class="header">{{ item.html_header|html|raw }}</div>
+								<div class="descr">{{ item.html_descr|html|raw }}</div>
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+				{{ particle.html_after|html|raw }}
+			{% if particle.contentW == "default" %}</div></div>{% endif %}
+			<div class="clear"></div>
+		</div>
+	</div>
+{% endblock %}

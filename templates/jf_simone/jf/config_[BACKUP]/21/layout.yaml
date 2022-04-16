@@ -1,0 +1,260 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_radial.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/:
+    -
+      - jf_p_radialslider-1917
+    -
+      - jf_p_radialslider-3338
+    -
+      - jf_p_radialslider-8955
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/: {  }
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  jf_p_radialslider-1917:
+    title: 'JF Particle - Radial Slider 1'
+    attributes:
+      autoplay: '1'
+      items:
+        -
+          image: 'gantry-media://jf/particles/radialslider/creative/1.jpg'
+          html: "<h1 class=\"data_resp\" style=\"margin:0 0 50px;font-weight:700\" data-respWide=\"margin:0 0 50px;font-weight:700\" data-resp768px=\"margin:0 0 20px;font-weight:700;font-size:2.5rem;\" data-resp667px=\"margin:0 0 20px;font-weight:700;font-size:2rem;\" data-resp568px=\"margin:0 0 10px;font-weight:700;font-size:1.5rem;\" data-resp320px=\"margin:0 0 10px;font-weight:700;font-size:1rem;\">Digital<br>Creative Agency</h1>\n<button type=\"button\" class=\"btn btn-large btn-primary waves-effect waves-light-50 data_resp\" style=\"background:0;border:2px solid #fff;padding:11px 25px;margin:0 5px;\" data-respWide=\"background:0;border:2px solid #fff;padding:11px 25px;margin:0 5px;\" data-resp768px=\"background:0;border:2px solid #fff;padding:8px 22px;margin:0 5px;font-size:14px;\" data-resp667px=\"background:0;border:2px solid #fff;padding:6px 18px;margin:0 5px;font-size:14px;\" data-resp568px=\"background:0;border:2px solid #fff;padding:6px 18px;margin:0 5px;font-size:12px;\" data-resp320px=\"background:0;border:2px solid #fff;padding:0 14px;margin:0 5px;font-size:8px;\" data-tilt=\"10\">Download</button>\n<button type=\"button\" class=\"btn btn-large btn-primary waves-effect waves-light-50 data_resp\" style=\"margin:0 5px\" data-respWide=\"margin:0 5px\" data-resp768px=\"margin:0 5px;padding:10px 24px;font-size:14px;\" data-resp667px=\"margin:0 5px;padding:8px 22px;font-size:14px;\" data-resp568px=\"margin:0 5px;padding:8px 22px;font-size:12px;\" data-resp320px=\"margin:0 5px;padding:2px 14px;font-size:8px;\" data-tilt=\"10\">Gets Started</button>"
+          textAl: center
+          parallax: '1'
+          scrollBtn: '1'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: '#features'
+          name: 'item 1'
+        -
+          image: 'gantry-media://jf/particles/radialslider/creative/2.jpg'
+          html: "<h1 class=\"data_resp\" \nstyle=\"margin:0 0 50px;font-weight:700\" \ndata-respWide=\"margin:0 0 50px;font-weight:700\" \ndata-resp768px=\"margin:0 0 20px;font-weight:700;font-size:2.5rem;\" \ndata-resp667px=\"margin:0 0 20px;font-weight:700;font-size:2rem;\" \ndata-resp568px=\"margin:0 0 10px;font-weight:700;font-size:1.5rem;\" \ndata-resp320px=\"margin:0 0 10px;font-weight:700;font-size:1rem;\">The Best FREE<br>Joomla Template</h1>\n<button type=\"button\" class=\"btn btn-large btn-primary waves-effect waves-light-50 data_resp\" \nstyle=\"margin:0 5px\" \ndata-respWide=\"margin:0 5px\" \ndata-resp768px=\"margin:0 5px;padding:10px 24px;font-size:14px;\" \ndata-resp667px=\"margin:0 5px;padding:8px 22px;font-size:14px;\" \ndata-resp568px=\"margin:0 5px;padding:8px 22px;font-size:12px;\" \ndata-resp320px=\"margin:0 5px;padding:2px 14px;font-size:8px;\" \ndata-tilt=\"10\">Download Now</button>"
+          textAl: center
+          parallax: '1'
+          scrollBtn: '1'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: '#features'
+          name: 'item 2'
+        -
+          image: 'gantry-media://jf/particles/radialslider/creative/3.jpg'
+          html: "<h1 class=\"data_resp\" \nstyle=\"margin:0 0 50px;font-weight:700\" \ndata-respWide=\"margin:0 0 50px;font-weight:700\" \ndata-resp768px=\"margin:0 0 20px;font-weight:700;font-size:2.5rem;\" \ndata-resp667px=\"margin:0 0 20px;font-weight:700;font-size:2rem;\" \ndata-resp568px=\"margin:0 0 10px;font-weight:700;font-size:1.5rem;\" \ndata-resp320px=\"margin:0 0 10px;font-weight:700;font-size:1rem;\">Gantry 5 Template</h1>\n<button type=\"button\" class=\"btn btn-large btn-primary waves-effect waves-light-50 data_resp\" \nstyle=\"background:0;border:2px solid #fff;padding:11px 25px;margin:0 5px;\" \ndata-respWide=\"background:0;border:2px solid #fff;padding:11px 25px;margin:0 5px;\" \ndata-resp768px=\"background:0;border:2px solid #fff;padding:8px 22px;margin:0 5px;font-size:14px;\" \ndata-resp667px=\"background:0;border:2px solid #fff;padding:6px 18px;margin:0 5px;font-size:14px;\" \ndata-resp568px=\"background:0;border:2px solid #fff;padding:6px 18px;margin:0 5px;font-size:12px;\" \ndata-resp320px=\"background:0;border:2px solid #fff;padding:0 14px;margin:0 5px;font-size:8px;\" \ndata-tilt=\"10\">Download</button>\n<button type=\"button\" class=\"btn btn-large btn-primary waves-effect waves-light-50 data_resp\" \nstyle=\"margin:0 5px\" \ndata-respWide=\"margin:0 5px\" \ndata-resp768px=\"margin:0 5px;padding:10px 24px;font-size:14px;\" \ndata-resp667px=\"margin:0 5px;padding:8px 22px;font-size:14px;\" \ndata-resp568px=\"margin:0 5px;padding:8px 22px;font-size:12px;\" \ndata-resp320px=\"margin:0 5px;padding:2px 14px;font-size:8px;\" \ndata-tilt=\"10\">Gets Started</button>"
+          textAl: center
+          parallax: '1'
+          scrollBtn: '1'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: '#features'
+          name: 'item 3'
+        -
+          image: 'gantry-media://jf/particles/radialslider/creative/4.jpg'
+          html: "<h1 class=\"data_resp\" \nstyle=\"margin:0 0 50px;font-weight:700\" \ndata-respWide=\"margin:0 0 50px;font-weight:700\" \ndata-resp768px=\"margin:0 0 20px;font-weight:700;font-size:2.5rem;\" \ndata-resp667px=\"margin:0 0 20px;font-weight:700;font-size:2rem;\" \ndata-resp568px=\"margin:0 0 10px;font-weight:700;font-size:1.5rem;\" \ndata-resp320px=\"margin:0 0 10px;font-weight:700;font-size:1rem;\">Unique &<br>Creative Design</h1>\n<button type=\"button\" class=\"btn btn-large btn-primary waves-effect waves-light-50 data_resp\" \nstyle=\"background:0;border:2px solid #fff;padding:11px 25px;margin:0 5px;\" \ndata-respWide=\"background:0;border:2px solid #fff;padding:11px 25px;margin:0 5px;\" \ndata-resp768px=\"background:0;border:2px solid #fff;padding:8px 22px;margin:0 5px;font-size:14px;\" \ndata-resp667px=\"background:0;border:2px solid #fff;padding:6px 18px;margin:0 5px;font-size:14px;\" \ndata-resp568px=\"background:0;border:2px solid #fff;padding:6px 18px;margin:0 5px;font-size:12px;\" \ndata-resp320px=\"background:0;border:2px solid #fff;padding:0 14px;margin:0 5px;font-size:8px;\" \ndata-tilt=\"10\">Download</button>\n<button type=\"button\" class=\"btn btn-large btn-primary waves-effect waves-light-50 data_resp\" \nstyle=\"margin:0 5px\" \ndata-respWide=\"margin:0 5px\" \ndata-resp768px=\"margin:0 5px;padding:10px 24px;font-size:14px;\" \ndata-resp667px=\"margin:0 5px;padding:8px 22px;font-size:14px;\" \ndata-resp568px=\"margin:0 5px;padding:8px 22px;font-size:12px;\" \ndata-resp320px=\"margin:0 5px;padding:2px 14px;font-size:8px;\" \ndata-tilt=\"10\">Gets Started</button>"
+          textAl: center
+          parallax: '1'
+          scrollBtn: '1'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: '#features'
+          name: 'item 4'
+        -
+          image: 'gantry-media://jf/particles/radialslider/creative/5.jpg'
+          html: "<h1 class=\"data_resp\" \nstyle=\"margin:0 0 50px;font-weight:700\" \ndata-respWide=\"margin:0 0 50px;font-weight:700\" \ndata-resp768px=\"margin:0 0 20px;font-weight:700;font-size:2.5rem;\" \ndata-resp667px=\"margin:0 0 20px;font-weight:700;font-size:2rem;\" \ndata-resp568px=\"margin:0 0 10px;font-weight:700;font-size:1.5rem;\" \ndata-resp320px=\"margin:0 0 10px;font-weight:700;font-size:1rem;\">Premium Quality<br>Design</h1>\n<button type=\"button\" class=\"btn btn-large btn-primary waves-effect waves-light-50 data_resp\" \nstyle=\"background:0;border:2px solid #fff;padding:11px 25px;margin:0 5px;\" \ndata-respWide=\"background:0;border:2px solid #fff;padding:11px 25px;margin:0 5px;\" \ndata-resp768px=\"background:0;border:2px solid #fff;padding:8px 22px;margin:0 5px;font-size:14px;\" \ndata-resp667px=\"background:0;border:2px solid #fff;padding:6px 18px;margin:0 5px;font-size:14px;\" \ndata-resp568px=\"background:0;border:2px solid #fff;padding:6px 18px;margin:0 5px;font-size:12px;\" \ndata-resp320px=\"background:0;border:2px solid #fff;padding:0 14px;margin:0 5px;font-size:8px;\" \ndata-tilt=\"10\">Download</button>\n<button type=\"button\" class=\"btn btn-large btn-primary waves-effect waves-light-50 data_resp\" \nstyle=\"margin:0 5px\" \ndata-respWide=\"margin:0 5px\" \ndata-resp768px=\"margin:0 5px;padding:10px 24px;font-size:14px;\" \ndata-resp667px=\"margin:0 5px;padding:8px 22px;font-size:14px;\" \ndata-resp568px=\"margin:0 5px;padding:8px 22px;font-size:12px;\" \ndata-resp320px=\"margin:0 5px;padding:2px 14px;font-size:8px;\" \ndata-tilt=\"10\">Gets Started</button>"
+          textAl: center
+          parallax: '1'
+          scrollBtn: '1'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: '#features'
+          name: 'item 5'
+  jf_p_radialslider-3338:
+    title: 'JF Particle - Radial Slider 2'
+    attributes:
+      autoplay: '1'
+      items:
+        -
+          image: 'gantry-media://jf/particles/radialslider/business/1.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:3rem\"\ndata-respWide=\"font-size:3rem\" \ndata-resp768px=\"font-size:2rem\" \ndata-resp667px=\"font-size:1.5rem\" \ndata-resp568px=\"font-size:1.2rem\" \ndata-resp320px=\"font-size:1rem\">Take your Business<br>to the Next Level</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<button type=\"button\" class=\"btn btn-default waves-effect waves-dark-50 data_resp\" style=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-respWide=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-resp768px=\"background:#fff;border:2px solid #fff;padding:8px 24px;color:#000;font-size:14px\" \ndata-resp667px=\"background:#fff;border:2px solid #fff;padding:6px 22px;color:#000;font-size:12px\" \ndata-resp568px=\"background:#fff;border:2px solid #fff;padding:4px 18px;color:#000;font-size:10px\" \ndata-resp320px=\"background:#fff;border:2px solid #fff;padding:2px 14px;color:#000;font-size:8px\" data-tilt=\"10\">Company</button>\n\n<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox data_resp\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-respWide=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-resp768px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:8px 24px;font-size:14px\" \ndata-resp667px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:6px 22px;font-size:12px\" \ndata-resp568px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:4px 18px;font-size:10px\" \ndata-resp320px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:2px 14px;font-size:8px\" data-tilt=\"10\">Play Video <i class=\"fa fa-play data_resp\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"\ndata-respWide=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\" \ndata-resp768px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:8px;width:30px;height:30px;text-align:center;font-size:13px\" \ndata-resp667px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp568px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp320px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:10px\"></i></a>"
+          textAl: left
+          parallax: '0'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 1'
+        -
+          image: 'gantry-media://jf/particles/radialslider/business/2.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:3rem\"\ndata-respWide=\"font-size:3rem\" \ndata-resp768px=\"font-size:2rem\" \ndata-resp667px=\"font-size:1.5rem\" \ndata-resp568px=\"font-size:1.2rem\" \ndata-resp320px=\"font-size:1rem\">See things in the Present,<br>Even if they are in the Future.</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<button type=\"button\" class=\"btn btn-default waves-effect waves-dark-50 data_resp\" style=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-respWide=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-resp768px=\"background:#fff;border:2px solid #fff;padding:8px 24px;color:#000;font-size:14px\" \ndata-resp667px=\"background:#fff;border:2px solid #fff;padding:6px 22px;color:#000;font-size:12px\" \ndata-resp568px=\"background:#fff;border:2px solid #fff;padding:4px 18px;color:#000;font-size:10px\" \ndata-resp320px=\"background:#fff;border:2px solid #fff;padding:2px 14px;color:#000;font-size:8px\" data-tilt=\"10\">Company</button>\n\n<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox data_resp\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-respWide=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-resp768px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:8px 24px;font-size:14px\" \ndata-resp667px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:6px 22px;font-size:12px\" \ndata-resp568px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:4px 18px;font-size:10px\" \ndata-resp320px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:2px 14px;font-size:8px\" data-tilt=\"10\">Play Video <i class=\"fa fa-play data_resp\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"\ndata-respWide=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\" \ndata-resp768px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:8px;width:30px;height:30px;text-align:center;font-size:13px\" \ndata-resp667px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp568px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp320px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:10px\"></i></a>"
+          textAl: left
+          parallax: '0'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 2'
+        -
+          image: 'gantry-media://jf/particles/radialslider/business/3.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:3rem\"\ndata-respWide=\"font-size:3rem\" \ndata-resp768px=\"font-size:2rem\" \ndata-resp667px=\"font-size:1.5rem\" \ndata-resp568px=\"font-size:1.2rem\" \ndata-resp320px=\"font-size:1rem\">Build your Business<br>Corporate Empire</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<button type=\"button\" class=\"btn btn-default waves-effect waves-dark-50 data_resp\" style=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-respWide=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-resp768px=\"background:#fff;border:2px solid #fff;padding:8px 24px;color:#000;font-size:14px\" \ndata-resp667px=\"background:#fff;border:2px solid #fff;padding:6px 22px;color:#000;font-size:12px\" \ndata-resp568px=\"background:#fff;border:2px solid #fff;padding:4px 18px;color:#000;font-size:10px\" \ndata-resp320px=\"background:#fff;border:2px solid #fff;padding:2px 14px;color:#000;font-size:8px\" data-tilt=\"10\">Company</button>\n\n<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox data_resp\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-respWide=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-resp768px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:8px 24px;font-size:14px\" \ndata-resp667px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:6px 22px;font-size:12px\" \ndata-resp568px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:4px 18px;font-size:10px\" \ndata-resp320px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:2px 14px;font-size:8px\" data-tilt=\"10\">Play Video <i class=\"fa fa-play data_resp\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"\ndata-respWide=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\" \ndata-resp768px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:8px;width:30px;height:30px;text-align:center;font-size:13px\" \ndata-resp667px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp568px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp320px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:10px\"></i></a>"
+          textAl: left
+          parallax: '0'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 3'
+        -
+          image: 'gantry-media://jf/particles/radialslider/business/1.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:3rem\"\ndata-respWide=\"font-size:3rem\" \ndata-resp768px=\"font-size:2rem\" \ndata-resp667px=\"font-size:1.5rem\" \ndata-resp568px=\"font-size:1.2rem\" \ndata-resp320px=\"font-size:1rem\">Take your Business<br>to the Next Level</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<button type=\"button\" class=\"btn btn-default waves-effect waves-dark-50 data_resp\" style=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-respWide=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-resp768px=\"background:#fff;border:2px solid #fff;padding:8px 24px;color:#000;font-size:14px\" \ndata-resp667px=\"background:#fff;border:2px solid #fff;padding:6px 22px;color:#000;font-size:12px\" \ndata-resp568px=\"background:#fff;border:2px solid #fff;padding:4px 18px;color:#000;font-size:10px\" \ndata-resp320px=\"background:#fff;border:2px solid #fff;padding:2px 14px;color:#000;font-size:8px\" data-tilt=\"10\">Company</button>\n\n<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox data_resp\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-respWide=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-resp768px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:8px 24px;font-size:14px\" \ndata-resp667px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:6px 22px;font-size:12px\" \ndata-resp568px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:4px 18px;font-size:10px\" \ndata-resp320px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:2px 14px;font-size:8px\" data-tilt=\"10\">Play Video <i class=\"fa fa-play data_resp\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"\ndata-respWide=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\" \ndata-resp768px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:8px;width:30px;height:30px;text-align:center;font-size:13px\" \ndata-resp667px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp568px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp320px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:10px\"></i></a>"
+          textAl: left
+          parallax: '0'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 1'
+        -
+          image: 'gantry-media://jf/particles/radialslider/business/2.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:3rem\"\ndata-respWide=\"font-size:3rem\" \ndata-resp768px=\"font-size:2rem\" \ndata-resp667px=\"font-size:1.5rem\" \ndata-resp568px=\"font-size:1.2rem\" \ndata-resp320px=\"font-size:1rem\">See things in the Present,<br>Even if they are in the Future.</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<button type=\"button\" class=\"btn btn-default waves-effect waves-dark-50 data_resp\" style=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-respWide=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-resp768px=\"background:#fff;border:2px solid #fff;padding:8px 24px;color:#000;font-size:14px\" \ndata-resp667px=\"background:#fff;border:2px solid #fff;padding:6px 22px;color:#000;font-size:12px\" \ndata-resp568px=\"background:#fff;border:2px solid #fff;padding:4px 18px;color:#000;font-size:10px\" \ndata-resp320px=\"background:#fff;border:2px solid #fff;padding:2px 14px;color:#000;font-size:8px\" data-tilt=\"10\">Company</button>\n\n<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox data_resp\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-respWide=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-resp768px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:8px 24px;font-size:14px\" \ndata-resp667px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:6px 22px;font-size:12px\" \ndata-resp568px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:4px 18px;font-size:10px\" \ndata-resp320px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:2px 14px;font-size:8px\" data-tilt=\"10\">Play Video <i class=\"fa fa-play data_resp\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"\ndata-respWide=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\" \ndata-resp768px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:8px;width:30px;height:30px;text-align:center;font-size:13px\" \ndata-resp667px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp568px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp320px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:10px\"></i></a>"
+          textAl: left
+          parallax: '0'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 2'
+        -
+          image: 'gantry-media://jf/particles/radialslider/business/3.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:3rem\"\ndata-respWide=\"font-size:3rem\" \ndata-resp768px=\"font-size:2rem\" \ndata-resp667px=\"font-size:1.5rem\" \ndata-resp568px=\"font-size:1.2rem\" \ndata-resp320px=\"font-size:1rem\">Build your Business<br>Corporate Empire</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<button type=\"button\" class=\"btn btn-default waves-effect waves-dark-50 data_resp\" style=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-respWide=\"background:#fff;border:2px solid #fff;padding:15px 30px;color:#000\" \ndata-resp768px=\"background:#fff;border:2px solid #fff;padding:8px 24px;color:#000;font-size:14px\" \ndata-resp667px=\"background:#fff;border:2px solid #fff;padding:6px 22px;color:#000;font-size:12px\" \ndata-resp568px=\"background:#fff;border:2px solid #fff;padding:4px 18px;color:#000;font-size:10px\" \ndata-resp320px=\"background:#fff;border:2px solid #fff;padding:2px 14px;color:#000;font-size:8px\" data-tilt=\"10\">Company</button>\n\n<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox data_resp\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-respWide=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" \ndata-resp768px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:8px 24px;font-size:14px\" \ndata-resp667px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:6px 22px;font-size:12px\" \ndata-resp568px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:4px 18px;font-size:10px\" \ndata-resp320px=\"margin:0 5px;background:0;color:#fff;font-weight:400;padding:2px 14px;font-size:8px\" data-tilt=\"10\">Play Video <i class=\"fa fa-play data_resp\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"\ndata-respWide=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\" \ndata-resp768px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:8px;width:30px;height:30px;text-align:center;font-size:13px\" \ndata-resp667px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp568px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:12px\" \ndata-resp320px=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:7px;width:30px;height:30px;text-align:center;font-size:10px\"></i></a>"
+          textAl: left
+          parallax: '0'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 3'
+  jf_p_radialslider-8955:
+    title: 'JF Particle - Radial Slider 3'
+    attributes:
+      autoplay: '1'
+      items:
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/1.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Create your App page <br>with <span style=\"font-weight:600\">Simone</span></h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background:#fff;font-weight:400;border-radius:100px;\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius: 100px;\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t\t</div>\n\t</a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 1'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/2.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Manage All of Your <br>Stuff with our App</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius:100px;color:#d119ad\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" data-tilt=\"10\">Play Video <i class=\"fa fa-play\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"></i></a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 2'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/3.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Easy and Powerful <br>Mobile App</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius:100px;color:#f18e52\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" data-tilt=\"10\">Watch Video <i class=\"fa fa-play\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"></i></a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 3'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/1.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Create your App page <br>with <span style=\"font-weight:600\">Simone</span></h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background:#fff;font-weight:400;border-radius:100px;\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius: 100px;\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t\t</div>\n\t</a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 1'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/2.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Manage All of Your <br>Stuff with our App</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius:100px;color:#d119ad\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-apple\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Apple Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" data-tilt=\"10\">Play Video <i class=\"fa fa-play\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"></i></a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 2'
+        -
+          image: 'gantry-media://jf/particles/radialslider/app/3.jpg'
+          html: "<h1 class=\"data_resp\" style=\"font-size:2.5rem\"\ndata-respWide=\"font-size:2.5rem\" \ndata-resp768px=\"font-size:1.5rem\" \ndata-resp667px=\"font-size:1.2rem\" \ndata-resp568px=\"font-size:1rem\" \ndata-resp320px=\"font-size:0.8rem\">Easy and Powerful <br>Mobile App</h1>\n\n<div class=\"small_sep white data_resp\" style=\"margin:30px 0 50px;width:100px\"\ndata-respWide=\"margin:30px 0 50px;width:100px\" \ndata-resp768px=\"margin:20px 0 30px;width:100px\" \ndata-resp667px=\"margin:10px 0 10px;width:100px\" \ndata-resp568px=\"margin:10px 0 10px;width:50px\" \ndata-resp320px=\"margin:10px 0 10px;width:50px\"></div>\n\n<div class=\"data_resp\" \ndata-resp768px=\"transform:scale(0.7);transform-origin:left;\" \ndata-resp667px=\"transform:scale(0.6);transform-origin:left;\" \ndata-resp568px=\"transform:scale(0.4);transform-origin:left;\" \ndata-resp320px=\"transform:scale(0.4);transform-origin:top left;\">\n\t<a class=\"btn btn-large waves-effect waves-dark-50\" href=\"#\" style=\"margin:0 5px;background: #fff;font-weight:400;border-radius:100px;color:#f18e52\" data-tilt=\"10\">\n\t\t<i class=\"fa fa-android\" aria-hidden=\"true\" style=\"font-size:26px;margin:0 10px 0 0;display:inline-block;vertical-align:middle;\"></i>\n\t\t<div style=\"font-weight:500;text-align:left;display:inline-block;vertical-align:middle;line-height:1px;\">\n\t\t\t<div style=\"font-size:12px;line-height:1.3;\">available on</div>\n\t\t\t<div style=\"font-size:16px;line-height:1.3;font-weight:600;\">Google Store</div>\n\t\t</div>\n\t</a>\n\t<a class=\"btn btn-large waves-effect waves-light-50 jf_venobox\" data-autoplay=\"true\" data-vbtype=\"youtube\" href=\"https://youtu.be/luhsTvMihi0\" style=\"margin:0 5px;background:0;color:#fff;font-weight:400;\" data-tilt=\"10\">Watch Video <i class=\"fa fa-play\" aria-hidden=\"true\" style=\"margin:0 10px;border-radius:50%;border:2px solid #fff;padding:10px;width:40px;height:40px;text-align:center;font-size:15px\"></i></a>\n</div>"
+          textAl: left
+          parallax: '1'
+          scrollBtn: '0'
+          scrollBtn_color: '#ffffff'
+          scrollBtn_url: ''
+          name: 'item 3'
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589

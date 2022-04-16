@@ -1,0 +1,51 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+	<div{% if particle.special_id %} id="{{ particle.special_id|e }}"{% endif %} class="jf_p_global{% if particle.theme == 'dark' %} dark{% endif %}" style="
+		{% if particle.padding %}padding:{{ particle.padding|e }};{% endif %}
+		{% if particle.textAlign %}text-align:{{ particle.textAlign|e }};{% endif %}
+		{% if particle.bg_color %}background-color:{{ particle.bg_color|e }};{% endif %}
+		{% if particle.bg_img %}background-image:url('{{ url(particle.bg_img)|e }}');{% endif %}
+		background-size:{{ particle.bg_size|e }};
+		background-attachment:{{ particle.bg_attachement|e }};
+		{{ particle.bg_css|e }}
+	">
+		{% if particle.bg_mask %}<div class="jf_p_global_bg_mask" style="background:{{ particle.bg_mask|e }}"></div>{% endif %}
+		<div class="jf_p_global_cont">
+			<div class="clear"></div>
+			{% if particle.contentW == "default" %}<div class="jf_g_container"><div class="g-content">{% endif %}
+				{{ particle.html_before|html|raw }}
+				<div class="row-fluid">
+					{% for item in particle.items %}
+						<div class="span{{ item.grid }}" style="text-align:{{ item.contentTextAl|e }};{{ item.contentCSS|e }}"
+							{% if item.css3_anim %} data-aos="{{ item.css3_anim|e }}" data-aos-delay="{{ item.css3_anim_delay|e }}"{% endif %}>
+								{% if item.contentStyle == "image" %}
+									<div class="jf_p_cta_img_block">
+										{% if item.image_url %}<a href="{{ item.image_url|e }}" target="_{{ item.image_urlTarget|e }}">{% endif %}
+										<img src="{{ url(item.image_src)|e }}" alt="{{ item.image_alt|e }}" style="max-width:100%;{{ item.image_css|e }}">
+										{% if item.image_url %}</a>{% endif %}
+										{% if item.lighbox == "image" %}
+											<a class="jf_p_cta_lightbox_btn jf_venobox" 
+												href="{{ url(item.lightbox_image)|e }}" title="{{ item.image_alt|e }}">{{ item.lightbox_icon_html|html|raw }}</a>
+										{% elseif item.lighbox == "video_y" %}
+											<a class="jf_p_cta_lightbox_btn jf_venobox" 
+												data-autoplay="true" data-vbtype="youtube" 
+												href="{{ item.lightbox_video|e }}">{{ item.lightbox_icon_html|html|raw }}</a>
+										{% elseif item.lighbox == "video_v" %}
+											<a class="jf_p_cta_lightbox_btn jf_venobox" 
+												data-autoplay="true" data-vbtype="vimeo" 
+												href="{{ item.lightbox_video|e }}">{{ item.lightbox_icon_html|html|raw }}</a>
+										{% endif %}
+									</div>
+								{% else %}
+									{{ item.html|html|raw }}
+								{% endif %}
+						</div>
+					{% endfor %}
+				</div>
+				{{ particle.html_after|html|raw }}
+			{% if particle.contentW == "default" %}</div></div>{% endif %}
+			<div class="clear"></div>
+		</div>
+	</div>
+{% endblock %}

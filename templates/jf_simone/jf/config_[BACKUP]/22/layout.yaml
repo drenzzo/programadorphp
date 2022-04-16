@@ -1,0 +1,283 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/p_faq.jpg'
+  name: default
+  timestamp: 1482703875
+layout:
+  header: {  }
+  navigation: {  }
+  right-panel: {  }
+  news-panel: {  }
+  /full-width-section-1/: {  }
+  /main/:
+    -
+      - system-messages-5749
+  /full-width-section-2/:
+    -
+      - jf_p_faq-2557
+    -
+      - jf_p_faq-3330
+    -
+      - jf_p_faq-1314
+    -
+      - jf_p_faq-3682
+  footer: {  }
+  bottom-footer: {  }
+structure:
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  right-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  news-panel:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  full-width-section-1:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+      class: ''
+  full-width-section-2:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+  bottom-footer:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
+content:
+  system-messages-5749:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: system-messages-9589
+  jf_p_faq-2557:
+    title: 'JF Particle - FAQ (Example 1)'
+    attributes:
+      padding: '120px 0'
+      bg_color: '#f4f4f4'
+      html_before: "<h3 style=\"margin:0;font-size:2.3rem;color:#000;line-height:1\" data-aos=\"fade-up\">Particle - F.A.Q. (Example 1)</h3>\n<div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\" style=\"margin:0 0 80px\">Below is a list of frequently asked questions to help you understand how this works.</p>"
+      items:
+        -
+          grid: '8'
+          contentTextAl: left
+          contentStyle: faq
+          contentCSS: ''
+          question_items:
+            -
+              question: '1. When can we get started?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 1'
+            -
+              question: '2. How do I go about conducting market research?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 2'
+            -
+              question: '3. What do I need in order to start selling?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 3'
+            -
+              question: '4. How much does it cost?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 4'
+            -
+              question: '5. What other help is available?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 5'
+          html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: left
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:0 20px'
+          html: "<h3 style=\"font-size:22px;line-height:45px;margin:15px 0 20px;color:#000;letter-spacing:-1px\">Questions?</h3>\n<p style=\"margin:0 0 30px 0;\">Nisi porta! Pulvinar ut, rhoncus vut eu velit nec amet nec duis.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"padding:14px 34px;margin:0 0 30px\">Contact Us</a>\n<h3 style=\"font-size:22px;line-height:45px;margin:15px 0 20px;color:#000;letter-spacing:-1px\">About Us</h3>\n<p style=\"margin:0 0 30px 0;\">Turpis ridiculus. Arcu, elementum, odio sed lorem ac, placerat. Cum placerat non a, ac! Hac, et in pulvinar Enim nunc.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"padding:14px 34px;\">Learn More</a>"
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: right
+  jf_p_faq-3330:
+    title: 'JF Particle - FAQ (Example 2)'
+    attributes:
+      padding: '120px 0'
+      theme: dark
+      bg_color: '#333333'
+      html_before: "<h3 style=\"margin:0;font-size:2.3rem;line-height:1\" data-aos=\"fade-up\">Particle - F.A.Q. (Example 2)</h3>\n<div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\" style=\"margin:0 0 80px\">Below is a list of frequently asked questions to help you understand how this works.</p>"
+      items:
+        -
+          grid: '8'
+          contentTextAl: left
+          contentStyle: faq
+          contentCSS: ''
+          question_items:
+            -
+              question: '1. When can we get started?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 1'
+            -
+              question: '2. How do I go about conducting market research?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 2'
+            -
+              question: '3. What do I need in order to start selling?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 3'
+            -
+              question: '4. How much does it cost?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 4'
+            -
+              question: '5. What other help is available?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 5'
+          html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: left
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:0 20px'
+          html: "<h3 style=\"font-size:22px;line-height:45px;margin:15px 0 20px;letter-spacing:-1px\">Questions?</h3>\n<p style=\"margin:0 0 30px 0;\">Nisi porta! Pulvinar ut, rhoncus vut eu velit nec amet nec duis.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"padding:14px 34px;margin:0 0 30px\">Contact Us</a>\n<h3 style=\"font-size:22px;line-height:45px;margin:15px 0 20px;letter-spacing:-1px\">About Us</h3>\n<p style=\"margin:0 0 30px 0;\">Turpis ridiculus. Arcu, elementum, odio sed lorem ac, placerat. Cum placerat non a, ac! Hac, et in pulvinar Enim nunc.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"padding:14px 34px;\">Learn More</a>"
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: right
+  jf_p_faq-1314:
+    title: 'JF Particle - FAQ (Example 3)'
+    attributes:
+      padding: '120px 0'
+      bg_color: '#ffffff'
+      html_before: "<h3 style=\"margin:0;font-size:2.3rem;color:#000;line-height:1\" data-aos=\"fade-up\">Particle - F.A.Q. (Example 3)</h3>\n<div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\" style=\"margin:0 0 80px\">Below is a list of frequently asked questions to help you understand how this works.</p>"
+      items:
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:0 20px'
+          html: "<h3 style=\"font-size:22px;line-height:45px;margin:15px 0 20px;color:#000;letter-spacing:-1px\">Questions?</h3>\n<p style=\"margin:0 0 30px 0;\">Nisi porta! Pulvinar ut, rhoncus vut eu velit nec amet nec duis.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"padding:14px 34px;margin:0 0 30px\">Contact Us</a>\n<h3 style=\"font-size:22px;line-height:45px;margin:15px 0 20px;color:#000;letter-spacing:-1px\">About Us</h3>\n<p style=\"margin:0 0 30px 0;\">Turpis ridiculus. Arcu, elementum, odio sed lorem ac, placerat. Cum placerat non a, ac! Hac, et in pulvinar Enim nunc.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"padding:14px 34px;\">Learn More</a>"
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: left
+        -
+          grid: '8'
+          contentTextAl: left
+          contentStyle: faq
+          contentCSS: ''
+          question_items:
+            -
+              question: '1. When can we get started?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 1'
+            -
+              question: '2. How do I go about conducting market research?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 2'
+            -
+              question: '3. What do I need in order to start selling?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 3'
+            -
+              question: '4. How much does it cost?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 4'
+            -
+              question: '5. What other help is available?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 5'
+          html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: right
+  jf_p_faq-3682:
+    title: 'JF Particle - FAQ (Example 4)'
+    attributes:
+      padding: '120px 0'
+      theme: dark
+      bg_color: ''
+      bg_img: 'gantry-media://jf/pages/home_business/testimonials_bg.jpg'
+      bg_mask: 'rgba(0, 0, 0, 0.7)'
+      bg_attachement: fixed
+      html_before: "<h3 style=\"margin:0;font-size:2.3rem;line-height:1\" data-aos=\"fade-up\">Particle - F.A.Q. (Example 4)</h3>\n<div class=\"small_sep middle\" style=\"margin:30px auto;\" data-aos=\"fade-up\"></div>\n<p data-aos=\"fade-up\" style=\"margin:0 0 80px\">Below is a list of frequently asked questions to help you understand how this works.</p>"
+      items:
+        -
+          grid: '4'
+          contentTextAl: left
+          contentStyle: html
+          contentCSS: 'padding:0 20px'
+          html: "<h3 style=\"font-size:22px;line-height:45px;margin:15px 0 20px;letter-spacing:-1px\">Questions?</h3>\n<p style=\"margin:0 0 30px 0;\">Nisi porta! Pulvinar ut, rhoncus vut eu velit nec amet nec duis.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"padding:14px 34px;margin:0 0 30px\">Contact Us</a>\n<h3 style=\"font-size:22px;line-height:45px;margin:15px 0 20px;letter-spacing:-1px\">About Us</h3>\n<p style=\"margin:0 0 30px 0;\">Turpis ridiculus. Arcu, elementum, odio sed lorem ac, placerat. Cum placerat non a, ac! Hac, et in pulvinar Enim nunc.</p>\n<a class=\"btn btn-primary waves-effect waves-light-50\" data-tilt=\"10\" href=\"#\" style=\"padding:14px 34px;\">Learn More</a>"
+          css3_anim: fade-left
+          css3_anim_delay: '300'
+          name: left
+        -
+          grid: '8'
+          contentTextAl: left
+          contentStyle: faq
+          contentCSS: ''
+          question_items:
+            -
+              question: '1. When can we get started?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 1'
+            -
+              question: '2. How do I go about conducting market research?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 2'
+            -
+              question: '3. What do I need in order to start selling?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 3'
+            -
+              question: '4. How much does it cost?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 4'
+            -
+              question: '5. What other help is available?'
+              answer: 'Elit ut cras placerat eros enim ac nunc phasellus magna lectus! Nunc, tempor natoque nec, porttitor! Ut nisi lacus integer. Turpis enim ultrices? Ac lectus penatibus augue ut sit, dolor, scelerisque ut aenean dictumst, dictumst, risus, sagittis tristique elementum diam! Nunc porta, dapibus odio.'
+              name: 'Question 5'
+          html: ''
+          css3_anim: fade-right
+          css3_anim_delay: '0'
+          name: right

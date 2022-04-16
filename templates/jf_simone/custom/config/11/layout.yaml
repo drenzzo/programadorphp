@@ -1,0 +1,72 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1648230812
+layout:
+  /header/:
+    -
+      - 'logo-9504 15'
+      - 'position-header 85'
+  /navigation/:
+    -
+      - menu-1141
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-5898
+    -
+      - system-content-3939
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'copyright-8092 40'
+      - 'spacer-6359 30'
+      - 'branding-8698 30'
+  offcanvas:
+    -
+      - mobile-menu-8697
+structure:
+  header:
+    attributes:
+      boxed: ''
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  logo-9504:
+    attributes:
+      image: 'gantry-media://logo.png'
+      svg: ''
+      text: 'Programador PHP'
+      class: ''
+      flash: '0'
+      descr: ''
+  position-header:
+    attributes:
+      key: header
+  menu-1141:
+    attributes:
+      enabled: 0
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  position-footer:
+    attributes:
+      enabled: 0
+      key: footer
+  copyright-8092:
+    attributes:
+      enabled: 0
+  branding-8698:
+    attributes:
+      enabled: 0

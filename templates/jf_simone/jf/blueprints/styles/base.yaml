@@ -1,0 +1,15 @@
+name: Base Font Styles
+description: Base Font Styles
+type: core
+
+form:
+  fields:
+
+    body-font:
+      type: input.fonts
+      label: Body Font
+      default: 'family=Roboto:300,500,700,400'
+    heading-font:
+      type: input.fonts
+      label: Heading Font
+      default: 'family=Roboto:300,500,700,400'
