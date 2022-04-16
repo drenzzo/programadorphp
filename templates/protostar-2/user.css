@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+body{
+  font-family: "Fira Sans", "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #ccc;
+}
+
+header {
+  border-bottom: 5px solid #4F5B93;
+  background: #8892BF;
+  box-shadow: 0 .25em .25em rgba(0,0,0,.1);
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 1030;
+	margin: 0;
+	height: 48px;
+	line-height: 48px;
+	display: flex;
+	flex-direction: column;
+}
+
+.header{
+	background: #8892BF;
+}
+
+.header .header-inner{
+	
+}
+
+.header .brand{
+	width: 160px;
+	position: absolute;
+}
+
+.header .header-search{
+	width: 215px;
+	float: right;
+	line-height: 48px;
+}
+
+.header-inner .brand img{
+	height: 20px;
+}
+
+body.site{
+  padding:0;
+  background-color: none;
+}
+
+.body {
+	flex-direction: column;
+}
+
+.body .container{
+  border:none;
+  border-radius:0;
+	background-color: #F2F2F2;
+	color: #333;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin: 50px 0 0 0;
+}
+
+a{
+	color: #369;
+}
+
+a:hover{
+	color: #AE508D;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 3rem;
+  margin: 0 0 1.5rem;
+  overflow: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2 {
+	font-size: 1.5rem;
+}
+
+.btn-primary:hover{
+	background-color: #AE508D;
+}
+
+.btn-link, #kunena.layout .kwho-user {
+	color: #777bb3;
+}
+
+.btn-link:hover, #kunena.layout .kwho-user:hover{
+	color: #AE508D;
+}
+
+.wrapper{
+	
+}
+
+.well {
+	background-color: transparent !important;
+	border: none !important;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	padding: 0;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.page-header{
+	padding:0;
+	margin:0 !important;
+	border-bottom: none;
+}
+
+.span3 {
+	margin-left: 25px;
+}
+
+/* search kunena*/
+.ksearch-form{
+	text-align: right;
+	width: 215px; 
+}
+
+.ksearch-fieldset input{
+	width: 185px;
+}
+
+/* mod login */
+#form-login-username{
+	margin-bottom: 0;
+}
+
+#form-login-username > .controls > .input-prepend,
+#form-login-password > .controls > .input-prepend{
+	width: 100%;
+}
+
+#form-login-remember{
+	height: 30px;
+}
+
+#form-login-remember > .controls > .input-prepend{
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	align-content: center;
+}
+
+#form-login-remember > .controls > .input-prepend > label{
+	margin-bottom: 0;
+	margin-left: 10px;
+	font-size: 1rem;
+}
+
+#modlgn-username, #modlgn-passwd, 
+#kmobile-username, #kmobile-passwd{
+	padding: 7px 5px;
+	font-size: 14px;
+	line-height: 36px; 
+	height: 37px;
+	border-radius: 4px;
+	min-width: 174px;
+	margin-bottom: 10px;
+}
+
+#form-login-submit > p > button {
+	display: block;
+	text-align: center;	
+}
+
+#kmobile-form-login-submit{
+	max-width: 174px;
+	margin: 0 auto 10px auto;
+	text-align: left;
+}
+
+#kmobile-form-login-submit button{
+	height: 42px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#kmobile-form-login-submit > p > a{
+	margin-bottom: 15px;
+	height: 28px;
+	line-height: 28px;
+	text-align: left;
+}
+
+#login-remember, #kmobile-remember{
+	margin: 0;
+	padding: 4px;
+	width: 20px;
+	height: 20px;
+}
+
+#kmobile-form-login-remember > .controls > .input-prepend > .add-on{
+	border: none;
+	background: transparent;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	width: 176px;	
+	margin-bottom: 10px;
+}
+
+#kmobile-form-login-remember > .controls > .input-prepend > .add-on > label {
+	font-size: 1rem;
+	margin-bottom:0;
+	line-height: 20px;
+}
+
+/* search */
+#ksearch-keywords{
+	margin-bottom: 0;
+	border-radius: 4px;
+	padding: 7px 5px;
+	background-color: #4F5B93;
+	color: #fff;
+}
+
+
+/* kunena */
+#kunena.layout h1{
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+
+.klogin-logoutfield li{
+	list-style: none;
+}
+
+#kunena.layout .kfrontend .table td:first-child {
+  padding: 10px;
+}
+
+#kunena.layout .kfrontend .table td:nth-child(2) {
+  padding: 10px 10px 25px 10px;
+}
+
+#kunena.layout .kfrontend .table td:last-child {
+  padding: 10px 0 10px 10px;
+	text-align: center;
+}
+
+.header-desc{
+	font-size: 14px;
+	color: #333;
+	margin-top: 5px;
+}
+
+#catid {
+  padding: 8px 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.footer > .container {
+	padding: 20px;
+}
+
+#member-registration input,
+#user-registration input{
+	padding: 8px 5px;
+}
+
+#member-registration button,
+#member-registration a.btn,
+#user-registration button{
+	width: 125px;
+	padding: 8px 5px;
+}
+
+@media (min-width:768px) and (max-width:979px){
+	.header-inner {
+		width: 728px;
+		margin: 0;
+	}
+	
+	.header .brand {
+		width: 260px;
+		float:left;
+	}
+	
+	.header-inner .brand img{
+		height: 35px;
+	}
+	
+	.header-search{
+		width: 400px;
+		float:right;
+	}
+	
+	.ksearch-fieldset input{
+		width: 205px;
+	}
+	
+	.header-inner{
+		width: 100%;
+		margin:0 auto;
+	}
+
+	.wrapper{
+		width: 100%;
+		margin: 0;
+	}
+		
+	.wrapper .container {
+		width: auto;
+	} 
+
+	
+	footer{
+		padding: 0 20px;
+	}	
+	
+		
+	.footer  .container{
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+}
+
+@media (min-width: 980px) {
+	.wrapper {
+		width: 100%;
+		max-width: 1366px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.container{
+		width: 68%;
+	}
+	
+	footer{
+		width: 100%;
+		max-width: 1366px;
+		display: flex;
+		align-content: start;
+		margin: 0 auto;
+	}
+	
+	.footer > .container{
+		width: 68%;
+		max-width: 960px;
+		margin: 0;
+		padding: 20px;
+	}
+	
+	.footer > .container > hr {
+		display: none;
+	}
+}
+
