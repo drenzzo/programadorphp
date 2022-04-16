@@ -45,41 +45,55 @@ foreach ($this->sections as $section) :
 	}
 	?>
 	<div class="kfrontend">
-		<h2 class="btn-toolbar pull-right">
-			<!--			<?php /*if ($this->me->isAdmin()) :*/
-			?>
+    <table class="upper table table-condensed">
+      <thead class="hidden-phone">
+        <tr>
+          <td class="category-header-cover">
+            <h1 class="category-header">
+              <?php echo $this->getCategoryLink($section, $this->escape($section->name), null, KunenaTemplate::getInstance()->tooltips(), true, false); ?>
+              <small class="hidden-phone nowrap" id="ksection-count<?php echo $section->id; ?>">
+                <?php echo KunenaForumCategory::getInstance()->totalCount($section->getTopics()); ?>
+              </small>
+            </h1>
+            <div class="header-desc">
+              <?php echo $section->displayField('description'); ?>
+            </div>
+          </td>
+          <td class="hidden-phone">
+            <h2 class="btn-toolbar pull-right">
+              <!--			<?php /*if ($this->me->isAdmin()) :*/
+              ?>
 				<a class="btn btn-small" href="<?php /*echo KunenaRoute::_('index.php?option=com_kunena&view=category&layout=manage'); */
-			?>"><?php /*echo Text::_('COM_KUNENA_MENU_CATEGORY_MANAGE'); */
-			?></a>
+              ?>"><?php /*echo Text::_('COM_KUNENA_MENU_CATEGORY_MANAGE'); */
+              ?></a>
 			--><?php /*endif; */
-			?>
+              ?>
 
-			<?php if (count($this->sections) > 1) : ?>
-				<div class="btn btn-small" data-toggle="collapse"
-				     data-target="#section<?php echo $section->id; ?>"></div>
-			<?php endif; ?>
-		</h2>
+              <?php if (count($this->sections) > 1) : ?>
+                <div class="btn btn-small" data-toggle="collapse"
+                     data-target="#section<?php echo $section->id; ?>"></div>
+              <?php endif; ?>
+            </h2>
+          </td>
+        </tr>
+      </thead>
+    </table>
 
-		<h1>
-			<?php echo $this->getCategoryLink($section, $this->escape($section->name), null, KunenaTemplate::getInstance()->tooltips(), true, false); ?>
-			<small class="hidden-phone nowrap" id="ksection-count<?php echo $section->id; ?>">
-				<?php echo KunenaForumCategory::getInstance()->totalCount($section->getTopics()); ?>
-			</small>
-		</h1>
+    <div style="clear:both"></div>
 
 		<div
       class="row-fluid section <?php if (!empty($section->class)) : ?>section<?php echo $this->escape($section->class_sfx); ?><?php endif; ?> in collapse"
       id="section<?php echo $section->id; ?>">
 			<table class="table<?php echo KunenaTemplate::getInstance()->borderless(); ?> table-bordered table-striped table-condensed">
-				<?php if (!empty($section->description)) : ?>
-					<thead class="hidden-phone">
-					<tr>
-						<td colspan="3">
-							<div class="header-desc"><?php echo $section->displayField('description'); ?></div>
-						</td>
-					</tr>
-					</thead>
-				<?php endif; ?>
+<!--				--><?php //if (!empty($section->description)) : ?>
+<!--					<thead class="hidden-phone">-->
+<!--					<tr>-->
+<!--						<td colspan="3">-->
+<!--							<div class="header-desc"></div>-->
+<!--						</td>-->
+<!--					</tr>-->
+<!--					</thead>-->
+<!--				--><?php //endif; ?>
 
 				<?php if ($section->isSection() && empty($this->categories[$section->id]) && empty($this->more[$section->id])) : ?>
 					<tr>
